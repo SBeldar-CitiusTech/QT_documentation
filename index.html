@@ -92,6 +92,24 @@
             </ul>
           </li>
           <!-- end -->
+
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-handshake"></i>
+              </span>
+              <span class="navlink">How to use QT</span>
+              <i class="fa-solid fa-chevron-right arrow-right"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink qtLib" onClick="clickCalled('qtLib')">How to use QT Lib</a>
+              <a href="#" class="nav_link sublink errResolution" onClick="clickCalled('errResolution')">Error Resolution</a>
+              <a href="#" class="nav_link sublink fnq" onClick="clickCalled('fnq')">F&Q</a>
+            </ul>
+          </li>
+          <!-- end -->
         </ul>
 
         <ul class="menu_items">
@@ -381,7 +399,31 @@ How the Q&T Framework Supports Development and Scaling
         log_metadata.log(metadata_path="app/qualitytrust/config/metric_config.yml")
 
       </div>
-      
+
+      <div id="qtLib">
+        Here is an example to showcase how you can use the library to evaluate various metrics such as Factual Accuracy, Response Relevance, Response Completeness, Hallucination Degree, Context Disregard, Language Critique, Gender and Racial Bias, Honest Score, Toxic Opinions. 
+ 
+        <b>We have a dict data containing query, response and context -</b>
+        data = [{
+                    "question": "What is the size of hernia sac?",
+                    "response": "The hernia sac measures 4.5 x 1.5 x 0.6 cm in widest dimensions.",
+                    "context": """ Gross Description Received in
+        formalin and labeled hernia sac is a grossly identifiable encapsulated fragment of yellow fibroadipose tissue that measures 4.5 x 1.5 x 0.6 cm in widest dimensions. The specimen is cross sectioned which reveals a surface that is homogeneously balanced and encapsulated with a thin tan-brown membranous material"""
+                },{
+                    "question": "What are the treatments given to john Brown?",
+                    "context": """Repair of recurrent right inguinal hernia. HISTORY AND INDICATIONS FOR ADMISSION: Mr. Brown is a 54-year-old white male who presented with pain to Dr. Jeff Moore. He had a hernia repair, on the right, in the past, and this was recurrent. He was scheduled for surgery. HOSPITAL COURSE: The patient was admitted on 11/12/1999 and underwent surgery, and did fine. He was transferred to the floor. On 11/13/99 he is alert, awake, afebrile, taking a regular diet. Having bowel movements, and passing his urine normally. His incision is clean and dry. He is discharged home in satisfactory condition with Lortab PRN for pain. He is to follow up with his primary care physician, Dr. Moore, on Monday. D: 11/13/1999 T: 11/16/1999 wms cc: Jeff T. Moore, M.D. Tom W. Smith, M.D. Community General Hospital Anytown, USA HISTORY AND
+        PHYSICAL Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Page 1 of 2 REASON FOR ADMISSION: This is a 54 year old male, admitted here for repair of right inguinal hernia. HISTORY OF PRESENT ILLNESS: The patient has
+        had his hernia repaired in the past, elsewhere. Over the past number of months, he has seen this hernia come back and recur, and become larger. It causes discomfort. He is admitted for repair of a right inguinal hernia. PAST MEDICAL HISTORY: Denies. MEDICATIONS: None. PAST SURGICAL HISTORY: Hernia surgery on the right in the past. The patient also has had a left inguinal hernia repair in the past""", 
+                    "response": "John Brown underwent surgery for a recurrent hernia repair. It is not specified what other treatments, if any, were given to him."
+          }]
+        
+        To evaluate metrics import the following library from qualitytrust package
+        from app.qualitytrust.bench import Evaluate
+        
+        <b>Score can be calculated using - </b>
+        score = Evaluate.evaluate_dataset(dataset=data,metrics=["Factual Accuracy","Response Relevance","Response Completeness","Hallucination Degree","Context Disregard", "Language Critique","Gender and Racial Bias","Honest Score","Toxic Opinions"]) 
+      </div>
+
       <div id="response">
         <table> <tr> <th>Name</th> <th>Definition</th> </tr> <tr> <th>Accuracy</th> <td></td> </tr> <tr> <td>Exact Match</td> <td>Exact match is the proportion of the predicted output that matches the reference.</td> </tr> <tr> <td>Rouge Score </td> <td>Rouge Score compares the overlap of words or phrases (n-grams) between the generated answer and reference answer.</td> </tr> <tr> <td>Factual Accuracy</td> <td>Factual accuracy grades how factual the generated response was. </td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Relevancy</th> <td></td> </tr> <tr> <td>Reponse Relevance</td> <td>Measures how relevant the generated response was to the question specified and irrelevant additional information.</td> </tr> <tr> <td>Text Relevance</td> <td>Evaluates relevance between prompts and responses by computing similarity scores between embeddings generated from prompts and responses.</td> </tr> <tr> <td>Reponse Completeness</td> <td>Grades whether the response has answered all the aspects of the question specified.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Hallucination</th> <td></td> </tr> <tr> <td>Hallucination Degree</td> <td>Grades how concise the generated response is ie. the extent of additional irrelevant information in the response.</td> </tr> <tr> <td>Context Validity</td> <td>Evaluates how relevant the retrieved context is to the question specified.</td> </tr> <tr> <td>Context Utilization </td> <td>Context Utilization score measures if the generated response has sufficiently used the retrieved context to answer the question being asked.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Robustness</th> <td></td> </tr> <tr> <td>Syntax Sensitivity</td> <td>This class of metrics assesses the NLP model&#39;s ability to handle input text that includes abbreviations and other changes to language. </td> </tr> <tr> <td>Language Critique</td> <td>The Language Critique metric - scores machine generated response on multiple aspects, fluency, politeness, grammar, and coherence. </td> </tr> <tr> <td>Aspect Critique</td> <td>This metric is designed to assess submissions based on predefined aspects such as harmlessness and correctness.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Efficiency</th> <td></td> </tr> <tr> <td>Latency </td> <td>Measures the time it takes for an LLM to generate a response. </td> </tr> <tr> <td>Cost </td> <td>The cost metric measures the token cost of LLM response.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Bias</th> <td></td> </tr> <tr> <td>Gender and Racial Bias</td> <td>The bias metric determines whether the LLM output contains gender, or racial bias.</td> </tr> <tr> <td>Honest Score</td> <td>The Honest score aims to measure hurtful sentence completions in language models. </td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Toxicity</th> <td></td> </tr> <tr> <td>Toxic Opinions</td> <td>Evaluates toxicity in the application response includes personal attack, mockery, threats or intimidation. </td> </tr> <tr> <td>Abusive Speech </td> <td>Quantifies abusive speech targeting ethnicity, religion or gender in the input text using a pretrained hate speech classification model.</td> </tr> </table>
       </div>
