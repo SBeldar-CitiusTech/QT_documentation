@@ -288,7 +288,7 @@ table{
   margin-bottom: 20px;
 }
 
-#busRel, #relUC{
+#busRel, #relUC, #preReq, #packIns, #errRes, #llm, #dbConf, #setDb{
   white-space: break-spaces;
 }
 

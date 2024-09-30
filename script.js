@@ -60,21 +60,6 @@ $(function () {
   //   $("#qts").show();  
   // })
 
-  // $(".intro").on("click", function(e){
-  //   $("#maincontent > div").hide();
-  //   $("#intro").show();  
-  // })
-
-  // $(".busRel").on("click", function(e){
-  //   $("#maincontent > div").hide();
-  //   $("#busRel").show();  
-  // })
-
-  $(".prereq").on("click", function(e){
-    $("#maincontent > div").hide();
-    $("#prerequisite").show();  
-  })
-
   $(".nav_res").on("click", function(e){
     $("#maincontent > div").hide();
     $("#response").show();

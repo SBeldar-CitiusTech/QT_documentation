@@ -67,9 +67,9 @@
             </div>
 
             <ul class="menu_items submenu">
-              <a href="#" class="nav_link sublink show_submenu prereq">Prerequisite</a>
-              <a href="#" class="nav_link sublink show_submenu">Package Installation</a>
-              <a href="#" class="nav_link sublink show_submenu">Error Solution</a>
+              <a href="#" class="nav_link sublink preReq" onClick="clickCalled('preReq')">Prerequisite</a>
+              <a href="#" class="nav_link sublink packIns" onClick="clickCalled('packIns')">Package Installation</a>
+              <a href="#" class="nav_link sublink errRes" onClick="clickCalled('errRes')">Error Resolution</a>
             </ul>
           </li>
           <!-- end -->
@@ -85,9 +85,10 @@
             </div>
 
             <ul class="menu_items submenu">
-              <a href="#" class="nav_link sublink">LLM Model Config</a>
-              <a href="#" class="nav_link sublink">Database Config:</a>
-              <a href="#" class="nav_link sublink">Metric/Metadata Config</a>
+              <a href="#" class="nav_link sublink llm" onClick="clickCalled('llm')">LLM Model Config</a>
+              <a href="#" class="nav_link sublink dbConf" onClick="clickCalled('dbConf')">Database Config:</a>
+              <a href="#" class="nav_link sublink setDb" onClick="clickCalled('setDb')">Setup database & use Lib</a>
+              <a href="#" class="nav_link sublink mmc" onClick="clickCalled('mmc')">Metric/Metadata Config</a>
             </ul>
           </li>
           <!-- end -->
@@ -162,7 +163,7 @@
     </nav>
     <div id="maincontent">
       <div id="default">
-        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+        CitiusTech's Healthcare GenAI Quality & Trust Solution is a software-based framework to design, develop, integrate, and monitor quality and trust of GenAI applications in healthcare to drive enterprise adoption and scaling.<br><br>QT solution is an evaluator to assess the performance and effectiveness of applications utilizing LLMs for the tasks: question answering, summarization, classification and NER & entity extraction. Also evaluates the search and retrieval part of a RAG application. Perform reference free evaluations of parts of the RAG pipeline. These metrics can be a part of CI/CD pipelines for improving prompts for entity extraction, response quality, search quality and application quality during development.
       </div>
 
       <div id="qts">
@@ -205,8 +206,180 @@ How the Q&T Framework Supports Development and Scaling
       <b>• Metrics for Trust and Quality:</b> The framework provides actionable metrics that help developers assess the quality and trust of the AI applications they are building. These metrics can drive prompt engineering, improving model performance at every stage of the AI lifecycle.
       </div>
 
-      <div id="prerequisite">
-        Prerequisite data will be placed here ...
+      <div id="preReq">
+        • Python Version 3.10.* to 3.11.*
+	
+        • MySQL Workbench
+        
+        • Postgres
+        
+        • Environment variables to be set and configured. Refer to Configurations for further steps.
+      </div>
+
+      <div id="packIns">
+        <b>Steps:-</b>
+
+          <b>Step 1:</b> Get access to Quality & Trust gitlab repository. Download Q&T package wheel file from https://git/generativeai/genai-trust-framework/-/tree/QT_backend/dist
+          
+          <b>Step 2:</b> For Package Installation, create a new virtual environment and activate it or install the package in existing application environment.
+          
+          <b>Step 3:</b> To install wheel file, execute below command -
+          <b>pip install qualitytrust-1.0-py3-none-any.whl</b>
+ 
+        All the libraries will be installed with dependencies.
+ 
+        <b>Note -</b> if you face any issue while installation, please refer to error resolution page (link).
+      </div>
+
+      <div id="errRes">
+        Error : Visual Build Tool error
+        Solution : Download and install visual C++ build tool
+        
+        Error : Python package dependency errors
+        Solution : Downgrade/upgrade common packages.        
+      </div>
+
+      <div id="llm">
+        <b>Environment Variables</b>
+        There are two types of metrics in the Q&T solution package: reference based and reference free metrics. Reference based metrics need a ground truth against which to evaluate the application response. Reference free metrics in the Q&T solution are evaluated using LLMs. These metrics align with human expectations and can be computed using any LLM. An LLM is a Judge for evaluation of these non-ground truth based/ reference free metrics. The user can switch between different models or even open source LLMs by providing the model details. Following are the methods to set up / configure the models and to setup environment variables.
+        
+        <b>For Azure OpenAI model:</b>
+        Run the following commands to configure your environment to use AzureOpenAI models for all LLM-based metrics. To use AzureOpenAI models for evaluation, supply the model details as below:
+        • os.environ["MODEL_TYPE"] = "azure"
+        • os.environ["AZURE_OPENAI_API_KEY"] = "1213jaj...." 
+        • os.environ["Azure_OPENAI_VERSION"] = ""
+        • os.environ["AZURE_API_BASE_URL"] = ""
+        • os.environ["AZURE_MODEL_DEPLOYMENT_NAME"] ="davinci"
+
+        <b>For OpenAI models :</b> 
+        • os.environ["MODEL_TYPE"] = "openai"
+        • os.environ["OPENAI_API_KEY"] = "sk-..."
+        • os.environ["OPENAI_MODEL_NAME"] = ""
+
+        <b>For Anthropic Claude models:</b>
+        • os.environ["MODEL_TYPE"] = "claude"
+        • os.environ["ANTHROPIC_API_KEY"] = "sk-..."
+        • os.environ["CLAUDE_MODEL_NAME"] = ""
+
+        <b>For Mistral models:</b>
+        • os.environ["MODEL_TYPE"] = "mistral"
+        • os.environ["MISTRAL_API_KEY"] = "sk-..."
+        • os.environ["MISTRAL_MODEL_NAME"] = ""
+
+        <b>For Ollama models:</b> 
+          Run the following commands to configure your environment to use an open source model for all LLM-based metrics. Quantized models can be used on the CPU without high latency/ without increasing computational costs. Some models that you can try are: Llama 3.1, MS phi3.5 mini etc
+        • os.environ["MODEL_TYPE"] = "ollama"
+        • os.environ["OLLAMA_MODEL_NAME"] = ""
+
+        <b>For AWS Bedrock models:</b>
+        • os.environ["MODEL_TYPE"] = "bedrock"
+        • os.environ["AWS_ACCESS_KEY_ID"] = ""
+        • os.environ["AWS_SECRET_ACCESS_KEY"] = ""
+        • os.environ["AWS_REGION_NAME"] = ""
+        • os.environ["BEDROCK_MODEL_NAME"] = ""
+      </div>
+
+      <div id="dbConf">
+        To integrate Q&T with any application, we need database to store evaluation scores that can be visualized in dashboard. Hence, we need to set environment variables to configure
+ 
+        <b>For mysql database:</b>
+        • os.environ["DB_TYPE"] = "mysql"
+        • os.environ["MYSQL_USER"] = ""
+        • os.environ["MYSQL_PASSWORD"] = ""
+        • os.environ["MYSQL_HOST"] = ""
+        • os.environ["MYSQL_PORT"] = "3306"
+        • os.environ["MYSQL_DB_NAME"] = ""
+        
+        <b>For postgres database:</b>
+        • os.environ["DB_TYPE"] = "postgres"
+        • os.environ["POSTGRES_USER"] = ""
+        • os.environ["POSTGRES_PASSWORD"] = ""
+        • os.environ["POSTGRES_HOST"] = ""
+        • os.environ["POSTGRES_PORT"] = "5432"
+        • os.environ["POSTGRES_NAME"] = ""
+
+        <b>For mssql database:</b>
+        • os.environ["DB_TYPE"] = "mssql"
+        • os.environ["MSSQL_USER"] = ""
+        • os.environ["MSSQL_PASSWORD"] = ""
+        • os.environ["MSSQL_HOST"] = ""
+        • os.environ["MSSQL_PORT"] = "1433"
+        • os.environ["MSSQL_NAME"] = ""
+
+        <b>For oracle database :</b>
+        • os.environ["DB_TYPE"] = "oracle"
+        • os.environ["ORACLE_USER"] = ""
+        • os.environ["ORACLE_PASSWORD"] = ""
+        • os.environ["ORACLE_HOST"] = ""
+        • os.environ["ORACLE_PORT"] = "1521"
+        • os.environ["ORACLE_NAME"] = ""
+
+        
+        <b>For databricks database :</b>
+        • os.environ["DB_TYPE"] = "delta_table"
+        • os.environ["DATABRICKS_HTTP_PATH"] = ""
+        • os.environ["DATABRICKS_ACCESS_TOKEN"] = ""
+        • os.environ["DATABRICKS_HOST"] = ""
+        • os.environ["DATABRICKS_CATALOG"] = ""
+        • os.environ["DATABRICKS_SCHEMA"] = ""
+
+        If none of the above databases is used, by default sqlite database is used and quality_trust.db is created.
+      </div>
+
+      <div id="setDb">
+        <b>How to setup database</b>
+ 
+        • Install any of the database tools like postgres, MySQL workbench/server, MS SQL, Oracle etc. 
+        
+        • Setup credentials in the tool and accordingly change the database configuration (link of db config)
+        
+        • Create a database in database tool and update database name in database configuration (link)
+        
+        • To create schema, follow these steps - 
+        
+        <b>Steps to create schema</b>
+        Run the following python commands -  
+        
+        <b>#Import below library from qualitytrust</b>
+        from qualitytrust import model
+                  
+        <b>#Execute the following command</b>
+        model.create_schema()
+
+        
+        <b>Insert metadata in database</b>
+        With this metadata following tables will be loaded -
+                    applications
+                    metric_type
+                    metrics
+                    metric_mapping
+        
+        Format of the schema which is provided explicitly should be as below –
+        
+        - application: name_of_the_application
+                    app_description: GenAI tool which assist clinical reviewers in decision support through infornation retrieval, extraction and accessing medical necessity of requested services
+          mapping:
+            - metric_type: Application
+              metrics:
+                - metric_class: A.F.T.R
+                  description: ""
+                  task: All
+                  metric_name: A.F.T.R
+                  soft_threshold: 0.7
+                  hard_threshold: 0.4
+        
+        This data should be in metric_config.yml file as per the requirements.
+        
+        <b>Logging metadata in database</b>
+        Use the following commands to log metadata into the database using qualitytrust package
+        
+        <b>#Import log metadata library </b>
+        from app.qualitytrust.suite.log_metadata import LogMetadata
+        
+        <b>#Run the python commands</b>
+        log_metadata = LogMetadata()
+        log_metadata.log(metadata_path="app/qualitytrust/config/metric_config.yml")
+
       </div>
       
       <div id="response">
