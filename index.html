@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Quality and Trust Solution Documentation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="fa-solid fa-bars" id="sidebarOpen"></i>
+        <!-- <img src="images/logo.png" alt=""></i> -->
+        Quality and Trust Solution
+      </div>
+
+      <div class="search_bar">
+        <!-- <input type="text" placeholder="Search" /> -->
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class="fa-solid fa-sun" id="darkLight"></i>
+        <img src="images/profile.jpg" alt="" class="profile" />
+      </div>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_dahsboard"></div>
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </span>
+              <span class="navlink">Installation</span>
+              <i class="fa-solid fa-chevron-right arrow-right"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink show_submenu prereq">Prerequisite</a>
+              <a href="#" class="nav_link sublink show_submenu">Package Installation</a>
+              <a href="#" class="nav_link sublink show_submenu">Error Solution</a>
+            </ul>
+          </li>
+          <!-- end -->
+
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-sliders"></i>
+              </span>
+              <span class="navlink">Configuration</span>
+              <i class="fa-solid fa-chevron-right arrow-right"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">LLM Model Config</a>
+              <a href="#" class="nav_link sublink">Database Config:</a>
+              <a href="#" class="nav_link sublink">Metric/Metadata Config</a>
+            </ul>
+          </li>
+          <!-- end -->
+        </ul>
+
+        <ul class="menu_items">
+          <div class="menu_title menu_editor"></div>
+          <!-- duplicate these li tag if you want to add or remove navlink only -->
+          <!-- Start -->
+          <li class="item">
+            <a href="#" class="nav_link nav_res">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-reply"></i>
+              </span>
+              <span class="navlink">Response</span>
+            </a>
+          </li>
+          <!-- End -->
+
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <span class="navlink">Search</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-file-circle-check"></i>
+              </span>
+              <span class="navlink">Data Quality</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-diagram-project"></i>
+              </span>
+              <span class="navlink">Classification</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                </i><i class="fa-solid fa-flask-vial"></i>
+              </span>
+              <span class="navlink">Experiment Tracking</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu_items">
+          <div class="menu_title menu_model_benchmarking"></div>
+        </ul>
+        <ul class="menu_items">
+          <div class="menu_title menu_ref"></div>
+        </ul>
+
+        <!-- Sidebar Open / Close -->
+        <!-- <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</span>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div> -->
+      </div>
+    </nav>
+    <div id="maincontent">
+      <div id="default">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+      </div>
+      <div id="prerequisite">
+        Prerequisite data will be placed here ...
+      </div>
+      <div id="response">
+        <table> <tr> <th>Name</th> <th>Definition</th> </tr> <tr> <th>Accuracy</th> <td></td> </tr> <tr> <td>Exact Match</td> <td>Exact match is the proportion of the predicted output that matches the reference.</td> </tr> <tr> <td>Rouge Score </td> <td>Rouge Score compares the overlap of words or phrases (n-grams) between the generated answer and reference answer.</td> </tr> <tr> <td>Factual Accuracy</td> <td>Factual accuracy grades how factual the generated response was. </td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Relevancy</th> <td></td> </tr> <tr> <td>Reponse Relevance</td> <td>Measures how relevant the generated response was to the question specified and irrelevant additional information.</td> </tr> <tr> <td>Text Relevance</td> <td>Evaluates relevance between prompts and responses by computing similarity scores between embeddings generated from prompts and responses.</td> </tr> <tr> <td>Reponse Completeness</td> <td>Grades whether the response has answered all the aspects of the question specified.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Hallucination</th> <td></td> </tr> <tr> <td>Hallucination Degree</td> <td>Grades how concise the generated response is ie. the extent of additional irrelevant information in the response.</td> </tr> <tr> <td>Context Validity</td> <td>Evaluates how relevant the retrieved context is to the question specified.</td> </tr> <tr> <td>Context Utilization </td> <td>Context Utilization score measures if the generated response has sufficiently used the retrieved context to answer the question being asked.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Robustness</th> <td></td> </tr> <tr> <td>Syntax Sensitivity</td> <td>This class of metrics assesses the NLP model&#39;s ability to handle input text that includes abbreviations and other changes to language. </td> </tr> <tr> <td>Language Critique</td> <td>The Language Critique metric - scores machine generated response on multiple aspects, fluency, politeness, grammar, and coherence. </td> </tr> <tr> <td>Aspect Critique</td> <td>This metric is designed to assess submissions based on predefined aspects such as harmlessness and correctness.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Efficiency</th> <td></td> </tr> <tr> <td>Latency </td> <td>Measures the time it takes for an LLM to generate a response. </td> </tr> <tr> <td>Cost </td> <td>The cost metric measures the token cost of LLM response.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Bias</th> <td></td> </tr> <tr> <td>Gender and Racial Bias</td> <td>The bias metric determines whether the LLM output contains gender, or racial bias.</td> </tr> <tr> <td>Honest Score</td> <td>The Honest score aims to measure hurtful sentence completions in language models. </td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Toxicity</th> <td></td> </tr> <tr> <td>Toxic Opinions</td> <td>Evaluates toxicity in the application response includes personal attack, mockery, threats or intimidation. </td> </tr> <tr> <td>Abusive Speech </td> <td>Quantifies abusive speech targeting ethnicity, religion or gender in the input text using a pretrained hate speech classification model.</td> </tr> </table>
+      </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
