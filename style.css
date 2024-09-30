@@ -117,6 +117,9 @@ body.dark {
   color: var(--grey-color);
   white-space: nowrap;
 }
+.menu_home::before {
+  content: "Home";
+}
 .menu_dahsboard::before {
   content: "Getting Started";
 }
@@ -283,5 +286,9 @@ table, tr, th, td {
 table{
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+#busRel, #relUC{
+  white-space: break-spaces;
 }
 

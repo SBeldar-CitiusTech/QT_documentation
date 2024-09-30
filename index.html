@@ -34,7 +34,28 @@
     <nav class="sidebar">
       <div class="menu_content">
         <ul class="menu_items">
+          
+
           <div class="menu_title menu_dahsboard"></div>
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-house"></i>
+              </span>
+              <span class="navlink">Home</span>
+              <i class="fa-solid fa-chevron-right arrow-right"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink qts" onClick="clickCalled('qts')">Quality & Trust Solution</a>
+              <a href="#" class="nav_link sublink intro" onClick="clickCalled('intro')">Introduction</a>
+              <a href="#" class="nav_link sublink busRel" onClick="clickCalled('busRel')">Business Relevance</a>
+              <a href="#" class="nav_link sublink relUC" onClick="clickCalled('relUC')">Relevant Use cases</a>
+            </ul>
+          </li>
+          <!-- end -->
+
           <!-- start -->
           <li class="item">
             <div href="#" class="nav_link submenu_item">
@@ -143,9 +164,51 @@
       <div id="default">
         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
       </div>
+
+      <div id="qts">
+        CitiusTech's Healthcare GenAI Quality & Trust Solution is a software-based framework to design, develop, integrate, and monitor quality and trust of GenAI applications in healthcare to drive enterprise adoption and scaling.<br><br>QT solution is an evaluator to assess the performance and effectiveness of applications utilizing LLMs for the tasks: question answering, summarization, classification and NER & entity extraction. Also evaluates the search and retrieval part of a RAG application. Perform reference free evaluations of parts of the RAG pipeline. These metrics can be a part of CI/CD pipelines for improving prompts for entity extraction, response quality, search quality and application quality during development.
+      </div>
+
+      <div id="intro">
+        <b>Citiustech Healthcare GENAI Quality & Trust (Q&T) Framework</b> is a software-based solution designed to ensure the quality, reliability, and trustworthiness of Generative AI (GENAI) applications in the healthcare industry. As organizations increasingly adopt AI-driven solutions, particularly Large Language Models (LLMs), it becomes crucial to monitor and assess their performance. The Q&T Framework is built to evaluate applications that leverage LLMs for critical tasks like question answering, summarization, classification, Named Entity Recognition (NER), and entity extraction.
+        <br><br> framework is pivotal for organizations aiming to implement and scale GENAI applications within healthcare ecosystems. By integrating the Q&T Framework into the Continuous Integration/Continuous Deployment (CI/CD) pipeline, healthcare organizations can monitor, improve, and optimize the quality of AI-generated outputs, ensuring regulatory compliance, enhanced accuracy, and ultimately better patient outcomes.        
+      </div>
+
+      <div id="busRel">Generative AI is revolutionizing healthcare, from automating administrative tasks to assisting with clinical decision-making. However, its successful enterprise-wide adoption hinges on ensuring the quality, accuracy, and trustworthiness of AI-driven applications. The Citiustech Healthcare GENAI Quality & Trust Framework addresses this need by providing a structured, evaluative approach that organizations can use to: <br>
+	• <b>Mitigate Risks:</b> Ensure that AI models are accurate, transparent, and ethical, thereby mitigating risks associated with incorrect or biased outputs in healthcare scenarios.
+	• <b>Enhance Trust:</b> Build trust among healthcare providers and patients by ensuring that AI-driven decisions are reliable and aligned with healthcare standards and regulations.
+	• <b>Optimize Performance:</b> The framework evaluates model effectiveness during development and post-deployment, improving performance in real time by identifying areas for prompt enhancement and error correction.
+	• <b>Accelerate Scaling:</b> By integrating the framework into CI/CD pipelines, organizations can streamline the development and deployment process, facilitating large-scale adoption of GENAI applications across multiple healthcare use cases.
+  <br>With a focus on tasks like question answering, summarization, classification, NER, entity extraction, and RAG (Retrieval-Augmented Generation) applications, the Q&T Framework supports ongoing AI model refinement, making it a vital tool for scaling AI innovations in healthcare.
+      </div>
+
+      <div id="relUC">
+<i>1. Question Answering for Clinical Decision Support</i>
+      <b>• Challenge:</b> Healthcare professionals often rely on AI models to provide fast, accurate answers to complex medical questions based on large datasets of clinical knowledge. Ensuring the quality and reliability of these answers is critical for patient safety.
+      <b>• Solution:</b> The Q&T Framework evaluates the effectiveness of LLMs in clinical question-answering tasks, ensuring that responses are accurate, relevant, and free from bias. Continuous evaluation helps refine model responses over time, improving clinical decision-making.
+<br><i>2. Summarization of Medical Records</i>
+      <b>• Challenge:</b> Healthcare providers require concise, accurate summaries of extensive patient medical records, which are often generated by AI systems. Errors in summarization can lead to missed diagnoses or incorrect treatment plans.
+      <b>• Solution:</b> The Q&T Framework assesses the quality of summarizations produced by GENAI models, ensuring the summaries are clear, comprehensive, and medically accurate. The evaluation results can be used to fine-tune summarization models to better meet clinical requirements.
+<br><i>3. Classification of Medical Data</i>
+      <b>• Challenge:</b> In applications like diagnostic tools and medical billing, AI models must accurately classify medical data (e.g., images, clinical notes) into predefined categories. Misclassification can result in incorrect diagnoses or billing errors.
+      <b>• Solution:</b> The Q&T Framework evaluates the precision, recall, and overall accuracy of classification models, allowing healthcare organizations to monitor and improve model performance, ensuring data is classified correctly.
+<br><i>4. Named Entity Recognition (NER) and Entity Extraction from Clinical Texts</i>
+      <b>• Challenge:</b> AI systems in healthcare must accurately identify medical entities (e.g., diseases, drugs, symptoms) from unstructured clinical notes or research papers. Errors in NER or entity extraction can lead to incomplete patient data or incorrect analytics.
+      <b>• Solution:</b> The Q&T Framework assesses the quality of NER and entity extraction tasks, ensuring that models accurately recognize and extract relevant entities from text. By integrating this into the CI/CD pipeline, developers can continuously improve the performance of NER models.
+<br><i>5. Search and Retrieval for RAG (Retrieval-Augmented Generation) Applications</i>
+      <b>• Challenge:</b> In RAG applications, LLMs rely on search and retrieval functions to generate relevant and accurate responses. Poor search results can lead to incomplete or incorrect AI outputs.
+      <b>• Solution:</b> The Q&T Framework evaluates the effectiveness of the search and retrieval process in RAG applications. By continuously monitoring this aspect, the framework ensures that LLMs retrieve the most relevant information, improving overall response quality in GENAI applications.
+
+How the Q&T Framework Supports Development and Scaling
+      <b>• Reference-Free Evaluation:</b> The Q&T Framework can perform reference-free evaluations of specific components in the RAG pipeline. This means that the framework can assess model outputs without needing predefined correct answers, making it versatile in evaluating complex, open-ended tasks such as summarization or question answering.
+      <b>• CI/CD Pipeline Integration:</b> By incorporating evaluation metrics into the CI/CD pipelines, developers can automatically monitor and improve the quality of entity extraction, response quality, and search performance as new iterations of the AI model are deployed. This real-time feedback mechanism ensures that healthcare AI applications continuously evolve and improve in terms of accuracy, relevance, and trustworthiness.
+      <b>• Metrics for Trust and Quality:</b> The framework provides actionable metrics that help developers assess the quality and trust of the AI applications they are building. These metrics can drive prompt engineering, improving model performance at every stage of the AI lifecycle.
+      </div>
+
       <div id="prerequisite">
         Prerequisite data will be placed here ...
       </div>
+      
       <div id="response">
         <table> <tr> <th>Name</th> <th>Definition</th> </tr> <tr> <th>Accuracy</th> <td></td> </tr> <tr> <td>Exact Match</td> <td>Exact match is the proportion of the predicted output that matches the reference.</td> </tr> <tr> <td>Rouge Score </td> <td>Rouge Score compares the overlap of words or phrases (n-grams) between the generated answer and reference answer.</td> </tr> <tr> <td>Factual Accuracy</td> <td>Factual accuracy grades how factual the generated response was. </td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Relevancy</th> <td></td> </tr> <tr> <td>Reponse Relevance</td> <td>Measures how relevant the generated response was to the question specified and irrelevant additional information.</td> </tr> <tr> <td>Text Relevance</td> <td>Evaluates relevance between prompts and responses by computing similarity scores between embeddings generated from prompts and responses.</td> </tr> <tr> <td>Reponse Completeness</td> <td>Grades whether the response has answered all the aspects of the question specified.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Hallucination</th> <td></td> </tr> <tr> <td>Hallucination Degree</td> <td>Grades how concise the generated response is ie. the extent of additional irrelevant information in the response.</td> </tr> <tr> <td>Context Validity</td> <td>Evaluates how relevant the retrieved context is to the question specified.</td> </tr> <tr> <td>Context Utilization </td> <td>Context Utilization score measures if the generated response has sufficiently used the retrieved context to answer the question being asked.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Robustness</th> <td></td> </tr> <tr> <td>Syntax Sensitivity</td> <td>This class of metrics assesses the NLP model&#39;s ability to handle input text that includes abbreviations and other changes to language. </td> </tr> <tr> <td>Language Critique</td> <td>The Language Critique metric - scores machine generated response on multiple aspects, fluency, politeness, grammar, and coherence. </td> </tr> <tr> <td>Aspect Critique</td> <td>This metric is designed to assess submissions based on predefined aspects such as harmlessness and correctness.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Efficiency</th> <td></td> </tr> <tr> <td>Latency </td> <td>Measures the time it takes for an LLM to generate a response. </td> </tr> <tr> <td>Cost </td> <td>The cost metric measures the token cost of LLM response.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Bias</th> <td></td> </tr> <tr> <td>Gender and Racial Bias</td> <td>The bias metric determines whether the LLM output contains gender, or racial bias.</td> </tr> <tr> <td>Honest Score</td> <td>The Honest score aims to measure hurtful sentence completions in language models. </td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Toxicity</th> <td></td> </tr> <tr> <td>Toxic Opinions</td> <td>Evaluates toxicity in the application response includes personal attack, mockery, threats or intimidation. </td> </tr> <tr> <td>Abusive Speech </td> <td>Quantifies abusive speech targeting ethnicity, religion or gender in the input text using a pretrained hate speech classification model.</td> </tr> </table>
       </div>

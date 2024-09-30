@@ -55,6 +55,21 @@ if (window.innerWidth < 768) {
 $(function () {
   $("#maincontent > div:gt(0)").hide();
 
+  // $(".qts").on("click", function(e){
+  //   $("#maincontent > div").hide();
+  //   $("#qts").show();  
+  // })
+
+  // $(".intro").on("click", function(e){
+  //   $("#maincontent > div").hide();
+  //   $("#intro").show();  
+  // })
+
+  // $(".busRel").on("click", function(e){
+  //   $("#maincontent > div").hide();
+  //   $("#busRel").show();  
+  // })
+
   $(".prereq").on("click", function(e){
     $("#maincontent > div").hide();
     $("#prerequisite").show();  
@@ -64,4 +79,10 @@ $(function () {
     $("#maincontent > div").hide();
     $("#response").show();
   })
+  
 });
+
+function clickCalled(divname){
+  $("#maincontent > div").hide();
+  $("#"+divname).show();  
+}
