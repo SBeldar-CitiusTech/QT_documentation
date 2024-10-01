@@ -115,49 +115,76 @@
         <ul class="menu_items">
           <div class="menu_title menu_editor"></div>
           <!-- duplicate these li tag if you want to add or remove navlink only -->
-          <!-- Start -->
           <li class="item">
-            <a href="#" class="nav_link nav_res">
+            <a href="#" class="nav_link matrIntro" onClick="clickCalled('matrIntro')">
               <span class="navlink_icon">
-                <i class="fa-solid fa-reply"></i>
+                <i class="fa-solid fa-circle"></i>
               </span>
-              <span class="navlink">Response</span>
+              <span class="navlink">Introduction</span>
             </a>
           </li>
-          <!-- End -->
 
           <li class="item">
-            <a href="#" class="nav_link">
+            <div href="#" class="nav_link submenu_item">
               <span class="navlink_icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-circle"></i>
               </span>
-              <span class="navlink">Search</span>
-            </a>
+              <span class="navlink">Application</span>
+              <i class="fa-solid fa-chevron-right arrow-right"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink matrCost" onClick="clickCalled('matrCost')">Cost</a>
+            </ul>
           </li>
+
           <li class="item">
-            <a href="#" class="nav_link">
+            <div href="#" class="nav_link submenu_item">
               <span class="navlink_icon">
-                <i class="fa-solid fa-file-circle-check"></i>
+                <i class="fa-solid fa-circle"></i>
               </span>
-              <span class="navlink">Data Quality</span>
-            </a>
+              <span class="navlink">Response_QA</span>
+              <i class="fa-solid fa-chevron-right arrow-right"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <div class="nav_link">
+                <span class="nav_link sublink matrCost">Accuracy</span>
+                <i class="fa-solid fa-chevron-right arrow-right"></i>
+              </div>
+            </ul>
+
+            <ul class="menu_items childmenu">
+              <a href="#" class="nav_link sublink matrQA_exact" onClick="clickCalled('matrQA_exact')">Exact Match</a>
+            </ul>
+            <ul class="menu_items childmenu">
+              <a href="#" class="nav_link sublink matrQA_rouge" onClick="clickCalled('matrQA_rouge')">ROUGE Score</a>
+            </ul>
+            <ul class="menu_items childmenu">
+              <a href="#" class="nav_link sublink matrQA_factual" onClick="clickCalled('matrQA_factual')">Factual Accuracy</a>
+            </ul>
+
+            <ul class="menu_items submenu">
+              <div class="nav_link">
+                <span class="nav_link sublink matrCost">Relevancy</span>
+                <i class="fa-solid fa-chevron-right arrow-right"></i>
+              </div>
+            </ul>
+
+            <ul class="menu_items childmenu">
+              <a href="#" class="nav_link sublink matrQA_complete" onClick="clickCalled('matrQA_complete')">Response Completeness</a>
+            </ul>
+            <ul class="menu_items childmenu">
+              <a href="#" class="nav_link sublink matrQA_relevance" onClick="clickCalled('matrQA_relevance')">Response Relevance</a>
+            </ul>
+            <ul class="menu_items childmenu">
+              <a href="#" class="nav_link sublink matrQA_text" onClick="clickCalled('matrQA_text')">Text Relevance</a>
+            </ul>
+            <ul class="menu_items childmenu">
+              <a href="#" class="nav_link sublink matrQA_answer" onClick="clickCalled('matrQA_answer')">Answer Relevancy</a>
+            </ul>
           </li>
-          <li class="item">
-            <a href="#" class="nav_link">
-              <span class="navlink_icon">
-                <i class="fa-solid fa-diagram-project"></i>
-              </span>
-              <span class="navlink">Classification</span>
-            </a>
-          </li>
-          <li class="item">
-            <a href="#" class="nav_link">
-              <span class="navlink_icon">
-                </i><i class="fa-solid fa-flask-vial"></i>
-              </span>
-              <span class="navlink">Experiment Tracking</span>
-            </a>
-          </li>
+          
         </ul>
         <ul class="menu_items">
           <div class="menu_title menu_model_benchmarking"></div>
@@ -181,252 +208,423 @@
     </nav>
     <div id="maincontent">
       <div id="default">
-        CitiusTech's Healthcare GenAI Quality & Trust Solution is a software-based framework to design, develop, integrate, and monitor quality and trust of GenAI applications in healthcare to drive enterprise adoption and scaling.<br><br>QT solution is an evaluator to assess the performance and effectiveness of applications utilizing LLMs for the tasks: question answering, summarization, classification and NER & entity extraction. Also evaluates the search and retrieval part of a RAG application. Perform reference free evaluations of parts of the RAG pipeline. These metrics can be a part of CI/CD pipelines for improving prompts for entity extraction, response quality, search quality and application quality during development.
+CitiusTech's Healthcare GenAI Quality & Trust Solution is a software-based framework to design, develop, integrate, and monitor quality and trust of GenAI applications in healthcare to drive enterprise adoption and scaling.<br><br>QT solution is an evaluator to assess the performance and effectiveness of applications utilizing LLMs for the tasks: question answering, summarization, classification and NER & entity extraction. Also evaluates the search and retrieval part of a RAG application. Perform reference free evaluations of parts of the RAG pipeline. These metrics can be a part of CI/CD pipelines for improving prompts for entity extraction, response quality, search quality and application quality during development.
       </div>
 
       <div id="qts">
-        CitiusTech's Healthcare GenAI Quality & Trust Solution is a software-based framework to design, develop, integrate, and monitor quality and trust of GenAI applications in healthcare to drive enterprise adoption and scaling.<br><br>QT solution is an evaluator to assess the performance and effectiveness of applications utilizing LLMs for the tasks: question answering, summarization, classification and NER & entity extraction. Also evaluates the search and retrieval part of a RAG application. Perform reference free evaluations of parts of the RAG pipeline. These metrics can be a part of CI/CD pipelines for improving prompts for entity extraction, response quality, search quality and application quality during development.
+CitiusTech's Healthcare GenAI Quality & Trust Solution is a software-based framework to design, develop, integrate, and monitor quality and trust of GenAI applications in healthcare to drive enterprise adoption and scaling.<br><br>QT solution is an evaluator to assess the performance and effectiveness of applications utilizing LLMs for the tasks: question answering, summarization, classification and NER & entity extraction. Also evaluates the search and retrieval part of a RAG application. Perform reference free evaluations of parts of the RAG pipeline. These metrics can be a part of CI/CD pipelines for improving prompts for entity extraction, response quality, search quality and application quality during development.
       </div>
 
       <div id="intro">
-        <b>Citiustech Healthcare GENAI Quality & Trust (Q&T) Framework</b> is a software-based solution designed to ensure the quality, reliability, and trustworthiness of Generative AI (GENAI) applications in the healthcare industry. As organizations increasingly adopt AI-driven solutions, particularly Large Language Models (LLMs), it becomes crucial to monitor and assess their performance. The Q&T Framework is built to evaluate applications that leverage LLMs for critical tasks like question answering, summarization, classification, Named Entity Recognition (NER), and entity extraction.
-        <br><br> framework is pivotal for organizations aiming to implement and scale GENAI applications within healthcare ecosystems. By integrating the Q&T Framework into the Continuous Integration/Continuous Deployment (CI/CD) pipeline, healthcare organizations can monitor, improve, and optimize the quality of AI-generated outputs, ensuring regulatory compliance, enhanced accuracy, and ultimately better patient outcomes.        
+<b>Citiustech Healthcare GENAI Quality & Trust (Q&T) Framework</b> is a software-based solution designed to ensure the quality, reliability, and trustworthiness of Generative AI (GENAI) applications in the healthcare industry. As organizations increasingly adopt AI-driven solutions, particularly Large Language Models (LLMs), it becomes crucial to monitor and assess their performance. The Q&T Framework is built to evaluate applications that leverage LLMs for critical tasks like question answering, summarization, classification, Named Entity Recognition (NER), and entity extraction.
+<br><br> framework is pivotal for organizations aiming to implement and scale GENAI applications within healthcare ecosystems. By integrating the Q&T Framework into the Continuous Integration/Continuous Deployment (CI/CD) pipeline, healthcare organizations can monitor, improve, and optimize the quality of AI-generated outputs, ensuring regulatory compliance, enhanced accuracy, and ultimately better patient outcomes.        
       </div>
 
-      <div id="busRel">Generative AI is revolutionizing healthcare, from automating administrative tasks to assisting with clinical decision-making. However, its successful enterprise-wide adoption hinges on ensuring the quality, accuracy, and trustworthiness of AI-driven applications. The Citiustech Healthcare GENAI Quality & Trust Framework addresses this need by providing a structured, evaluative approach that organizations can use to: <br>
-	• <b>Mitigate Risks:</b> Ensure that AI models are accurate, transparent, and ethical, thereby mitigating risks associated with incorrect or biased outputs in healthcare scenarios.
-	• <b>Enhance Trust:</b> Build trust among healthcare providers and patients by ensuring that AI-driven decisions are reliable and aligned with healthcare standards and regulations.
-	• <b>Optimize Performance:</b> The framework evaluates model effectiveness during development and post-deployment, improving performance in real time by identifying areas for prompt enhancement and error correction.
-	• <b>Accelerate Scaling:</b> By integrating the framework into CI/CD pipelines, organizations can streamline the development and deployment process, facilitating large-scale adoption of GENAI applications across multiple healthcare use cases.
-  <br>With a focus on tasks like question answering, summarization, classification, NER, entity extraction, and RAG (Retrieval-Augmented Generation) applications, the Q&T Framework supports ongoing AI model refinement, making it a vital tool for scaling AI innovations in healthcare.
+      <div id="busRel">
+Generative AI is revolutionizing healthcare, from automating administrative tasks to assisting with clinical decision-making. However, its successful enterprise-wide adoption hinges on ensuring the quality, accuracy, and trustworthiness of AI-driven applications. The Citiustech Healthcare GENAI Quality & Trust Framework addresses this need by providing a structured, evaluative approach that organizations can use to: <br>
+• <b>Mitigate Risks:</b> Ensure that AI models are accurate, transparent, and ethical, thereby mitigating risks associated with incorrect or biased outputs in healthcare scenarios.
+• <b>Enhance Trust:</b> Build trust among healthcare providers and patients by ensuring that AI-driven decisions are reliable and aligned with healthcare standards and regulations.
+• <b>Optimize Performance:</b> The framework evaluates model effectiveness during development and post-deployment, improving performance in real time by identifying areas for prompt enhancement and error correction.
+• <b>Accelerate Scaling:</b> By integrating the framework into CI/CD pipelines, organizations can streamline the development and deployment process, facilitating large-scale adoption of GENAI applications across multiple healthcare use cases.
+<br>With a focus on tasks like question answering, summarization, classification, NER, entity extraction, and RAG (Retrieval-Augmented Generation) applications, the Q&T Framework supports ongoing AI model refinement, making it a vital tool for scaling AI innovations in healthcare.
       </div>
 
       <div id="relUC">
 <i>1. Question Answering for Clinical Decision Support</i>
-      <b>• Challenge:</b> Healthcare professionals often rely on AI models to provide fast, accurate answers to complex medical questions based on large datasets of clinical knowledge. Ensuring the quality and reliability of these answers is critical for patient safety.
-      <b>• Solution:</b> The Q&T Framework evaluates the effectiveness of LLMs in clinical question-answering tasks, ensuring that responses are accurate, relevant, and free from bias. Continuous evaluation helps refine model responses over time, improving clinical decision-making.
+<b>• Challenge:</b> Healthcare professionals often rely on AI models to provide fast, accurate answers to complex medical questions based on large datasets of clinical knowledge. Ensuring the quality and reliability of these answers is critical for patient safety.
+<b>• Solution:</b> The Q&T Framework evaluates the effectiveness of LLMs in clinical question-answering tasks, ensuring that responses are accurate, relevant, and free from bias. Continuous evaluation helps refine model responses over time, improving clinical decision-making.
 <br><i>2. Summarization of Medical Records</i>
-      <b>• Challenge:</b> Healthcare providers require concise, accurate summaries of extensive patient medical records, which are often generated by AI systems. Errors in summarization can lead to missed diagnoses or incorrect treatment plans.
-      <b>• Solution:</b> The Q&T Framework assesses the quality of summarizations produced by GENAI models, ensuring the summaries are clear, comprehensive, and medically accurate. The evaluation results can be used to fine-tune summarization models to better meet clinical requirements.
+<b>• Challenge:</b> Healthcare providers require concise, accurate summaries of extensive patient medical records, which are often generated by AI systems. Errors in summarization can lead to missed diagnoses or incorrect treatment plans.
+<b>• Solution:</b> The Q&T Framework assesses the quality of summarizations produced by GENAI models, ensuring the summaries are clear, comprehensive, and medically accurate. The evaluation results can be used to fine-tune summarization models to better meet clinical requirements.
 <br><i>3. Classification of Medical Data</i>
-      <b>• Challenge:</b> In applications like diagnostic tools and medical billing, AI models must accurately classify medical data (e.g., images, clinical notes) into predefined categories. Misclassification can result in incorrect diagnoses or billing errors.
-      <b>• Solution:</b> The Q&T Framework evaluates the precision, recall, and overall accuracy of classification models, allowing healthcare organizations to monitor and improve model performance, ensuring data is classified correctly.
+<b>• Challenge:</b> In applications like diagnostic tools and medical billing, AI models must accurately classify medical data (e.g., images, clinical notes) into predefined categories. Misclassification can result in incorrect diagnoses or billing errors.
+<b>• Solution:</b> The Q&T Framework evaluates the precision, recall, and overall accuracy of classification models, allowing healthcare organizations to monitor and improve model performance, ensuring data is classified correctly.
 <br><i>4. Named Entity Recognition (NER) and Entity Extraction from Clinical Texts</i>
-      <b>• Challenge:</b> AI systems in healthcare must accurately identify medical entities (e.g., diseases, drugs, symptoms) from unstructured clinical notes or research papers. Errors in NER or entity extraction can lead to incomplete patient data or incorrect analytics.
-      <b>• Solution:</b> The Q&T Framework assesses the quality of NER and entity extraction tasks, ensuring that models accurately recognize and extract relevant entities from text. By integrating this into the CI/CD pipeline, developers can continuously improve the performance of NER models.
+<b>• Challenge:</b> AI systems in healthcare must accurately identify medical entities (e.g., diseases, drugs, symptoms) from unstructured clinical notes or research papers. Errors in NER or entity extraction can lead to incomplete patient data or incorrect analytics.
+<b>• Solution:</b> The Q&T Framework assesses the quality of NER and entity extraction tasks, ensuring that models accurately recognize and extract relevant entities from text. By integrating this into the CI/CD pipeline, developers can continuously improve the performance of NER models.
 <br><i>5. Search and Retrieval for RAG (Retrieval-Augmented Generation) Applications</i>
-      <b>• Challenge:</b> In RAG applications, LLMs rely on search and retrieval functions to generate relevant and accurate responses. Poor search results can lead to incomplete or incorrect AI outputs.
-      <b>• Solution:</b> The Q&T Framework evaluates the effectiveness of the search and retrieval process in RAG applications. By continuously monitoring this aspect, the framework ensures that LLMs retrieve the most relevant information, improving overall response quality in GENAI applications.
+<b>• Challenge:</b> In RAG applications, LLMs rely on search and retrieval functions to generate relevant and accurate responses. Poor search results can lead to incomplete or incorrect AI outputs.
+<b>• Solution:</b> The Q&T Framework evaluates the effectiveness of the search and retrieval process in RAG applications. By continuously monitoring this aspect, the framework ensures that LLMs retrieve the most relevant information, improving overall response quality in GENAI applications.
 
 How the Q&T Framework Supports Development and Scaling
-      <b>• Reference-Free Evaluation:</b> The Q&T Framework can perform reference-free evaluations of specific components in the RAG pipeline. This means that the framework can assess model outputs without needing predefined correct answers, making it versatile in evaluating complex, open-ended tasks such as summarization or question answering.
-      <b>• CI/CD Pipeline Integration:</b> By incorporating evaluation metrics into the CI/CD pipelines, developers can automatically monitor and improve the quality of entity extraction, response quality, and search performance as new iterations of the AI model are deployed. This real-time feedback mechanism ensures that healthcare AI applications continuously evolve and improve in terms of accuracy, relevance, and trustworthiness.
-      <b>• Metrics for Trust and Quality:</b> The framework provides actionable metrics that help developers assess the quality and trust of the AI applications they are building. These metrics can drive prompt engineering, improving model performance at every stage of the AI lifecycle.
+<b>• Reference-Free Evaluation:</b> The Q&T Framework can perform reference-free evaluations of specific components in the RAG pipeline. This means that the framework can assess model outputs without needing predefined correct answers, making it versatile in evaluating complex, open-ended tasks such as summarization or question answering.
+<b>• CI/CD Pipeline Integration:</b> By incorporating evaluation metrics into the CI/CD pipelines, developers can automatically monitor and improve the quality of entity extraction, response quality, and search performance as new iterations of the AI model are deployed. This real-time feedback mechanism ensures that healthcare AI applications continuously evolve and improve in terms of accuracy, relevance, and trustworthiness.
+<b>• Metrics for Trust and Quality:</b> The framework provides actionable metrics that help developers assess the quality and trust of the AI applications they are building. These metrics can drive prompt engineering, improving model performance at every stage of the AI lifecycle.
       </div>
 
       <div id="preReq">
-        • Python Version 3.10.* to 3.11.*
-	
-        • MySQL Workbench
-        
-        • Postgres
-        
-        • Environment variables to be set and configured. Refer to Configurations for further steps.
+• Python Version 3.10.* to 3.11.*
+
+• MySQL Workbench
+
+• Postgres
+
+• Environment variables to be set and configured. Refer to Configurations for further steps.
       </div>
 
       <div id="packIns">
-        <b>Steps:-</b>
+<b>Steps:-</b>
 
-          <b>Step 1:</b> Get access to Quality & Trust gitlab repository. Download Q&T package wheel file from https://git/generativeai/genai-trust-framework/-/tree/QT_backend/dist
-          
-          <b>Step 2:</b> For Package Installation, create a new virtual environment and activate it or install the package in existing application environment.
-          
-          <b>Step 3:</b> To install wheel file, execute below command -
-          <b>pip install qualitytrust-1.0-py3-none-any.whl</b>
- 
-        All the libraries will be installed with dependencies.
- 
-        <b>Note -</b> if you face any issue while installation, please refer to error resolution page (link).
+<b>Step 1:</b> Get access to Quality & Trust gitlab repository. Download Q&T package wheel file from https://git/generativeai/genai-trust-framework/-/tree/QT_backend/dist
+
+<b>Step 2:</b> For Package Installation, create a new virtual environment and activate it or install the package in existing application environment.
+
+<b>Step 3:</b> To install wheel file, execute below command -
+<b>pip install qualitytrust-1.0-py3-none-any.whl</b>
+
+All the libraries will be installed with dependencies.
+
+<b>Note -</b> if you face any issue while installation, please refer to error resolution page (link).
       </div>
 
       <div id="errRes">
-        Error : Visual Build Tool error
-        Solution : Download and install visual C++ build tool
-        
-        Error : Python package dependency errors
-        Solution : Downgrade/upgrade common packages.        
+Error : Visual Build Tool error
+Solution : Download and install visual C++ build tool
+
+Error : Python package dependency errors
+Solution : Downgrade/upgrade common packages.        
       </div>
 
       <div id="llm">
-        <b>Environment Variables</b>
-        There are two types of metrics in the Q&T solution package: reference based and reference free metrics. Reference based metrics need a ground truth against which to evaluate the application response. Reference free metrics in the Q&T solution are evaluated using LLMs. These metrics align with human expectations and can be computed using any LLM. An LLM is a Judge for evaluation of these non-ground truth based/ reference free metrics. The user can switch between different models or even open source LLMs by providing the model details. Following are the methods to set up / configure the models and to setup environment variables.
-        
-        <b>For Azure OpenAI model:</b>
-        Run the following commands to configure your environment to use AzureOpenAI models for all LLM-based metrics. To use AzureOpenAI models for evaluation, supply the model details as below:
-        • os.environ["MODEL_TYPE"] = "azure"
-        • os.environ["AZURE_OPENAI_API_KEY"] = "1213jaj...." 
-        • os.environ["Azure_OPENAI_VERSION"] = ""
-        • os.environ["AZURE_API_BASE_URL"] = ""
-        • os.environ["AZURE_MODEL_DEPLOYMENT_NAME"] ="davinci"
+<b>Environment Variables</b>
+There are two types of metrics in the Q&T solution package: reference based and reference free metrics. Reference based metrics need a ground truth against which to evaluate the application response. Reference free metrics in the Q&T solution are evaluated using LLMs. These metrics align with human expectations and can be computed using any LLM. An LLM is a Judge for evaluation of these non-ground truth based/ reference free metrics. The user can switch between different models or even open source LLMs by providing the model details. Following are the methods to set up / configure the models and to setup environment variables.
 
-        <b>For OpenAI models :</b> 
-        • os.environ["MODEL_TYPE"] = "openai"
-        • os.environ["OPENAI_API_KEY"] = "sk-..."
-        • os.environ["OPENAI_MODEL_NAME"] = ""
+<b>For Azure OpenAI model:</b>
+Run the following commands to configure your environment to use AzureOpenAI models for all LLM-based metrics. To use AzureOpenAI models for evaluation, supply the model details as below:
+• os.environ["MODEL_TYPE"] = "azure"
+• os.environ["AZURE_OPENAI_API_KEY"] = "1213jaj...." 
+• os.environ["Azure_OPENAI_VERSION"] = ""
+• os.environ["AZURE_API_BASE_URL"] = ""
+• os.environ["AZURE_MODEL_DEPLOYMENT_NAME"] ="davinci"
 
-        <b>For Anthropic Claude models:</b>
-        • os.environ["MODEL_TYPE"] = "claude"
-        • os.environ["ANTHROPIC_API_KEY"] = "sk-..."
-        • os.environ["CLAUDE_MODEL_NAME"] = ""
+<b>For OpenAI models :</b> 
+• os.environ["MODEL_TYPE"] = "openai"
+• os.environ["OPENAI_API_KEY"] = "sk-..."
+• os.environ["OPENAI_MODEL_NAME"] = ""
 
-        <b>For Mistral models:</b>
-        • os.environ["MODEL_TYPE"] = "mistral"
-        • os.environ["MISTRAL_API_KEY"] = "sk-..."
-        • os.environ["MISTRAL_MODEL_NAME"] = ""
+<b>For Anthropic Claude models:</b>
+• os.environ["MODEL_TYPE"] = "claude"
+• os.environ["ANTHROPIC_API_KEY"] = "sk-..."
+• os.environ["CLAUDE_MODEL_NAME"] = ""
 
-        <b>For Ollama models:</b> 
-          Run the following commands to configure your environment to use an open source model for all LLM-based metrics. Quantized models can be used on the CPU without high latency/ without increasing computational costs. Some models that you can try are: Llama 3.1, MS phi3.5 mini etc
-        • os.environ["MODEL_TYPE"] = "ollama"
-        • os.environ["OLLAMA_MODEL_NAME"] = ""
+<b>For Mistral models:</b>
+• os.environ["MODEL_TYPE"] = "mistral"
+• os.environ["MISTRAL_API_KEY"] = "sk-..."
+• os.environ["MISTRAL_MODEL_NAME"] = ""
 
-        <b>For AWS Bedrock models:</b>
-        • os.environ["MODEL_TYPE"] = "bedrock"
-        • os.environ["AWS_ACCESS_KEY_ID"] = ""
-        • os.environ["AWS_SECRET_ACCESS_KEY"] = ""
-        • os.environ["AWS_REGION_NAME"] = ""
-        • os.environ["BEDROCK_MODEL_NAME"] = ""
+<b>For Ollama models:</b> 
+  Run the following commands to configure your environment to use an open source model for all LLM-based metrics. Quantized models can be used on the CPU without high latency/ without increasing computational costs. Some models that you can try are: Llama 3.1, MS phi3.5 mini etc
+• os.environ["MODEL_TYPE"] = "ollama"
+• os.environ["OLLAMA_MODEL_NAME"] = ""
+
+<b>For AWS Bedrock models:</b>
+• os.environ["MODEL_TYPE"] = "bedrock"
+• os.environ["AWS_ACCESS_KEY_ID"] = ""
+• os.environ["AWS_SECRET_ACCESS_KEY"] = ""
+• os.environ["AWS_REGION_NAME"] = ""
+• os.environ["BEDROCK_MODEL_NAME"] = ""
       </div>
 
       <div id="dbConf">
-        To integrate Q&T with any application, we need database to store evaluation scores that can be visualized in dashboard. Hence, we need to set environment variables to configure
- 
-        <b>For mysql database:</b>
-        • os.environ["DB_TYPE"] = "mysql"
-        • os.environ["MYSQL_USER"] = ""
-        • os.environ["MYSQL_PASSWORD"] = ""
-        • os.environ["MYSQL_HOST"] = ""
-        • os.environ["MYSQL_PORT"] = "3306"
-        • os.environ["MYSQL_DB_NAME"] = ""
-        
-        <b>For postgres database:</b>
-        • os.environ["DB_TYPE"] = "postgres"
-        • os.environ["POSTGRES_USER"] = ""
-        • os.environ["POSTGRES_PASSWORD"] = ""
-        • os.environ["POSTGRES_HOST"] = ""
-        • os.environ["POSTGRES_PORT"] = "5432"
-        • os.environ["POSTGRES_NAME"] = ""
+To integrate Q&T with any application, we need database to store evaluation scores that can be visualized in dashboard. Hence, we need to set environment variables to configure
 
-        <b>For mssql database:</b>
-        • os.environ["DB_TYPE"] = "mssql"
-        • os.environ["MSSQL_USER"] = ""
-        • os.environ["MSSQL_PASSWORD"] = ""
-        • os.environ["MSSQL_HOST"] = ""
-        • os.environ["MSSQL_PORT"] = "1433"
-        • os.environ["MSSQL_NAME"] = ""
+<b>For mysql database:</b>
+• os.environ["DB_TYPE"] = "mysql"
+• os.environ["MYSQL_USER"] = ""
+• os.environ["MYSQL_PASSWORD"] = ""
+• os.environ["MYSQL_HOST"] = ""
+• os.environ["MYSQL_PORT"] = "3306"
+• os.environ["MYSQL_DB_NAME"] = ""
 
-        <b>For oracle database :</b>
-        • os.environ["DB_TYPE"] = "oracle"
-        • os.environ["ORACLE_USER"] = ""
-        • os.environ["ORACLE_PASSWORD"] = ""
-        • os.environ["ORACLE_HOST"] = ""
-        • os.environ["ORACLE_PORT"] = "1521"
-        • os.environ["ORACLE_NAME"] = ""
+<b>For postgres database:</b>
+• os.environ["DB_TYPE"] = "postgres"
+• os.environ["POSTGRES_USER"] = ""
+• os.environ["POSTGRES_PASSWORD"] = ""
+• os.environ["POSTGRES_HOST"] = ""
+• os.environ["POSTGRES_PORT"] = "5432"
+• os.environ["POSTGRES_NAME"] = ""
 
-        
-        <b>For databricks database :</b>
-        • os.environ["DB_TYPE"] = "delta_table"
-        • os.environ["DATABRICKS_HTTP_PATH"] = ""
-        • os.environ["DATABRICKS_ACCESS_TOKEN"] = ""
-        • os.environ["DATABRICKS_HOST"] = ""
-        • os.environ["DATABRICKS_CATALOG"] = ""
-        • os.environ["DATABRICKS_SCHEMA"] = ""
+<b>For mssql database:</b>
+• os.environ["DB_TYPE"] = "mssql"
+• os.environ["MSSQL_USER"] = ""
+• os.environ["MSSQL_PASSWORD"] = ""
+• os.environ["MSSQL_HOST"] = ""
+• os.environ["MSSQL_PORT"] = "1433"
+• os.environ["MSSQL_NAME"] = ""
 
-        If none of the above databases is used, by default sqlite database is used and quality_trust.db is created.
+<b>For oracle database :</b>
+• os.environ["DB_TYPE"] = "oracle"
+• os.environ["ORACLE_USER"] = ""
+• os.environ["ORACLE_PASSWORD"] = ""
+• os.environ["ORACLE_HOST"] = ""
+• os.environ["ORACLE_PORT"] = "1521"
+• os.environ["ORACLE_NAME"] = ""
+
+
+<b>For databricks database :</b>
+• os.environ["DB_TYPE"] = "delta_table"
+• os.environ["DATABRICKS_HTTP_PATH"] = ""
+• os.environ["DATABRICKS_ACCESS_TOKEN"] = ""
+• os.environ["DATABRICKS_HOST"] = ""
+• os.environ["DATABRICKS_CATALOG"] = ""
+• os.environ["DATABRICKS_SCHEMA"] = ""
+
+If none of the above databases is used, by default sqlite database is used and quality_trust.db is created.
       </div>
 
       <div id="setDb">
-        <b>How to setup database</b>
- 
-        • Install any of the database tools like postgres, MySQL workbench/server, MS SQL, Oracle etc. 
-        
-        • Setup credentials in the tool and accordingly change the database configuration (link of db config)
-        
-        • Create a database in database tool and update database name in database configuration (link)
-        
-        • To create schema, follow these steps - 
-        
-        <b>Steps to create schema</b>
-        Run the following python commands -  
-        
-        <b>#Import below library from qualitytrust</b>
-        from qualitytrust import model
-                  
-        <b>#Execute the following command</b>
-        model.create_schema()
+<b>How to setup database</b>
 
-        
-        <b>Insert metadata in database</b>
-        With this metadata following tables will be loaded -
-                    applications
-                    metric_type
-                    metrics
-                    metric_mapping
-        
-        Format of the schema which is provided explicitly should be as below –
-        
-        - application: name_of_the_application
-                    app_description: GenAI tool which assist clinical reviewers in decision support through infornation retrieval, extraction and accessing medical necessity of requested services
-          mapping:
-            - metric_type: Application
-              metrics:
-                - metric_class: A.F.T.R
-                  description: ""
-                  task: All
-                  metric_name: A.F.T.R
-                  soft_threshold: 0.7
-                  hard_threshold: 0.4
-        
-        This data should be in metric_config.yml file as per the requirements.
-        
-        <b>Logging metadata in database</b>
-        Use the following commands to log metadata into the database using qualitytrust package
-        
-        <b>#Import log metadata library </b>
-        from app.qualitytrust.suite.log_metadata import LogMetadata
-        
-        <b>#Run the python commands</b>
-        log_metadata = LogMetadata()
-        log_metadata.log(metadata_path="app/qualitytrust/config/metric_config.yml")
+• Install any of the database tools like postgres, MySQL workbench/server, MS SQL, Oracle etc. 
+
+• Setup credentials in the tool and accordingly change the database configuration (link of db config)
+
+• Create a database in database tool and update database name in database configuration (link)
+
+• To create schema, follow these steps - 
+
+<b>Steps to create schema</b>
+Run the following python commands -  
+
+<b>#Import below library from qualitytrust</b>
+from qualitytrust import model
+
+<b>#Execute the following command</b>
+model.create_schema()
+
+
+<b>Insert metadata in database</b>
+With this metadata following tables will be loaded -
+applications
+metric_type
+metrics
+metric_mapping
+
+Format of the schema which is provided explicitly should be as below –
+
+- application: name_of_the_application
+app_description: GenAI tool which assist clinical reviewers in decision support through infornation retrieval, extraction and accessing medical necessity of requested services
+mapping:
+- metric_type: Application
+metrics:
+- metric_class: A.F.T.R
+description: ""
+task: All
+metric_name: A.F.T.R
+soft_threshold: 0.7
+hard_threshold: 0.4
+
+This data should be in metric_config.yml file as per the requirements.
+
+<b>Logging metadata in database</b>
+Use the following commands to log metadata into the database using qualitytrust package
+
+<b>#Import log metadata library </b>
+from app.qualitytrust.suite.log_metadata import LogMetadata
+
+<b>#Run the python commands</b>
+log_metadata = LogMetadata()
+log_metadata.log(metadata_path="app/qualitytrust/config/metric_config.yml")
 
       </div>
 
       <div id="qtLib">
-        Here is an example to showcase how you can use the library to evaluate various metrics such as Factual Accuracy, Response Relevance, Response Completeness, Hallucination Degree, Context Disregard, Language Critique, Gender and Racial Bias, Honest Score, Toxic Opinions. 
- 
-        <b>We have a dict data containing query, response and context -</b>
-        data = [{
-                    "question": "What is the size of hernia sac?",
-                    "response": "The hernia sac measures 4.5 x 1.5 x 0.6 cm in widest dimensions.",
-                    "context": """ Gross Description Received in
-        formalin and labeled hernia sac is a grossly identifiable encapsulated fragment of yellow fibroadipose tissue that measures 4.5 x 1.5 x 0.6 cm in widest dimensions. The specimen is cross sectioned which reveals a surface that is homogeneously balanced and encapsulated with a thin tan-brown membranous material"""
-                },{
-                    "question": "What are the treatments given to john Brown?",
-                    "context": """Repair of recurrent right inguinal hernia. HISTORY AND INDICATIONS FOR ADMISSION: Mr. Brown is a 54-year-old white male who presented with pain to Dr. Jeff Moore. He had a hernia repair, on the right, in the past, and this was recurrent. He was scheduled for surgery. HOSPITAL COURSE: The patient was admitted on 11/12/1999 and underwent surgery, and did fine. He was transferred to the floor. On 11/13/99 he is alert, awake, afebrile, taking a regular diet. Having bowel movements, and passing his urine normally. His incision is clean and dry. He is discharged home in satisfactory condition with Lortab PRN for pain. He is to follow up with his primary care physician, Dr. Moore, on Monday. D: 11/13/1999 T: 11/16/1999 wms cc: Jeff T. Moore, M.D. Tom W. Smith, M.D. Community General Hospital Anytown, USA HISTORY AND
-        PHYSICAL Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Page 1 of 2 REASON FOR ADMISSION: This is a 54 year old male, admitted here for repair of right inguinal hernia. HISTORY OF PRESENT ILLNESS: The patient has
-        had his hernia repaired in the past, elsewhere. Over the past number of months, he has seen this hernia come back and recur, and become larger. It causes discomfort. He is admitted for repair of a right inguinal hernia. PAST MEDICAL HISTORY: Denies. MEDICATIONS: None. PAST SURGICAL HISTORY: Hernia surgery on the right in the past. The patient also has had a left inguinal hernia repair in the past""", 
-                    "response": "John Brown underwent surgery for a recurrent hernia repair. It is not specified what other treatments, if any, were given to him."
-          }]
-        
-        To evaluate metrics import the following library from qualitytrust package
-        from app.qualitytrust.bench import Evaluate
-        
-        <b>Score can be calculated using - </b>
-        score = Evaluate.evaluate_dataset(dataset=data,metrics=["Factual Accuracy","Response Relevance","Response Completeness","Hallucination Degree","Context Disregard", "Language Critique","Gender and Racial Bias","Honest Score","Toxic Opinions"]) 
+Here is an example to showcase how you can use the library to evaluate various metrics such as Factual Accuracy, Response Relevance, Response Completeness, Hallucination Degree, Context Disregard, Language Critique, Gender and Racial Bias, Honest Score, Toxic Opinions. 
+
+<b>We have a dict data containing query, response and context -</b>
+data = [{
+"question": "What is the size of hernia sac?",
+"response": "The hernia sac measures 4.5 x 1.5 x 0.6 cm in widest dimensions.",
+"context": """ Gross Description Received in
+formalin and labeled hernia sac is a grossly identifiable encapsulated fragment of yellow fibroadipose tissue that measures 4.5 x 1.5 x 0.6 cm in widest dimensions. The specimen is cross sectioned which reveals a surface that is homogeneously balanced and encapsulated with a thin tan-brown membranous material"""
+},{
+"question": "What are the treatments given to john Brown?",
+"context": """Repair of recurrent right inguinal hernia. HISTORY AND INDICATIONS FOR ADMISSION: Mr. Brown is a 54-year-old white male who presented with pain to Dr. Jeff Moore. He had a hernia repair, on the right, in the past, and this was recurrent. He was scheduled for surgery. HOSPITAL COURSE: The patient was admitted on 11/12/1999 and underwent surgery, and did fine. He was transferred to the floor. On 11/13/99 he is alert, awake, afebrile, taking a regular diet. Having bowel movements, and passing his urine normally. His incision is clean and dry. He is discharged home in satisfactory condition with Lortab PRN for pain. He is to follow up with his primary care physician, Dr. Moore, on Monday. D: 11/13/1999 T: 11/16/1999 wms cc: Jeff T. Moore, M.D. Tom W. Smith, M.D. Community General Hospital Anytown, USA HISTORY AND
+PHYSICAL Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Page 1 of 2 REASON FOR ADMISSION: This is a 54 year old male, admitted here for repair of right inguinal hernia. HISTORY OF PRESENT ILLNESS: The patient has
+had his hernia repaired in the past, elsewhere. Over the past number of months, he has seen this hernia come back and recur, and become larger. It causes discomfort. He is admitted for repair of a right inguinal hernia. PAST MEDICAL HISTORY: Denies. MEDICATIONS: None. PAST SURGICAL HISTORY: Hernia surgery on the right in the past. The patient also has had a left inguinal hernia repair in the past""", 
+"response": "John Brown underwent surgery for a recurrent hernia repair. It is not specified what other treatments, if any, were given to him."
+}]
+
+To evaluate metrics import the following library from qualitytrust package
+from app.qualitytrust.bench import Evaluate
+
+<b>Score can be calculated using - </b>
+score = Evaluate.evaluate_dataset(dataset=data,metrics=["Factual Accuracy","Response Relevance","Response Completeness","Hallucination Degree","Context Disregard", "Language Critique","Gender and Racial Bias","Honest Score","Toxic Opinions"]) 
       </div>
 
-      <div id="response">
-        <table> <tr> <th>Name</th> <th>Definition</th> </tr> <tr> <th>Accuracy</th> <td></td> </tr> <tr> <td>Exact Match</td> <td>Exact match is the proportion of the predicted output that matches the reference.</td> </tr> <tr> <td>Rouge Score </td> <td>Rouge Score compares the overlap of words or phrases (n-grams) between the generated answer and reference answer.</td> </tr> <tr> <td>Factual Accuracy</td> <td>Factual accuracy grades how factual the generated response was. </td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Relevancy</th> <td></td> </tr> <tr> <td>Reponse Relevance</td> <td>Measures how relevant the generated response was to the question specified and irrelevant additional information.</td> </tr> <tr> <td>Text Relevance</td> <td>Evaluates relevance between prompts and responses by computing similarity scores between embeddings generated from prompts and responses.</td> </tr> <tr> <td>Reponse Completeness</td> <td>Grades whether the response has answered all the aspects of the question specified.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Hallucination</th> <td></td> </tr> <tr> <td>Hallucination Degree</td> <td>Grades how concise the generated response is ie. the extent of additional irrelevant information in the response.</td> </tr> <tr> <td>Context Validity</td> <td>Evaluates how relevant the retrieved context is to the question specified.</td> </tr> <tr> <td>Context Utilization </td> <td>Context Utilization score measures if the generated response has sufficiently used the retrieved context to answer the question being asked.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Robustness</th> <td></td> </tr> <tr> <td>Syntax Sensitivity</td> <td>This class of metrics assesses the NLP model&#39;s ability to handle input text that includes abbreviations and other changes to language. </td> </tr> <tr> <td>Language Critique</td> <td>The Language Critique metric - scores machine generated response on multiple aspects, fluency, politeness, grammar, and coherence. </td> </tr> <tr> <td>Aspect Critique</td> <td>This metric is designed to assess submissions based on predefined aspects such as harmlessness and correctness.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Efficiency</th> <td></td> </tr> <tr> <td>Latency </td> <td>Measures the time it takes for an LLM to generate a response. </td> </tr> <tr> <td>Cost </td> <td>The cost metric measures the token cost of LLM response.</td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Bias</th> <td></td> </tr> <tr> <td>Gender and Racial Bias</td> <td>The bias metric determines whether the LLM output contains gender, or racial bias.</td> </tr> <tr> <td>Honest Score</td> <td>The Honest score aims to measure hurtful sentence completions in language models. </td> </tr> <tr> <td></td> <td></td> </tr> <tr> <th>Toxicity</th> <td></td> </tr> <tr> <td>Toxic Opinions</td> <td>Evaluates toxicity in the application response includes personal attack, mockery, threats or intimidation. </td> </tr> <tr> <td>Abusive Speech </td> <td>Quantifies abusive speech targeting ethnicity, religion or gender in the input text using a pretrained hate speech classification model.</td> </tr> </table>
+      <div id="matrIntro">
+<img src="images/matrIntro.png">
       </div>
+
+      <div id="matrCost">
+Measures the total cost for a GenAI application. The cost of a Generative AI application involves expenses related to application usage such as the following:<br>
+<b>Compute resources:</b> CPU, memory, or GPU hours used by the application for generating output.
+<b>Infrastructure costs:</b> If running the GenAI model locally using cloud services like AWS, Google Cloud Platform, or Azure, consider their pricing tiers and compute instance rates.
+<b>Software licensing fees:</b> Depending on how you're accessing the GenAI application, there might be subscription-based access or per-use cost associated with it.
+
+Estimate resource usage based on input time:
+Application run time can be used to compute the resources used during that time period.<br>
+<b>Calculate costs:</b>
+Compute resource-based cost: Multiply the estimated compute resource usage (in hours) by their hourly rates provided by the cloud service provider. 
+Software licensing fees: If there are any subscription costs associated with accessing the GenAI service or software license fees related to using the AI model (e.g., AzureOpenAI GPT 4), these are added as well. 
+For example, if the application uses a monthly subscription fee of $10 per user and used it for 2 hours, then this would contribute an additional cost: ($10/month * 2 hours per day) = 10*2*30 = $ 600
+
+<b>Required Arguments:</b>
+the run time of the application
+
+<b>Calculation:</b> 
+This metric is calculated as follows:
+
+Cost of application = Compute Resources + Infrastructure cost + Software Licensing Fees
+
+Output is the cost of the application in dollars 
+
+<b>Example code:</b>
+# Function to measure cost given inputs from the application.
+      </div>
+
+      <div id="matrQA_exact">
+        <!-- <div class="btnQA_accuracy">
+          <button class="button button2" onClick="clickCalled('matrQA_exact')">Exact Match</button>
+          <button class="button button2" onClick="clickCalled('matrQA_rouge')">ROUGE Score</button>
+          <button class="button button2" onClick="clickCalled('matrQA_factual')">Factual Accuracy</button>
+        </div> -->
+(This is a Reference Based Evaluator)
+
+The Exact Match metric measures how often the generated response (ex: an answer or a summary) exactly matches the reference (or ground truth answer). Exact match is the proportion of the predicted output that matches the reference.
+
+<b>Details:</b> 
+Exact match compares each generated response with the corresponding reference answer. If the generated response exactly matches the reference answer (word-for-word), it is considered a perfect match. 
+ 
+<b>Required Arguments: (your dataset must contain these fields)</b>
+<u>application response :</u> the answer / summary given by the application in response to the user query. 
+<u>reference:</u> the ground truth answer for the user query.
+
+<b>Calculation (include input, calculation/ formula, output details)</b>
+	• Exact Match = Number of overlapping unigrams/ Number of unigrams in the reference.
+	• The comparison is based on the exact sequence of unigrams (individual words) between the system-generated summary and the reference summary. Each comparison is scored as 1 if there is an exact match and 0 if there isn't.
+	
+<b>Output: </b>
+	 A number between 0 and 1. 
+
+How to use it? (Archie : is the value of Exact match = 1 for this example? Are we ignoring punctuation, case, numbers) Yes, we have not added.
+from qualitytrust.qnteval import EvaluateMetric
+eval_obj = EvaluateMetric()
+ 
+response = """The hernia sac measures 4.5 x 1.5 x 0.6 cm in widest dimensions."""
+
+reference = """Gross Description Received in formalin and labeled hernia sac is a grossly identifiable encapsulated fragment of yellow fibroadipose tissue that measures 4.5 x 1.5 x 0.6 cm in widest dimensions. The specimen is cross sectioned which reveals a surface that is homogeneously balanced and encapsulated with a thin tan-brown membranous
+material"""
+
+eval_score = eval_obj.evaluate(response=response,reference=reference,metric="Exact Match")
+print(eval_score)
+
+
+<b>Limitations:</b>
+	• It is a strict metric, meaning any minor difference (ex: punctuation, capitalization) will result in a score of 0.
+	• Does not account for semantic similarity, it may not capture correct answers that are phased differently.
+
+<b>Source:</b> <a href="https://huggingface.co/spaces/evaluate-metric/exact_match" target="_blank">Exact Match - a Hugging Face Space by evaluate-metric</a>
+
+      </div>
+
+      <div id="matrQA_rouge">
+(This is a Reference Based Evaluator) 
+
+(ROUGE-L is currently implemented in the QT package)
+
+ROUGE score measures the overlap of words or phrases (n-grams) between the generated answer and reference answer.
+
+<b>Details:</b> 
+Recall-Oriented Understudy for Gisting Evaluation. It is used to assess the quality of automatic summarization systems. These are a set of metrics that compare the application generated answer/ summary with the reference answer/ summary. ROUGE is case insensitive. 
+This score is used to check how much of the generated answer/ summary overlaps with the reference. 
+
+<b>Types of Rouge score: </b>
+• ROUGE-1 : unigram (1-gram) based scoring, I.e. measures that overlap of individual words. 
+• ROUGE-2 : specifically evaluates the overlap of bigrams between the system-generated output and reference summaries, I.e. measures the overlap of pairs of words. 
+• ROUGE-L : Longest common subsequence based scoring, I.e. measures the longest sequence of matching words. Ignores newlines and computes LSC for the entire text. 
+• ROUGELsum: splits text using "\n". This is a variant of the ROUGE-L metric. This metric applies ROUGE-L to each sentence in the generated answer/ summary and aggregates these scores by computing an average score for all sentences. Suitable for extractive summarization tasks. 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+<u>application response :</u> the answer / summary given by the application in response to the user query. 
+<u>reference:</u> the ground truth answer for the user query.
+
+<b>Calculation:</b>
+• ROUGE-L calculates the longest common subsequence by ignoring newlines. 
+• Compares the text in the generated answer/ summary with the reference. 
+
+<b>Output: </b>
+Output is a score between 0 to 1, where 0 indicates no overlap between bigrams and 1 indicates a perfect match.
+
+<b>How to use it?</b>
+from qualitytrust.qnteval import EvaluateMetric
+eval_obj = EvaluateMetric()
+
+response = """The hernia sac measures 4.5 x 1.5 x 0.6 cm in widest dimensions."""
+
+reference = """Gross Description Received in formalin and labeled hernia sac is a grossly identifiable encapsulated fragment of yellow fibroadipose tissue that measures 4.5 x 1.5 x 0.6 cm in widest dimensions. The specimen is cross sectioned which reveals a surface that is homogeneously balanced and encapsulated with a thin tan-brown membranous material"""
+
+eval_score = eval_obj.evaluate(response=response,reference=reference,metric="RougeL")
+
+print(eval_score)
+
+
+<b>Limitations:</b>
+• ROUGE score doesn't capture semantic meaning.
+• May not handle paraphrasing or synonym usage well. 
+
+<b>Source:</b>
+• <a href="https://huggingface.co/spaces/evaluate-metric/rouge" target="_blank">ROUGE - a Hugging Face Space by evaluate-metric</a>
+• <a href="https://dev.to/aws-builders/mastering-rouge-matrix-your-guide-to-large-language-model-evaluation-for-summarization-with-examples-jjg" target="_blank">Mastering ROUGE Matrix</a>
+        
+      </div>
+
+      <div id="matrQA_factual">
+(This is an LLM Based Evaluator)
+
+Checks whether the response generated is factually correct and grounded by the provided context.
+
+<b>Details: </b>
+This metric measures the degree to which a claim made in the response is true according to the context provided. 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+<u>question:</u>  the query input to the application by user
+<u>context:</u> the information/ text retrieved and input to LLM to answer the question
+<u>response:</u> the response given by the model.
+
+<b>Calculation:</b>
+• Split the response to facts. The response is divided into different arguments, each stating a fact. Each argument is evaluated on whether it is correct on the basis of supporting context and scores. 
+• Rate individual facts on correctness based on the following categories:
+○ Completely right (score = 1)
+○ Completely wrong (score = 0)
+○ Ambiguous (score = 0.5)
+• Final score is generated by calculating the mean of the scores of the individual facts.
+
+<b>Output: </b>
+A score between 0 and 1. 
+
+<b>Algorithm Elaborated:</b>
+<img src="images/matrQAfactual.png"> <br>
+<b>How to use it?</b>
+from qualitytrust.qnteval import EvaluateMetric
+eval_obj = EvaluateMetric() 
+query="What is the size of hernia sac"
+
+response = "The hernia sac measures 4.5 x 1.5 x 0.6 cm in widest dimensions."
+
+context = """Gross Description Received in
+formalin and labeled hernia sac is a grossly identifiable encapsulated fragment of yellow fibroadipose tissue that measures 4.5 x 1.5 x 0.6 cm in widest
+dimensions. The specimen is cross sectioned which reveals a surface that is homogeneously balanced and encapsulated with a thin tan-brown membranous
+material"""
+
+eval_score = eval_obj.evaluate(query=query,response=response,context=context,metric="Factual Accuracy")
+print(eval_score)
+
+<b>Sources:</b>
+• <a href="https://docs.uptrain.ai/predefined-evaluations/context-awareness/factual-accuracy" target="_blank">Factual Accuracy - UpTrain</a>
+• <a href="https://github.com/uptrain-ai/uptrain/blob/main/examples/checks/context_awareness/factual_accuracy.ipynb" target="_blank">Factual Accuracy - Github</a>        
+      </div>
+
     </div>
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
