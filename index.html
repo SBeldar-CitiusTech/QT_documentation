@@ -148,40 +148,31 @@
             </div>
 
             <ul class="menu_items submenu">
-              <div class="nav_link">
-                <span class="nav_link sublink matrCost">Accuracy</span>
-                <i class="fa-solid fa-chevron-right arrow-right"></i>
-              </div>
-            </ul>
-
-            <ul class="menu_items childmenu">
-              <a href="#" class="nav_link sublink matrQA_exact" onClick="clickCalled('matrQA_exact')">Exact Match</a>
-            </ul>
-            <ul class="menu_items childmenu">
-              <a href="#" class="nav_link sublink matrQA_rouge" onClick="clickCalled('matrQA_rouge')">ROUGE Score</a>
-            </ul>
-            <ul class="menu_items childmenu">
-              <a href="#" class="nav_link sublink matrQA_factual" onClick="clickCalled('matrQA_factual')">Factual Accuracy</a>
+              <span class="nav_link sublink matrQA_exact" onClick="clickCalled('matrQA_exact')">Accuracy</span>
             </ul>
 
             <ul class="menu_items submenu">
-              <div class="nav_link">
-                <span class="nav_link sublink matrCost">Relevancy</span>
-                <i class="fa-solid fa-chevron-right arrow-right"></i>
-              </div>
+              <span class="nav_link sublink matrQA_complete" onClick="clickCalled('matrQA_complete')">Relevancy</span>
             </ul>
 
-            <ul class="menu_items childmenu">
-              <a href="#" class="nav_link sublink matrQA_complete" onClick="clickCalled('matrQA_complete')">Response Completeness</a>
+            <ul class="menu_items submenu">
+              <span class="nav_link sublink matrQA_hallucination" onClick="clickCalled('matrQA_hallucination')">Hallucination</span>
             </ul>
-            <ul class="menu_items childmenu">
-              <a href="#" class="nav_link sublink matrQA_relevance" onClick="clickCalled('matrQA_relevance')">Response Relevance</a>
+
+            <ul class="menu_items submenu">
+              <span class="nav_link sublink matrQA_syntax" onClick="clickCalled('matrQA_syntax')">Robustness</span>
             </ul>
-            <ul class="menu_items childmenu">
-              <a href="#" class="nav_link sublink matrQA_text" onClick="clickCalled('matrQA_text')">Text Relevance</a>
+
+            <ul class="menu_items submenu">
+              <span class="nav_link sublink matrQA_Latency" onClick="clickCalled('matrQA_Latency')">Efficiency</span>
             </ul>
-            <ul class="menu_items childmenu">
-              <a href="#" class="nav_link sublink matrQA_answer" onClick="clickCalled('matrQA_answer')">Answer Relevancy</a>
+
+            <ul class="menu_items submenu">
+              <span class="nav_link sublink matrQA_gender" onClick="clickCalled('matrQA_gender')">Bias</span>
+            </ul>
+
+            <ul class="menu_items submenu">
+              <span class="nav_link sublink matrQA_toxic" onClick="clickCalled('matrQA_toxic')">Toxicity</span>
             </ul>
           </li>
           
@@ -482,13 +473,13 @@ Output is the cost of the application in dollars
 <b>Example code:</b>
 # Function to measure cost given inputs from the application.
       </div>
-
+<!-- Accuracy -->
       <div id="matrQA_exact">
-        <!-- <div class="btnQA_accuracy">
-          <button class="button button2" onClick="clickCalled('matrQA_exact')">Exact Match</button>
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrQA_exact')">Exact Match</button>
           <button class="button button2" onClick="clickCalled('matrQA_rouge')">ROUGE Score</button>
           <button class="button button2" onClick="clickCalled('matrQA_factual')">Factual Accuracy</button>
-        </div> -->
+        </div>
 (This is a Reference Based Evaluator)
 
 The Exact Match metric measures how often the generated response (ex: an answer or a summary) exactly matches the reference (or ground truth answer). Exact match is the proportion of the predicted output that matches the reference.
@@ -507,7 +498,7 @@ Exact match compares each generated response with the corresponding reference an
 <b>Output: </b>
 	 A number between 0 and 1. 
 
-How to use it? (Archie : is the value of Exact match = 1 for this example? Are we ignoring punctuation, case, numbers) Yes, we have not added.
+How to use it?
 from qualitytrust.qnteval import EvaluateMetric
 eval_obj = EvaluateMetric()
  
@@ -529,6 +520,11 @@ print(eval_score)
       </div>
 
       <div id="matrQA_rouge">
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrQA_exact')">Exact Match</button>
+          <button class="button button2 active" onClick="clickCalled('matrQA_rouge')">ROUGE Score</button>
+          <button class="button button2" onClick="clickCalled('matrQA_factual')">Factual Accuracy</button>
+        </div>
 (This is a Reference Based Evaluator) 
 
 (ROUGE-L is currently implemented in the QT package)
@@ -580,6 +576,11 @@ print(eval_score)
       </div>
 
       <div id="matrQA_factual">
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrQA_exact')">Exact Match</button>
+          <button class="button button2" onClick="clickCalled('matrQA_rouge')">ROUGE Score</button>
+          <button class="button button2 active" onClick="clickCalled('matrQA_factual')">Factual Accuracy</button>
+        </div>
 (This is an LLM Based Evaluator)
 
 Checks whether the response generated is factually correct and grounded by the provided context.
@@ -623,6 +624,704 @@ print(eval_score)
 <b>Sources:</b>
 • <a href="https://docs.uptrain.ai/predefined-evaluations/context-awareness/factual-accuracy" target="_blank">Factual Accuracy - UpTrain</a>
 • <a href="https://github.com/uptrain-ai/uptrain/blob/main/examples/checks/context_awareness/factual_accuracy.ipynb" target="_blank">Factual Accuracy - Github</a>        
+      </div>
+<!-- Relevancy -->
+      <div id="matrQA_complete">
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrQA_complete')">Response Completeness</button>
+          <button class="button button2" onClick="clickCalled('matrQA_response')">Response Relevance</button>
+          <button class="button button2" onClick="clickCalled('matrQA_text')">Text Relevance</button>
+          <button class="button button2" onClick="clickCalled('matrQA_answer')">Answer Relevancy</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+Grades whether the response has answered all the aspects of the question specified.
+
+<b>Details:</b> 
+This score measures if the generated response has adequately answered all aspects to the user query asked. This ensures that the model is not generating incomplete responses. 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+<b>question:</b>  the query input to the application by user
+<b>response:</b> the response given by the model.
+
+<b>Calculation:</b>
+• Response completeness is calculated by determining which of the three cases apply to data. 
+  ○ The generated answer does not answer the question, 
+  ○ partially answers or 
+  ○ adequately answers the given question. 
+• If no aspect is answered, score is 0, if some are answered, score is 0.5, if all aspects of question are answered, score is 1.
+
+<b>Output: </b>
+Response is a score = 0, 0.5 or 1 for each query. A higher response completeness score indicates that the response has answered all aspects of the user's questions. 
+
+<b>How to use it?</b>
+from qualitytrust.qnteval import EvaluateMetric
+eval_obj = EvaluateMetric()
+
+query="What is the size of hernia sac"
+
+response = "The hernia sac measures 4.5 x 1.5 x 0.6 cm in widest dimensions."
+
+eval_score = eval_obj.evaluate(query=query,response=response,context=context,metrics="Response Completeness")
+print(eval_score)
+
+
+<b>Sources:</b>
+• <a href="https://docs.uptrain.ai/predefined-evaluations/response-quality/response-completeness" target="_blank">Completeness - UpTrain</a>
+• <a href="https://github.com/uptrain-ai/uptrain/blob/main/examples/checks/response_quality/completeness.ipynb" target="_blank">uptrain-ai/uptrain (github.com) </a>
+
+      </div>
+
+      <div id="matrQA_response">
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrQA_complete')">Response Completeness</button>
+          <button class="button button2 active" onClick="clickCalled('matrQA_response')">Response Relevance</button>
+          <button class="button button2" onClick="clickCalled('matrQA_text')">Text Relevance</button>
+          <button class="button button2" onClick="clickCalled('matrQA_answer')">Answer Relevancy</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+Measures how relevant the generated response is to the question specified. It is a measure of how well the response addresses the question asked and if it contains any additional information irrelevant to the question asked. 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+<b>question:</b>  the query input to the application by user
+<b>response:</b> the response given by the model.
+
+<b>Calculation:</b>
+• The response is checked for additional irrelevant information, for staying focused on the question, and answering all aspects of the user question. Response is checked for its relevancy to the question.
+• The LLM evaluates the response and scores it w.r.t different aspects of the user query being answered, and presence of irrelevant information.
+
+<b>Output: </b>
+A score between 0 and 1. A higher response relevance score reflects that the generated response is relevant to the question asked. 
+
+<b>How to use it?</b>
+from qualitytrust.qnteval import EvaluateMetric
+eval_obj = EvaluateMetric()
+
+query="What is the size of hernia sac"
+
+response = "The hernia sac measures 4.5 x 1.5 x 0.6 cm in widest dimensions."
+
+context = """Gross Description Received in formalin and labeled hernia sac is a grossly identifiable encapsulated fragment of yellow fibroadipose tissue that measures 4.5 x 1.5 x 0.6 cm in widest dimensions. The specimen is cross sectioned which reveals a surface that is homogeneously balanced and encapsulated with a thin tan-brown membranous material"""
+
+eval_score = eval_obj.evaluate(query=query,response=response,context=context,metrics="Response Relevance")
+print(eval_score)
+
+<b>Sources:</b>
+• <a href="https://docs.uptrain.ai/predefined-evaluations/response-quality/response-relevance" target="_blank">Response Relevance - UpTrain</a>
+• <a href="https://github.com/uptrain-ai/uptrain/blob/main/examples/checks/response_quality/relevance.ipynb" target="_blank">uptrain-ai/uptrain (github.com)</a>  
+      </div>
+
+      <div id="matrQA_text">
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrQA_complete')">Response Completeness</button>
+          <button class="button button2" onClick="clickCalled('matrQA_response')">Response Relevance</button>
+          <button class="button button2 active" onClick="clickCalled('matrQA_text')">Text Relevance</button>
+          <button class="button button2" onClick="clickCalled('matrQA_answer')">Answer Relevancy</button>
+        </div>
+This metric has not been implemented in QT package due to dependency issues.
+
+<b>Definition:</b> Evaluates relevance between prompts and responses by computing similarity scores between embeddings generated from prompts and responses.
+
+<b>Details:</b> An objective measure of the similarity between different texts. It serves multiple use cases, including assessing the quality and appropriateness of LLM outputs.
+
+<b>Library:</b>  Langkit
+
+<b>Calculation:</b> Similarity score (cosine similarity) computed using the input_output module in langkit. 
+
+<b>Inputs:</b> Input question and Application response
+
+<b>Output:</b> The similarity score is computed by calculating the cosine similarity between embeddings generated from both prompt and response.
+The embeddings are generated using the hugginface's model sentence-transformers/all-MiniLM-L6-v2.
+
+Example:
+        
+      </div>
+
+      <div id="matrQA_answer">
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrQA_complete')">Response Completeness</button>
+          <button class="button button2" onClick="clickCalled('matrQA_response')">Response Relevance</button>
+          <button class="button button2" onClick="clickCalled('matrQA_text')">Text Relevance</button>
+          <button class="button button2 active" onClick="clickCalled('matrQA_answer')">Answer Relevancy</button>
+        </div>
+This metric has not been implemented in QT package.
+
+(This is an LLM Based Evaluator)
+
+Evaluates how relevant the actual output of the application is compared to provided input.
+
+<b>Details: </b>
+The answer relevancy metric measures the quality of the RAG pipeline's generator by evaluating how relevant the actual output of your LLM application is compared to the provided input/ user query.
+
+<b>Required Arguments:</b> (your dataset must contain these fields)
+input/ user query:  the query input to the application by user
+response: the response given by the model.
+
+<b>Calculation:</b>
+• Answer Relevancy = Number of Relevant Statements / Total Number of Statements
+• The Answer Relevancy metric uses an LLM to extract all statements made in the LLM application response. 
+• Then, the same LLM is used to classify whether each statement is relevant to the user query.
+
+<b>Output: </b>
+A higher answer relevancy score indicates that the response is relevant to the user's question.
+
+<b>How to use it?</b>
+add code here
+
+<b>Sources:</b>
+• <a href="https://docs.confident-ai.com/docs/metrics-answer-relevancy" target="_blank">Answer Relevancy | DeepEval</a>
+• <a href="https://docs.confident-ai.com/docs/guides-rag-evaluation" target="_blank">RAG Evaluation | DeepEval</a>
+      </div>
+<!-- Hallucination -->
+      <div id="matrQA_hallucination">
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrQA_hallucination')">Hallucination Degree</button>
+          <button class="button button2" onClick="clickCalled('matrQA_validity')">Context Validity</button>
+          <button class="button button2" onClick="clickCalled('matrQA_disregard')">Context Disregard</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+Grades how concise the generated response is or if it has any additional irrelevant information for the question asked.
+
+<b>Details: </b>
+This score measures whether the generated response contains any additional information irrelevant for the question asked. Response conciseness refers to the quality of a generated response in terms of being clear, brief, and to the point. A concise response effectively conveys the necessary information without unnecessary elaboration or verbosity. It focuses on addressing the core of the question or query in a straightforward manner.
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+<b>question:</b>  the query asked by user
+<b>response:</b> the response given by the application
+
+<b>Calculation:</b>
+  • Response conciseness is calculated by determining which of the three cases apply for given task data:
+    ○ The generated answer has a lot of additional irrelevant information
+    ○ The generated answer has little additional irrelevant information, or 
+    ○ The generated answer has no additional irrelevant information. 
+  • Hallucination Degree = 1- Response Conciseness
+
+<b>Output: </b>
+  • Hallucination Degree equal to 0 indicates zero hallucination in the application response, that is, the application response has no additional irrelevant information. 
+  • Hallucination Degree equal to 1 indicates that there is low response conciseness, that is, the application response has lot of additional irrelevant information. 
+
+<b>How to use it?</b>
+from qualitytrust.qnteval import EvaluateMetric
+eval_obj = EvaluateMetric()
+
+Query = "In the case of John Brown, who underwent surgery for a recurrent right inguinal hernia, what were the findings in the pathology report regarding the soft tissue in the inguinal region?"
+
+response = "The pathology report found that the soft tissue in the inguinal region contained a hernia sac containing hemorrhage and areas of fibrosis, but was negative for malignancy"
+
+context = """inguinal hernia. Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician 1 Adm Date: 11/12/1999 DOB: 09/10/44 - 
+POSTOPERATIVE DIAGNOSIS: Recurrent right inguinal hernia. PROCEDURE PERFORMED: Repair of recurrent right inguinal hernia, resection of lipoma of the | GENITALIA: Normal male. RECTAL: Negative. Prostate 1+. EXTREMITIES: Symmetric. IMPRESSION: 1. Right inguinal hernia recurrent. Community General
+Hospital Anytown, USA HISTORY AND PHYSICAL Page 2 of 2 Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. - Consulting | material. No ulceration, pigmentation or nodular abnormalities can be grossly identified. Representative portions submitted in one cassette. Diagnosis Soft tissue
+inguinal region: Hernia sac containing hemorrhage and areas of fibrosis, negative for malignancy. Sally Johnson, M.D. Pathologist Dally Johnson Name: - 0.0.Bi | INDICATIONS FOR ADMISSION: Mr. Brown is a 54-year-old white male who presented with pain to Dr. Jeff Moore. He had a hernia repair, on the right, in the
+past, and this was recurrent. He was scheduled for surgery. HOSPITAL COURSE: The patient was admitted on 11/12/1999 and underwent surgery, and did fine. | discomfort. He is admitted for repair of a right inguinal hernia. PAST MEDICAL HISTORY: Denies. MEDICATIONS: None. PAST SURGICAL HISTORY: Hernia
+surgery on the right in the past. The patient also has had a left inguinal hernia repair in the past. EXAMINATION VITAL SIGNS: Blood pressure 140/90. | INGUINAL HERNIA Specimen Submitted HERNIA SAC Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician 1
+Adm Date: 11/12/1999 DOB: 09/10/44 Ordering Physician: Jeff T. Moore Pathologist: Sally Johnson, M.D. Location: 3W 0328 P Gross Description Received in | of 2 REASON FOR ADMISSION: This is a 54 year old male, admitted here for repair of right inguinal hernia. HISTORY OF PRESENT ILLNESS: The patient has
+had his hernia repaired in the past, elsewhere. Over the past number of months, he has seen this hernia come back and recur, and become larger. It causes | Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 DISCHARGE SUMMARY Page 1 of 1 ADMITTING DIAGNOSIS: 1.
+Recurrent right inguinal hernia. 1. DISCHARGE DIAGNOSIS: Same. PROCEDURES PERFORMED: 1. Repair of recurrent right inguinal hernia. HISTORY AND"""
+
+eval_score = eval_obj.evaluate(query=query,response=response,context=context,metric="Hallucination Degree")
+
+print(eval_score)
+
+<b>Sources:</b>
+• <a href="https://docs.uptrain.ai/predefined-evaluations/response-quality/response-conciseness" target="_blank">Response Conciseness - UpTrain</a>
+• <a href="https://github.com/uptrain-ai/uptrain/blob/main/examples/checks/response_quality/conciseness.ipynb" target="_blank">uptrain-ai/uptrain (github.com)</a>
+• <a href="https://blog.uptrain.ai/revealing-the-hidden-truths-the-negative-impacts-of-hallucinations-in-large-language-models-llms/" target="_blank">UpTrain AI</a>
+        
+      </div>
+
+      <div id="matrQA_validity">
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrQA_hallucination')">Hallucination Degree</button>
+          <button class="button button2 active" onClick="clickCalled('matrQA_validity')">Context Validity</button>
+          <button class="button button2" onClick="clickCalled('matrQA_disregard')">Context Disregard</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+Evaluates how relevant the retrieved context is to the question specified.
+
+<b>Details: </b>
+Context relevance score measures if the retrieved context has enough information to answer the question being asked. A bad context reduces the chances of the model giving a relevant response to the question asked, and leads to hallucinations.
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+<b>question</b>  the query asked by user
+<b>context:</b> the information/ text retrieved and input to LLM to answer the question
+
+<b>Calculation:</b>
+  • Context relevance is evaluated by determining which of the following three cases apply for given inputs:
+    ○ The extracted context can answer the given query completely.
+    ○ The extracted context can give some relevant answer for the given query, but cannot answer it completely, or 
+    ○ The extracted context doesn't contain any information to answer the given query.
+  
+<b>Output: </b>
+  • The metric scores calculated for the examples show that a given task is scored 0, 0.5 or 1, based on the above.
+  
+<b>How to use it?</b>
+from qualitytrust.qnteval import EvaluateMetric
+eval_obj = EvaluateMetric()
+  
+Query = "Hello, I'm updating a patient's chart and need to administer care. Can you tell me if the patient has any known allergies that I should be aware of?"
+
+response = "Yes, the patient's chart lists allergies under the section "ALLERGIES" and indicates that they have allergies to medications, food, environmental factors, anesthetics, dyes, and rubber/latex/balloons."
+
+context = """have allergies and code status listed on the front of my chart to ensure my safety as a patient. 2. General Risks. The undersigned understands that the practice of
+medicine and surgery is not an exact science and that diagnosis and treatment may involve risks of injury or even death. No guarantees can or have been made | Personal Pharmacy Rx OTC
+NAME
+DOSE/FREQUENCY
+TIME OF LAST DOSE
+NA
+1
+Do you use herbs or other alternative medications: 4 Yes O No List: Ginko Occasionally Orientation to room: Call Light IV/telephone bathroom location lights meal 
+time visitor policy Personal belongings kept on person or at bedside: None Eye glasses Contacts Hearing aids Glass eye Walker Wheelchair Denture | ALLERGIES Medications Food Environmental Anesthetics Dyes Rubber/latex/balloons: Yes (No N/A Other HABITS Tobacco: Yes No per day Yrs. Chew: Yes No
+per day Yrs. Other Alcohol: Yes No per day yrs. Drug use/abuse: Yes No Type MEDICATIONS: Brought to hospital: Y N Sent Home: Y N To Pharmacy: Y N
+Personal Pharmacy Rx OTC
+NAME
+DOSE/FREQUENCY
+TIME OF LAST DOSE
+NA
+1 | Medication
+Dose
+Frequency
+Reason
+Last Dose
+New Med
+Has Rx
+Education Sheet
+Education/Handouts Given: YES INO MINA YES NO ZNA Special Instructions: Keep clean & dry YES NO NA YES NO BINA YES. NO DANA Primary Diagnosis
+Wound Care Daily Weight Smoking cessation Vaccines-information (Influenza, Pneumococcal NUTRITION Special Instructions: Diet Regular O YES INO Meals | 9. GI . 10. Steroid use 11. Flu Vaccine Current Q N 12. Pneumonia Vaccine current Y (N. if no give patient information. PULSE NKA 82 RESP 20 B/P 134/79 Ht.
+5'9". Wt 190.9 lbs 1. Diabetes 2. Epilepsy/seizure disorder 3. High Blood Pressure 4. Heart Disease 5. Kidney Disease 6. Cancer VITALS: TEMP 96.7 | Equipment/Supplies (Provider List) YES NO MINA Transportation Arranged Special Instructions: Patient Signature/Date: John Brown Person Giving
+Instructions/Date: Jemy Leurs Physician Signature/Date: 1 White Copy - Chart Yellow Copy - Patient DISCHARGE CHECKLIST: O ADMISSION CONSENT | :unselected: :unselected: :selected: :unselected: :unselected: :selected: :unselected: Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore,
+M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Community General Hospital Anytown, USA DISCHARGE INSTRUCTION SHEET
+Medication
+Dose
+Frequency
+Reason
+Last Dose
+New Med
+Has Rx
+Education Sheet | Time
+Medications Type, Route, Amt., Site
+Allergies: NKDA Nurses Notes Warming Blanket O :unselected:
+0920-
+LR
+SUCC in. IV site F Redness Jedema po (R) Feno
+POST ANESTHESIA
+RECOVERY SCORE
+ON ARRIV.
+15 MIN.
+30 MIN.
+45 MIN.
+60 MIN.
+DIS- CHG
+Able to move 4
+extremeties voluntarily
+or on command = 2
+Able to move 2
+extremeties voluntarily
+or on command = 1
+Able to move 0
+extremeties voluntarily"""
+
+eval_score = eval_obj.evaluate(query=query,response=response,context=context,metric="Context Validity")
+print(eval_score)
+
+
+<b>Sources:</b>
+  • <a href="https://docs.uptrain.ai/predefined-evaluations/context-awareness/context-relevance" target="_blank">Context Relevance - UpTrain</a>
+  • <a href="https://blog.uptrain.ai/a-comprehensive-guide-to-context-retrieval-in-llms-2/" target="_blank">A Comprehensive Guide to Context Retrieval in LLMs - UpTrain AI</a>
+  • <a href="https://github.com/uptrain-ai/uptrain/blob/main/examples/checks/context_awareness/relevance.ipynb" target="_blank">uptrain-ai/uptrain (github.com)</a> 
+      </div>
+
+      <div id="matrQA_disregard">
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrQA_hallucination')">Hallucination Degree</button>
+          <button class="button button2" onClick="clickCalled('matrQA_validity')">Context Validity</button>
+          <button class="button button2 active" onClick="clickCalled('matrQA_disregard')">Context Disregard</button>
+        </div>
+This metric has not been implemented in QT package.
+
+(This is an LLM Based Evaluator)
+
+Measures how complete the generated response is for the question specified, given the information provided in the context.
+
+<b>Details:</b> Context Disregard score measures if the generated response has insufficiently used the retrieved context to answer the question being asked. 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+<b>question:</b>  the query asked by user
+<b>context:</b> the information/ text retrieved and input to LLM to answer the question
+<b>response:</b> the response given by the model
+
+<b>Calculation:</b>
+  • Context disregard is evaluated by determining which of the following three cases apply for given inputs:
+    ○ The generated response doesn't incorporate any information present in the context. 
+    ○ The generated response incorporates some of the information present in the context, but misses some of the information in context which is relevant for answering the given question.
+    ○ The generated response incorporates all the relevant information present in the context.  
+  • Context disregard = 1- context utilization.
+  • Context disregard, when 0 indicates that response incorporates all the relevant information present in the context to answer the user question. This indicates hallucination is 0. 
+  • Context disregard, when 1, indicates that the response does not incorporate any information present in the context to answer the user query. This indicates hallucination is 1. 
+  
+<b>Output: </b>
+A values between 0 and 1.
+  
+<b>How to use it?</b>
+add code here
+
+<b>Sources:</b>
+  • <a href="https://docs.uptrain.ai/predefined-evaluations/context-awareness/context-utilization" target="_blank">Context Utilization - UpTrain</a>
+  • <a href="https://github.com/uptrain-ai/uptrain/blob/main/examples/checks/context_awareness/context_utlization.ipynb" target="_blank">uptrain-ai/uptrain (github.com)</a>
+      </div>
+<!-- Robustness -->
+      <div id="matrQA_syntax">
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrQA_syntax')">Syntax Sensitivity</button>
+          <button class="button button2" onClick="clickCalled('matrQA_lang')">Language Critique</button>
+          <button class="button button2" onClick="clickCalled('matrQA_aspect')">Aspect Critique</button>
+        </div>
+This metric has not been implemented in QT package due to dependency issues.
+
+<b>Definition:</b> This class of metrics assesses the NLP model's ability to handle input text that includes abbreviations and other changes to language. 
+
+<b>Details:</b> Metrics from the HELM library for robustness such as F1 score and exact match under perturbations. Also there are at least 10 metrics from  langtest to evaluate different aspects of language in a model string distance, case sensitivity and syntax sensitivity can be used. 
+
+<b>Library:</b> Langtest HELM
+
+<b>Calculation:</b> These metrics measure how the model performs with changes in the case, abbreviations in the input text. The goal is to understand how documents with typos or fully uppercased sentences affect the model's prediction performance compared to documents similar to those in the original training set.
+
+<b>Inputs:</b> Input text, Expected result
+
+<b>Output:</b> Score between 0 and 1.        
+      </div>
+
+      <div id="matrQA_lang">
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrQA_syntax')">Syntax Sensitivity</button>
+          <button class="button button2 active" onClick="clickCalled('matrQA_lang')">Language Critique</button>
+          <button class="button button2" onClick="clickCalled('matrQA_aspect')">Aspect Critique</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+The Language Critique metric scores machine generated response on multiple aspects : fluency, politeness, grammar, and coherence.
+
+<b>Details:</b> 
+  It involves analyzing how well the language used in a response conveys the intended message, whether it addresses the question or issue comprehensively, and if it is free from ambiguity or confusion.
+  • Grades the quality and effectiveness of language in a response, focusing on factors such as clarity, coherence, conciseness, and overall communication. 
+  • Language Evaluation helps analyse how well the language used in a response conveys the intended message, whether it addresses the question completely and if it is free from ambiguity or confusion. 
+  
+<b>Required Arguments: (your dataset must contain these fields)</b>
+<b>response:</b> the response given by the application
+
+<b>Calculation:</b>
+  • Considers features such as fluent, polite, grammatically correct and coherent, and determine one of the following three cases for evaluation:
+    ○ The response is highly rated on these features.
+    ○ The response is moderately rated on these features.
+    ○ The response is poorly rated on these features. 
+    
+<b>Output: </b>
+  • Scores between 0 to 1 are given to each response on fluency, grammar, politeness and coherence. 
+  •  The mean is the overall score for language critique
+  
+<b>How to use it?</b>
+from qualitytrust.qnteval import EvaluateMetric
+eval_obj = EvaluateMetric()
+  
+response = "Yes, the patient's chart lists allergies under the section "ALLERGIES" and indicates that they have allergies to medications, food, environmental factors, anesthetics, dyes, and rubber/latex/balloons."
+
+eval_score = eval_obj.evaluate(query=query,response=response,context=context,metric="Language Critique")
+
+print(eval_score)
+
+<b>Source:</b>
+  • <a href="https://docs.uptrain.ai/predefined-evaluations/language-quality/fluency-and-coherence" target="_blank">Language Features - UpTrain</a>
+  • <a href="https://github.com/uptrain-ai/uptrain/blob/main/examples/checks/language_features/language_critique.ipynb" target="_blank">uptrain-ai/uptrain (github.com)</a>
+        
+      </div>
+
+      <div id="matrQA_aspect">
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrQA_syntax')">Syntax Sensitivity</button>
+          <button class="button button2" onClick="clickCalled('matrQA_lang')">Language Critique</button>
+          <button class="button button2 active" onClick="clickCalled('matrQA_aspect')">Aspect Critique</button>
+        </div>
+This metric has not been implemented in QT package due to dependency issues.
+
+(This is an LLM Based Evaluator)
+
+This metric is designed to assess submissions based on predefined aspects such as harmlessness and correctness.
+
+<b>Details: </b>
+Users have the flexibility to define their own aspects for evaluating submissions according to their specific criteria. The output of aspect critiques is binary, indicating whether the submission aligns with the defined aspect or not. This evaluation is performed using the 'answer' as input.
+
+<b>Required Arguments:</b> (your dataset must contain these fields)
+response: the response given by the application
+
+<b>Calculation:</b>
+    ○ Critiques within the LLM evaluators evaluate submissions based on the provided aspect. 
+    ○ Predefined aspects are: harmfulness, maliciousness, coherence, correctness, conciseness.
+    
+<b>Output: </b>
+  • A score between 0 to 1
+  
+<b>How to use it?</b>
+add code here 
+
+<b>Source:</b>
+  • <a href="https://docs.ragas.io/en/v0.1.0/concepts/metrics/critique.html" target="_blank">Aspect Critique | Ragas</a>
+      </div>
+<!-- Efficiency -->
+      <div id="matrQA_Latency">
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrQA_Latency')">Latency</button>
+          <button class="button button2" onClick="clickCalled('matrQA_cost')">Cost</button>
+        </div>
+Logs the time taken for a GenAI application to generate a response from the moment it receives an input 
+until the output is provided.
+
+Helps assess the responsiveness and real-time performance of the application. This is an important aspect of GenAI applications that generate content in real-time. Latency allows the user to track a GenAI application and compare it with other applications or models. It captures the model's performance and responsiveness under different loads/ scenarios. 
+
+<b>Required Arguments:</b>
+the start time from the application and end time from the application to process a user query
+
+<b>Calculation: </b>
+    Latency = Time at output – Time at Input
+
+Output is the time in Milliseconds (ms)/ Seconds (s).
+
+<b>Example code:</b> (change the code)
+
+Latency can be passed as an argument to log response specific metric for an application. To calculate latency, you can refer below example, 
+
+# Function to measure latency for a single request 
+def measure_latency(input_text): 
+start_time = 
+end_time = 
+latency = end_time – start_time 
+
+print(latency)
+
+To log latency into Q&T, use the below code
+
+from app.qualitytrust.suite.log_metrics import LogMetrics
+
+log_metrics = LogMetrics()
+
+log_metrics.log_response_metrics(app_name="Prior Authorization", model_name="GPT Turbo 3.5",task="Q & A",session_id="123REQt1",case_id='E101',response = response ,context = context ,question = query,latency=10,cost=0.8)
+
+
+<b>Note - </b>
+  • Latency cannot be calculated in Q&T solution package. We can only log latency of LLM call completion in Q&T solution database.
+  • Make sure database and configuration setup is done before.  
+      </div>
+
+      <div id="matrQA_cost">
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrQA_Latency')">Latency</button>
+          <button class="button button2 active" onClick="clickCalled('matrQA_cost')">Cost</button>
+        </div>
+Measures the total for a GenAI application to generate a response from the moment it receives an input until the output is provided. This also includes the cost of evaluation of the response. 
+
+<b>Required Arguments:</b>
+number of tokens for response, token cost
+
+<b>Calculation: </b>
+This metric is calculated in the backend. Consider calculating the number of tokens for a response. Can be calculated using call back function. 
+
+<b>Cost of LLM inference</b> = (Number of input tokens * Rate of LLM for inputs) + (Number of out tokens * Rate of LLM for output)
+
+<b>Output</b> is the cost of the application in dollars 
+
+After calculation, to log calculated LLM cost in Q&T, see the example below:
+
+<b>How to use it?</b>
+from app.qualitytrust.suite.log_metrics import LogMetrics
+
+log_metrics = LogMetrics()
+
+log_metrics.log_response_metrics(app_name="Prior Authorization", model_name="GPT Turbo 3.5",task="Q & A",session_id="123REQt1",case_id='E101',response = response ,context = context ,question = query,latency=10,cost=0.8)        
+      </div>
+<!-- Bias -->
+      <div id="matrQA_gender">
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrQA_gender')">Gender and Racial Bias</button>
+          <button class="button button2" onClick="clickCalled('matrQA_honest')">Honest Score</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+This metric determines whether there is gender or racial bias in the GenAI application / LLM response. 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+<b>input:</b> The user query that is input to the application. 
+<b>response:</b> The actual output generated by the GenAI application/ LLM.
+
+<b>Calculation :</b>
+
+The BiasMetric is calculated according to the following equation: 
+
+      Bias = Number of biased opinions
+                              Total number of opinions
+  
+Step 1: Use an LLM to list all the opinions found in the response.
+Step 2: Use an LLM to classify each opinion as biased or not.
+
+<b>Definition of Bias :</b>
+  • <b>Gender Bias:</b> Discrimination based on a person's gender. 
+  • <b>Racial/ Ethnic Bias:</b> or discrimination based on a person's race, ethnicity or national origin. 
+  • <b>Geographical Bias:</b> Prejudice or preferential treatment based on where a person lives or comes from. 
+<b>Definition of Opinion:</b>
+  • Opinions are personal beliefs or judgements, not verifiable facts. 
+  • A mistaken statement
+  • Citation of a source, a reported statement, not a subjective opinion.
+
+<b>How to use this?</b>
+from qualitytrust.qnteval import EvaluateMetric
+eval_obj = EvaluateMetric()
+  
+query = "Could you please confirm Ms. Jane Doe's name and date of birth as they appear on the Certificate of Medical Necessity for her continuous glucose monitoring supplies?"
+
+response = "Ms. Jane Doe's name and date of birth on the Certificate of Medical Necessity for her continuous glucose monitoring supplies are as follows: Patient Name: Ms. Jane Doe Date of Birth: 05/10/1967"
+
+eval_score = eval_obj.evaluate(query=query,response=response,metrics="Gender and Racial Bias")
+
+print(eval_score)
+
+
+<b>Source: </b>
+<a href="https://docs.confident-ai.com/docs/metrics-bias" target="_blank">Bias | DeepEval</a>    
+      </div>
+
+      <div id="matrQA_honest">
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrQA_gender')">Gender and Racial Bias</button>
+          <button class="button button2 active" onClick="clickCalled('matrQA_honest')">Honest Score</button>
+        </div>
+(This is a rule based Evaluator)
+
+The Honest score aims to measure hurtful sentence completions in language models.
+
+<b>Details: </b>
+Uses HurtLex, a multilingual lexicon of hurtful language to evaluate the completions. Aim 
+is to quantify how many times a sentence is completed with a hurtful word and if there is any difference between groups such as genders. 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+<b>response:</b> The actual output generated by the GenAI application/ LLM.
+
+<b>Calculation: </b>
+  • Relies on a pre-built dictionary (HurtLex) to measure the hurtful nature of completions
+  • The metric matches the words generated by the LLM / response against the HurtLex lexicon to quantify the instances of hurtful completions.
+  • The metric assesses if there is a bias by comparing the frequency of hurtful completions across different groups (e.g., genders, sexual orientations).
+
+<b>Output: </b>
+A score between 0 and 1. 
+
+<b>How to use it?</b>
+from qualitytrust.qnteval import EvaluateMetric
+eval_obj = EvaluateMetric()
+  
+response = "The hernia sac measures 4.5 x 1.5 x 0.6 cm in widest dimensions."
+
+eval_score = eval_obj.evaluate(query=query,response=response,context=context,metric="Honest Score")
+
+print(eval_score)
+
+<b>Source:</b>
+  • <a href="https://huggingface.co/spaces/evaluate-measurement/honest" target="_blank">Honest - a Hugging Face Space by evaluate-measurement </a>
+  • <a href="https://aclanthology.org/2021.naacl-main.191.pdf" target="_blank">HONEST: Measuring Hurtful Sentence Completion in Language Models (aclanthology.org)</a>
+        
+      </div>
+<!-- Toxicity -->
+      <div id="matrQA_toxic">
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrQA_toxic')">Toxic Opinions</button>
+          <button class="button button2" onClick="clickCalled('matrQA_abuse')">Abusive Speech</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+This metric determines whether there is toxicity in the GenAI application / LLM response. Toxicity in the application response includes personal attack, mockery, threats or intimidation. 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+<b>input:</b> The user query that is input to the application. 
+<b>response:</b> The actual output generated by the GenAI application/ LLM.
+
+<b>Calculation :</b>
+
+The ToxicityMetric is calculated according to the following equation: 
+
+    Toxicity = Number of toxic opinions
+                            Total number of opinions
+  
+Step 1: Use an LLM all the opinions found in the response.
+Step 2: Use an LLM to classify each opinion as toxic or not.
+
+<b>Definition of Toxic Opinion:</b>
+  • Personal Attacks: Insults or hostile comments aimed at degrading the individual rather than addressing their ideas.
+  • Mockery: Sarcasm or ridicule used to belittle someone.
+  • Hate: Expressions of intense dislike or disgust, often targeting someone's identity or beliefs.
+  • Dismissive Statements: Comments that invalidate the person's viewpoint or shut down discussion without engaging constructively.
+  • Threats or Intimidation: Statements intending to frighten, control, or harm someone, either physically or emotionally.
+  
+<b>Output: </b>
+  The percentage of toxic opinions in the response. A number between 0 and 1. 
+
+<b>Example: </b>
+
+#Input data to calculate this metric 
+
+from qualitytrust.qnteval import EvaluateMetric
+
+eval_obj = EvaluateMetric()
+  
+query="What are the limitations that substantially affect Ms. Jane Doe's daily life due to her diabetes complications?"
+
+response = "Ms. Jane Doe's diabetes complications, such as neuropathy or retinopathy, may cause nerve damage/vision loss/other limitations and substantially limit her ability to walk/see/care for herself/perform other life activities."
+
+eval_score = eval_obj.evaluate(query=query,response=response,metrics="Toxic Opinions")
+
+
+print(eval_score)
+
+<b>Source: </b>
+<a href="https://docs.confident-ai.com/docs/metrics-toxicity" target="_blank">Toxicity | DeepEval - The Open-Source LLM Evaluation Framework (confident-ai.com)</a>
+        
+      </div>
+
+      <div id="matrQA_abuse">
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrQA_toxic')">Toxic Opinions</button>
+          <button class="button button2 active" onClick="clickCalled('matrQA_abuse')">Abusive Speech</button>
+        </div>
+(This is an LLM based evaluator)
+
+The toxicity measurement aims to quantify the toxicity of the input texts using a pretrained hate speech classification model. The default model used is roberta-hate-speech-dynabench-r4. In this model, ‘hate’ is defined as “abusive speech targeting specific group characteristics, such as ethnic origin, religion, gender, or sexual orientation.” 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+
+<b>Input Text:</b> The actual output generated by the GenAI application/ LLM. Is a collection of sentences.
+
+<b>Calculation: </b>
+Returns the maximum toxicity value computed for the sentences in the input text. We can also choose to compute the ratio of toxic sentences in the input text. 
+
+<b>Output:</b>
+Is a list of toxicity scores, one for each sentence in 'input text'. 
+or
+Returns the maximum toxicity over all the scores on the input text. 
+or
+Returns the percentage of predictions with toxicity score >= 0.5
+
+<b>Example:</b> Also does this metric need context and query? The metric definition does not specify!
+
+from qualitytrust.qnteval import EvaluateMetric
+eval_obj = EvaluateMetric()
+  
+response = "The hernia sac measures 4.5 x 1.5 x 0.6 cm in widest dimensions."
+
+eval_score = eval_obj.evaluate(query=query,response=response,context=context,metric="Abusive Speech")
+
+print(eval_score)
+
+<b>Source:</b>
+<a href="https://github.com/huggingface/evaluate/tree/main/measurements/toxicity" target="_blank">evaluate/measurements/toxicity at main · huggingface/evaluate (github.com)</a>
+        
+        
       </div>
 
     </div>

@@ -186,7 +186,7 @@ body.dark {
 .submenu_item, .submenu {
   cursor: pointer;
 }
-.submenu, .childmenu {
+.submenu {
   display: none;
 }
 .submenu_item .arrow-right, .submenu .arrow-right {
@@ -198,17 +198,15 @@ body.dark {
 .sidebar.close .submenu {
   display: none;
 }
-.show_submenu ~ .submenu, .show_childmenu ~ .childmenu {
+.show_submenu ~ .submenu{
   display: block;
 }
-.show_submenu .arrow-right, .show_childmenu .arrow-right {
+.show_submenu .arrow-right {
   transform: rotate(90deg);
 }
 .submenu .sublink {
-  padding: 15px 15px 15px 52px;
-}
-.childmenu .sublink {
-  padding: 15px 15px 15px 72px;
+  padding: 10px 15px 10px 65px;
+  font-size: 15px;
 }
 .bottom_content {
   position: fixed;
@@ -295,11 +293,16 @@ table{
   margin-bottom: 20px;
 }
 
+.btnQA_cont{
+  white-space: normal;
+  padding: unset !important;
+}
+
 .button {
   background-color: #04AA6D; /* Green */
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -307,21 +310,22 @@ table{
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .button2 {
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
+  display: inline-block;
 }
 
-.button2:hover {
+.button2:hover, .button2.active{
   background-color: #008CBA;
   color: white;
 }
 
-#busRel, #relUC, #preReq, #packIns, #errRes, #llm, #dbConf, #setDb, #qtLib, #matrCost, #matrQA_exact,
-#matrQA_rouge, #matrQA_factual{
+#maincontent > div{
   white-space: break-spaces;
 }
 
