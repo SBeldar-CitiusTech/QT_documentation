@@ -64,6 +64,11 @@ $(function () {
     $("#maincontent > div").hide();
     $("#response").show();
   })
+
+  $(".menu_model_benchmarking").on("click", function(e){
+    $("#maincontent > div").hide();
+    $("#contModelBench").show();
+  })
   
 });
 

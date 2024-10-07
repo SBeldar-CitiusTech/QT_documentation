@@ -137,7 +137,7 @@
               <a href="#" class="nav_link sublink matrCost" onClick="clickCalled('matrCost')">Cost</a>
             </ul>
           </li>
-
+<!-- Response_QA Start -->
           <li class="item">
             <div href="#" class="nav_link submenu_item">
               <span class="navlink_icon">
@@ -175,7 +175,96 @@
               <span class="nav_link sublink matrQA_toxic" onClick="clickCalled('matrQA_toxic')">Toxicity</span>
             </ul>
           </li>
-          
+<!-- Response_QA End -->
+<!-- Response_summarization Start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-circle"></i>
+              </span>
+              <span class="navlink">Response_Summarize</span>
+              <i class="fa-solid fa-chevron-right arrow-right"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <span class="nav_link sublink matrSum_agreement" onClick="clickCalled('matrSum_agreement')">Accuracy</span>
+            </ul>
+
+            <ul class="menu_items submenu">
+              <span class="nav_link sublink matrSum_supert" onClick="clickCalled('matrSum_supert')">Relevancy</span>
+            </ul>
+
+            <ul class="menu_items submenu">
+              <span class="nav_link sublink matrSum_hallucination" onClick="clickCalled('matrSum_hallucination')">Hallucination</span>
+            </ul>
+
+            <ul class="menu_items submenu">
+              <span class="nav_link sublink matrSum_coherance" onClick="clickCalled('matrSum_coherance')">Robustness</span>
+            </ul>
+
+            <ul class="menu_items submenu">
+              <span class="nav_link sublink matrSum_cost" onClick="clickCalled('matrSum_cost')">Efficiency</span>
+            </ul>
+
+            <ul class="menu_items submenu">
+              <span class="nav_link sublink matrSum_gender" onClick="clickCalled('matrSum_gender')">Bias</span>
+            </ul>
+
+            <ul class="menu_items submenu">
+              <span class="nav_link sublink matrSum_toxic" onClick="clickCalled('matrSum_toxic')">Toxicity</span>
+            </ul>
+          </li>
+<!-- Response_summarization End -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-circle"></i>
+              </span>
+              <span class="navlink">Search</span>
+              <i class="fa-solid fa-chevron-right arrow-right"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink matrHitrate" onClick="clickCalled('matrHitrate')">Hit Rate</a>
+            </ul>
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink matrBinary" onClick="clickCalled('matrBinary')">Binary Preference</a>
+            </ul>
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink matrSearch" onClick="clickCalled('matrSearch')">Search Reliability</a>
+            </ul>
+          </li>
+
+          <li class="item">
+            <div href="#" class="nav_link submenu_item matrData" onClick="clickCalled('matrData')">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-circle"></i>
+              </span>
+              <span class="navlink">Data Quality</span>
+              <!-- <i class="fa-solid fa-chevron-right arrow-right"></i> -->
+            </div>
+          </li>
+
+          <li class="item">
+            <div href="#" class="nav_link submenu_item matrClassification" onClick="clickCalled('matrClassification')">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-circle"></i>
+              </span>
+              <span class="navlink">Classification</span>
+              <!-- <i class="fa-solid fa-chevron-right arrow-right"></i> -->
+            </div>
+          </li>
+
+          <li class="item">
+            <div href="#" class="nav_link submenu_item matrExperiment" onClick="clickCalled('matrExperiment')">
+              <span class="navlink_icon">
+                <i class="fa-solid fa-circle"></i>
+              </span>
+              <span class="navlink">Experiment Tracking</span>
+              <!-- <i class="fa-solid fa-chevron-right arrow-right"></i> -->
+            </div>
+          </li>
+
         </ul>
         <ul class="menu_items">
           <div class="menu_title menu_model_benchmarking"></div>
@@ -199,19 +288,23 @@
     </nav>
     <div id="maincontent">
       <div id="default">
+        <h2 class="pageTitle">Quality & Trust Solution</h2>
 CitiusTech's Healthcare GenAI Quality & Trust Solution is a software-based framework to design, develop, integrate, and monitor quality and trust of GenAI applications in healthcare to drive enterprise adoption and scaling.<br><br>QT solution is an evaluator to assess the performance and effectiveness of applications utilizing LLMs for the tasks: question answering, summarization, classification and NER & entity extraction. Also evaluates the search and retrieval part of a RAG application. Perform reference free evaluations of parts of the RAG pipeline. These metrics can be a part of CI/CD pipelines for improving prompts for entity extraction, response quality, search quality and application quality during development.
       </div>
 
       <div id="qts">
+        <h2 class="pageTitle">Quality & Trust Solution</h2>
 CitiusTech's Healthcare GenAI Quality & Trust Solution is a software-based framework to design, develop, integrate, and monitor quality and trust of GenAI applications in healthcare to drive enterprise adoption and scaling.<br><br>QT solution is an evaluator to assess the performance and effectiveness of applications utilizing LLMs for the tasks: question answering, summarization, classification and NER & entity extraction. Also evaluates the search and retrieval part of a RAG application. Perform reference free evaluations of parts of the RAG pipeline. These metrics can be a part of CI/CD pipelines for improving prompts for entity extraction, response quality, search quality and application quality during development.
       </div>
 
       <div id="intro">
+        <h2 class="pageTitle">Introduction</h2>
 <b>Citiustech Healthcare GENAI Quality & Trust (Q&T) Framework</b> is a software-based solution designed to ensure the quality, reliability, and trustworthiness of Generative AI (GENAI) applications in the healthcare industry. As organizations increasingly adopt AI-driven solutions, particularly Large Language Models (LLMs), it becomes crucial to monitor and assess their performance. The Q&T Framework is built to evaluate applications that leverage LLMs for critical tasks like question answering, summarization, classification, Named Entity Recognition (NER), and entity extraction.
 <br><br> framework is pivotal for organizations aiming to implement and scale GENAI applications within healthcare ecosystems. By integrating the Q&T Framework into the Continuous Integration/Continuous Deployment (CI/CD) pipeline, healthcare organizations can monitor, improve, and optimize the quality of AI-generated outputs, ensuring regulatory compliance, enhanced accuracy, and ultimately better patient outcomes.        
       </div>
 
       <div id="busRel">
+        <h2 class="pageTitle">Business Relevance</h2>
 Generative AI is revolutionizing healthcare, from automating administrative tasks to assisting with clinical decision-making. However, its successful enterprise-wide adoption hinges on ensuring the quality, accuracy, and trustworthiness of AI-driven applications. The Citiustech Healthcare GENAI Quality & Trust Framework addresses this need by providing a structured, evaluative approach that organizations can use to: <br>
 • <b>Mitigate Risks:</b> Ensure that AI models are accurate, transparent, and ethical, thereby mitigating risks associated with incorrect or biased outputs in healthcare scenarios.
 • <b>Enhance Trust:</b> Build trust among healthcare providers and patients by ensuring that AI-driven decisions are reliable and aligned with healthcare standards and regulations.
@@ -221,6 +314,7 @@ Generative AI is revolutionizing healthcare, from automating administrative task
       </div>
 
       <div id="relUC">
+        <h2 class="pageTitle">Relevant Use Cases</h2>
 <i>1. Question Answering for Clinical Decision Support</i>
 <b>• Challenge:</b> Healthcare professionals often rely on AI models to provide fast, accurate answers to complex medical questions based on large datasets of clinical knowledge. Ensuring the quality and reliability of these answers is critical for patient safety.
 <b>• Solution:</b> The Q&T Framework evaluates the effectiveness of LLMs in clinical question-answering tasks, ensuring that responses are accurate, relevant, and free from bias. Continuous evaluation helps refine model responses over time, improving clinical decision-making.
@@ -244,6 +338,7 @@ How the Q&T Framework Supports Development and Scaling
       </div>
 
       <div id="preReq">
+        <h2 class="pageTitle">Prerequisite</h2>
 • Python Version 3.10.* to 3.11.*
 
 • MySQL Workbench
@@ -254,6 +349,7 @@ How the Q&T Framework Supports Development and Scaling
       </div>
 
       <div id="packIns">
+        <h2 class="pageTitle">Package Installation</h2>
 <b>Steps:-</b>
 
 <b>Step 1:</b> Get access to Quality & Trust gitlab repository. Download Q&T package wheel file from https://git/generativeai/genai-trust-framework/-/tree/QT_backend/dist
@@ -269,6 +365,7 @@ All the libraries will be installed with dependencies.
       </div>
 
       <div id="errRes">
+        <h2 class="pageTitle">Error Resolution</h2>
 Error : Visual Build Tool error
 Solution : Download and install visual C++ build tool
 
@@ -277,6 +374,7 @@ Solution : Downgrade/upgrade common packages.
       </div>
 
       <div id="llm">
+        <h2 class="pageTitle">LLM Model Config</h2>
 <b>Environment Variables</b>
 There are two types of metrics in the Q&T solution package: reference based and reference free metrics. Reference based metrics need a ground truth against which to evaluate the application response. Reference free metrics in the Q&T solution are evaluated using LLMs. These metrics align with human expectations and can be computed using any LLM. An LLM is a Judge for evaluation of these non-ground truth based/ reference free metrics. The user can switch between different models or even open source LLMs by providing the model details. Following are the methods to set up / configure the models and to setup environment variables.
 
@@ -317,6 +415,7 @@ Run the following commands to configure your environment to use AzureOpenAI mode
       </div>
 
       <div id="dbConf">
+        <h2 class="pageTitle">Database Config</h2>
 To integrate Q&T with any application, we need database to store evaluation scores that can be visualized in dashboard. Hence, we need to set environment variables to configure
 
 <b>For mysql database:</b>
@@ -364,6 +463,7 @@ If none of the above databases is used, by default sqlite database is used and q
       </div>
 
       <div id="setDb">
+        <h2 class="pageTitle">How to setup database and use library?</h2>
 <b>How to setup database</b>
 
 • Install any of the database tools like postgres, MySQL workbench/server, MS SQL, Oracle etc. 
@@ -419,7 +519,12 @@ log_metadata.log(metadata_path="app/qualitytrust/config/metric_config.yml")
 
       </div>
 
+      <div id="mmc">
+        <h2 class="pageTitle">Metric / Metadata Config</h2>
+      </div>
+
       <div id="qtLib">
+        <h2 class="pageTitle">How to use QualityTrust library ?</h2>
 Here is an example to showcase how you can use the library to evaluate various metrics such as Factual Accuracy, Response Relevance, Response Completeness, Hallucination Degree, Context Disregard, Language Critique, Gender and Racial Bias, Honest Score, Toxic Opinions. 
 
 <b>We have a dict data containing query, response and context -</b>
@@ -444,10 +549,12 @@ score = Evaluate.evaluate_dataset(dataset=data,metrics=["Factual Accuracy","Resp
       </div>
 
       <div id="matrIntro">
+        <h2 class="pageTitle">Introduction</h2>
 <img src="images/matrIntro.png">
       </div>
 
       <div id="matrCost">
+        <h2 class="pageTitle">Cost</h2>
 Measures the total cost for a GenAI application. The cost of a Generative AI application involves expenses related to application usage such as the following:<br>
 <b>Compute resources:</b> CPU, memory, or GPU hours used by the application for generating output.
 <b>Infrastructure costs:</b> If running the GenAI model locally using cloud services like AWS, Google Cloud Platform, or Azure, consider their pricing tiers and compute instance rates.
@@ -475,6 +582,7 @@ Output is the cost of the application in dollars
       </div>
 <!-- Accuracy -->
       <div id="matrQA_exact">
+        <h2 class="pageTitle">Accuracy</h2>
         <div class="btnQA_cont">
           <button class="button button2 active" onClick="clickCalled('matrQA_exact')">Exact Match</button>
           <button class="button button2" onClick="clickCalled('matrQA_rouge')">ROUGE Score</button>
@@ -520,6 +628,7 @@ print(eval_score)
       </div>
 
       <div id="matrQA_rouge">
+        <h2 class="pageTitle">Accuracy</h2>
         <div class="btnQA_cont">
           <button class="button button2" onClick="clickCalled('matrQA_exact')">Exact Match</button>
           <button class="button button2 active" onClick="clickCalled('matrQA_rouge')">ROUGE Score</button>
@@ -576,6 +685,7 @@ print(eval_score)
       </div>
 
       <div id="matrQA_factual">
+        <h2 class="pageTitle">Accuracy</h2>
         <div class="btnQA_cont">
           <button class="button button2" onClick="clickCalled('matrQA_exact')">Exact Match</button>
           <button class="button button2" onClick="clickCalled('matrQA_rouge')">ROUGE Score</button>
@@ -627,6 +737,7 @@ print(eval_score)
       </div>
 <!-- Relevancy -->
       <div id="matrQA_complete">
+        <h2 class="pageTitle">Relevancy</h2>
         <div class="btnQA_cont">
           <button class="button button2 active" onClick="clickCalled('matrQA_complete')">Response Completeness</button>
           <button class="button button2" onClick="clickCalled('matrQA_response')">Response Relevance</button>
@@ -673,6 +784,7 @@ print(eval_score)
       </div>
 
       <div id="matrQA_response">
+        <h2 class="pageTitle">Relevancy</h2>
         <div class="btnQA_cont">
           <button class="button button2" onClick="clickCalled('matrQA_complete')">Response Completeness</button>
           <button class="button button2 active" onClick="clickCalled('matrQA_response')">Response Relevance</button>
@@ -713,6 +825,7 @@ print(eval_score)
       </div>
 
       <div id="matrQA_text">
+        <h2 class="pageTitle">Relevancy</h2>
         <div class="btnQA_cont">
           <button class="button button2" onClick="clickCalled('matrQA_complete')">Response Completeness</button>
           <button class="button button2" onClick="clickCalled('matrQA_response')">Response Relevance</button>
@@ -739,6 +852,7 @@ Example:
       </div>
 
       <div id="matrQA_answer">
+        <h2 class="pageTitle">Relevancy</h2>
         <div class="btnQA_cont">
           <button class="button button2" onClick="clickCalled('matrQA_complete')">Response Completeness</button>
           <button class="button button2" onClick="clickCalled('matrQA_response')">Response Relevance</button>
@@ -775,6 +889,7 @@ add code here
       </div>
 <!-- Hallucination -->
       <div id="matrQA_hallucination">
+        <h2 class="pageTitle">Hallucination</h2>
         <div class="btnQA_cont">
           <button class="button button2 active" onClick="clickCalled('matrQA_hallucination')">Hallucination Degree</button>
           <button class="button button2" onClick="clickCalled('matrQA_validity')">Context Validity</button>
@@ -832,6 +947,7 @@ print(eval_score)
       </div>
 
       <div id="matrQA_validity">
+        <h2 class="pageTitle">Hallucination</h2>
         <div class="btnQA_cont">
           <button class="button button2" onClick="clickCalled('matrQA_hallucination')">Hallucination Degree</button>
           <button class="button button2 active" onClick="clickCalled('matrQA_validity')">Context Validity</button>
@@ -934,6 +1050,7 @@ print(eval_score)
       </div>
 
       <div id="matrQA_disregard">
+        <h2 class="pageTitle">Hallucination</h2>
         <div class="btnQA_cont">
           <button class="button button2" onClick="clickCalled('matrQA_hallucination')">Hallucination Degree</button>
           <button class="button button2" onClick="clickCalled('matrQA_validity')">Context Validity</button>
@@ -973,6 +1090,7 @@ add code here
       </div>
 <!-- Robustness -->
       <div id="matrQA_syntax">
+        <h2 class="pageTitle">Robustness</h2>
         <div class="btnQA_cont">
           <button class="button button2 active" onClick="clickCalled('matrQA_syntax')">Syntax Sensitivity</button>
           <button class="button button2" onClick="clickCalled('matrQA_lang')">Language Critique</button>
@@ -994,6 +1112,7 @@ This metric has not been implemented in QT package due to dependency issues.
       </div>
 
       <div id="matrQA_lang">
+        <h2 class="pageTitle">Robustness</h2>
         <div class="btnQA_cont">
           <button class="button button2" onClick="clickCalled('matrQA_syntax')">Syntax Sensitivity</button>
           <button class="button button2 active" onClick="clickCalled('matrQA_lang')">Language Critique</button>
@@ -1038,6 +1157,7 @@ print(eval_score)
       </div>
 
       <div id="matrQA_aspect">
+        <h2 class="pageTitle">Robustness</h2>
         <div class="btnQA_cont">
           <button class="button button2" onClick="clickCalled('matrQA_syntax')">Syntax Sensitivity</button>
           <button class="button button2" onClick="clickCalled('matrQA_lang')">Language Critique</button>
@@ -1070,6 +1190,7 @@ add code here
       </div>
 <!-- Efficiency -->
       <div id="matrQA_Latency">
+        <h2 class="pageTitle">Efficiency</h2>
         <div class="btnQA_cont">
           <button class="button button2 active" onClick="clickCalled('matrQA_Latency')">Latency</button>
           <button class="button button2" onClick="clickCalled('matrQA_cost')">Cost</button>
@@ -1114,6 +1235,7 @@ log_metrics.log_response_metrics(app_name="Prior Authorization", model_name="GPT
       </div>
 
       <div id="matrQA_cost">
+        <h2 class="pageTitle">Efficiency</h2>
         <div class="btnQA_cont">
           <button class="button button2" onClick="clickCalled('matrQA_Latency')">Latency</button>
           <button class="button button2 active" onClick="clickCalled('matrQA_cost')">Cost</button>
@@ -1141,6 +1263,7 @@ log_metrics.log_response_metrics(app_name="Prior Authorization", model_name="GPT
       </div>
 <!-- Bias -->
       <div id="matrQA_gender">
+        <h2 class="pageTitle">Bias</h2>
         <div class="btnQA_cont">
           <button class="button button2 active" onClick="clickCalled('matrQA_gender')">Gender and Racial Bias</button>
           <button class="button button2" onClick="clickCalled('matrQA_honest')">Honest Score</button>
@@ -1190,6 +1313,7 @@ print(eval_score)
       </div>
 
       <div id="matrQA_honest">
+        <h2 class="pageTitle">Bias</h2>
         <div class="btnQA_cont">
           <button class="button button2" onClick="clickCalled('matrQA_gender')">Gender and Racial Bias</button>
           <button class="button button2 active" onClick="clickCalled('matrQA_honest')">Honest Score</button>
@@ -1230,6 +1354,7 @@ print(eval_score)
       </div>
 <!-- Toxicity -->
       <div id="matrQA_toxic">
+        <h2 class="pageTitle">Toxicity</h2>
         <div class="btnQA_cont">
           <button class="button button2 active" onClick="clickCalled('matrQA_toxic')">Toxic Opinions</button>
           <button class="button button2" onClick="clickCalled('matrQA_abuse')">Abusive Speech</button>
@@ -1285,6 +1410,7 @@ print(eval_score)
       </div>
 
       <div id="matrQA_abuse">
+        <h2 class="pageTitle">Toxicity</h2>
         <div class="btnQA_cont">
           <button class="button button2" onClick="clickCalled('matrQA_toxic')">Toxic Opinions</button>
           <button class="button button2 active" onClick="clickCalled('matrQA_abuse')">Abusive Speech</button>
@@ -1322,6 +1448,2319 @@ print(eval_score)
 <a href="https://github.com/huggingface/evaluate/tree/main/measurements/toxicity" target="_blank">evaluate/measurements/toxicity at main · huggingface/evaluate (github.com)</a>
         
         
+      </div>
+
+      <div id="matrSum_agreement">
+        <h2 class="pageTitle">Accuracy</h2>
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrSum_agreement')">Agreement Score</button>
+          <button class="button button2" onClick="clickCalled('matrSum_coverage')">Coverage Score</button>
+          <button class="button button2" onClick="clickCalled('matrSum_summa')">SummaCConv</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+Agreement score metric compares information in a summary and the source document and gives a score for agreement between the summary and the source document.  
+
+This evaluator compares information between a source document and an LLM generated summary. The evaluator then generates close ended questions from the summary. It compares the answers from the summary and the document. Agreement Score is the percentage of questions that had identical answers for both summary and document.
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+
+<b>document:</b> The source document that contains the information that should be summarized.
+<b>response/ summary:</b> The LLM generated summary of the source document.
+  
+<b>Calculation (include input, calculation/ formula, output details)</b>
+
+  The evaluator compares the information between a source document and an LLM generated summary.
+  
+  Step 1: Generates N closed-ended (Y/N/Unknown) questions from the summary information.
+  Step 2: QuestionAnswerer LLM is used to answer each question given ONLY the summary as context.
+  Step 3: QuestionAnswerer LLM is used to answer each question given ONLY the source document as context.
+  Step 4: Compare the answers from the summary and document for each question to find contradictions.
+
+<b>Output: </b>
+  The percentage of questions that had identical answers for both contexts. A number between 0 and 1. 
+  
+<b>Algorithm Elaborated</b>
+
+<img src="images/matrSum_agreement.png">
+
+<b>How to use it?</b>
+from qualitytrust.qnteval import EvaluateMetric
+eval_obj = EvaluateMetric()
+  
+context = "4-part set) or Order Form 1266/5 (if 5-part set) PHYSICIAN'S ORDERS NAME Name: John Brown ROOM NO. Account No: 12345 (ADDRESS) Attending
+Physician: Jeff T. Moore, M.D. Consulting Physician HOSP. NO.
+DIET
+AGE
+WEIGHT
+SEX
+  
+DIAGNOSIS PHYSICIAN Adm Date: 11/12/1999 DOB: 09/10/44 DRUG ALLERGIES
+Date & Time
+DO NOT USE THIS
+SHEET" UNLESS A RED NUMBER SHOWS
+11/11 199
+ONPO Right Ing
+Q. CBC + urine PATIENT NAME
+BED NO
+Brown, John
+238B
+Kale Ravis AV (Kd) ( ) ( ) ( ) ) ( ) Community General Hospital Anytown, USA Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D.
+Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Graphics Flowsheet 1
+DATE: 11 Admit 1
+TEMPERATURE
+104
+:unselected:
+:unselected: Page 2 of 4 Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 D =
+Data A = Action R = Response
+SHIFT INIT
+NURSE SIGNATURE
+SHIFT INIT
+NURSE SIGNATURE
+13fc
+L. Carradine
+heura repair RLQ - Abd Sort c
+banned Sounds - Dsy dy - Voiding knowledge. Attending Physician Date :selected: :unselected: :unselected: :unselected: :unselected: :unselected: :unselected: :unselected: :unselected: HR3
+Community General Hospital Anytown, USA CONSENT TO TREATMENT AND CONDITIONS OF ADMISSION Name: John Brown Account No: 12345 Attending you are acknowledging that you have received a copy of our Notice of Privacy Practices. Patient's Name: (please print) John Brown Patient, Parent, Guardian,
+Agent: Date: 11.10.99 Time: Witness: Date: Time: 322 If other than patient, indicate relationship: Guarantee of Account by Person other than Patient: I agree to um
+0035
+fra completed. - : en
+0530
+Pre-Op
+OR called for pre-op Kg
+Precip quem as ordered. See MAR. -
+KC
+0410
+To OR via stretcher the chart k.
+Form #8002088 (Rev. 1/98) Page 3 of 4 Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician 24 HOUR 1266/4 (if 4-part set) or Order Form 1266/5 (if 5-part set) PHYSICIAN'S ORDERS NAME Name: John Brown Account No: 12345 ROOM NO (ADDRESS)
+Attending Physician: Jeff T. Moore, M.D. Consulting Physician HOSP. NO.
+DIET
+AGE
+WEIGHT
+SEX PM
+AM
+PM
+BATHING
+ORAL CARE
+PERICARE
+LOTION RUB
+ACTIVIY
+REPOSITION
+EDGE OF BED
+UP IN CY
+AMBULANEN
+62-6019-27.0602 :unselected: :unselected: :unselected: :unselected: Community General Hospital Anytown, USA Name: John Brown Account No: 12345
+Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 PATIENT ADMISSION ASSESSMENT Date 11/11/99 Time :unselected:
+Page 2 of 4 Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 D =
+Data A = Action R = Response
+SHIFT INIT NURSE SIGNATURE SHIFT INIT NURSE SIGNATURE
+93 M Dally Madisc RN TIME FOCUS D, A, R FOCUS NOTES 7400
+admission 1266/4 (if 4-part set) or Order Form 1266/5 (if 5-part set) PHYSICIAN'S ORDERS NAME ROOM NO (ADDRESS) HOSP. NO.
+DIET
+AGE
+WEIGHT
+SEX
+DIAGNOSIS PHYSICIAN 1 Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB:
+09/10/44 DRUG ALLERGIES
+Date & Time
+Another brand of drug
+Identical in form and content may be dispensed unless FOCUS NOTES
+heura repair RLQ - Abd Sort c
+banned Sounds - Dsy dy - Voiding
+95- Appetito
+Am Care quien - OU B.
+Amb in hall ) Accepting diet will-t
+Requested faim med en RLA ducesonal Portal 10 mg given TO. Will cont monitor Dish Home reyost Pari P.I)
+1130
+Ja Trop IJames po quia
+Howaura
+Form #8002088 (Rev. 1/98) Page 3 of 4 :unselected:
+Page 2 of 4 Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 D =
+Data A = Action R = Response
+SHIFT INIT
+NURSE SIGNATURE
+SHIFT INIT
+NURSE SIGNATURE
+3D
+Kim Danielsen
+TamFandomRN
+13PC
+Diana Camp CON
+TIME
+FOCUS NURSING CARE FLOW SHEET DATE: 11/12/99 1 1 SPACES LEFT BLANK INDICATE CONDITION NOT APPLICABLE AT THAT TIME
+SHIFT INIT
+NURSE SIGNATURE
+SHIFT INIT
+NURSE SIGNATURE
+750
+I Contin RNC
+1.78
+Tom Sander Rd
+Adm Date: 11/12/1999 DOB: 09/10/44 3-" AT andria Shands RN
+ASSESSMENT
+0020 :unselected: :unselected: :selected: :unselected: :unselected: :selected: :unselected: Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore,
+M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Community General Hospital Anytown, USA DISCHARGE INSTRUCTION SHEET
+Medication Dose Frequency Reason Last Dose New Med Has Rx Education Sheet NURSE SIGNATURE
+93 M
+Dally Madisc RN
+Rt. admitted for surgery in A. M for RIH
+Rt. alent and cliented. Reszeven and
+and unloved. VSS Family et bedside
+no significant hx. present. Bit hermin repos in post. distress noted. See admission
+assessment further information um
+0035
+A 40 H2 25.0 mm/s |10.0 mm/mV 4 by 2.5s + 1 rhythm ld MAC 8 002B 12SLtm v250 Community General Hospital Anytown, USA RADIOLOGY REPORT Page 1 of
+1 Name: John Brown DOB: 09/10/44 Ordering Physician: Jeff T. Moore, M.D. Exam date: 11/10/1999 Radiology Number: 506024 Account Number: 12345 :unselected: :unselected: :selected: :selected: :unselected: :selected: :selected: :selected: Name: John Brown Account No: 12345 Attending Physician: Jeff T.
+Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 24 HOUR NURSING CARE FLOW SHEET DATE: 11/11/99 SPACES LEFT BLANK
+INDICATE CONDITION NOT APPLICABLE AT THAT TIME
+SHIFT INIT NURSE SIGNATURE SHIFT INIT
+NURSE SIGNATURE HR1 Sample Inpatient Health Record This record was created for educational purposes only. The information in this sample record, though clinically accurate, is
+fictitious. Any resemblance to real people or to any actual clinical case is merely coincidental. AHâ– MA Continuing Education Career-building Resources HR2 on Monday. D: 11/13/1999 T: 11/16/1999 wms cc: Jeff T. Moore, M.D. Tom W. Smith, M.D. Community General Hospital Anytown, USA HISTORY AND
+PHYSICAL Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Page 1 hernia. Denies chest complaints/SOB. D: 11/10/1999 T: 11/10/1999 mls Chuck Hamlin, M.D. Radiologist Chuck Hamlin Community General Hospital Anytown,
+USA RADIOLOGY REPORT Page 1 of 1 EXAM: Abdomen KUB portable 1 vw HISTORY: Postoperative. Inguinal hernia. Name: John Brown DOB: 09/10/44 0600
+count vilaband, AD inpt. status
+Form #8002088 (Rev. 1/98) Page 3 of 4 Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date:
+11/12/1999 DOB: 09/10/44 24 HOUR NURSING CARE FLOW SHEET DATE: NOV 1 3 1999 SPACES LEFT BLANK INDICATE CONDITION NOT APPLICABLE
+AT THAT TIME SHIFT INIT Insured's Name John Brown Group Name Southern Company
+Financial Class
+Admitted By
+Patient Weight
+Discharge Date
+Disch. Time
+AD12
+11/13/99
+11:30
+Provisional Diagnosis Right Ing Hernia
+Principal Diagnosis, Secondary Diagnosis and
+Complications
+550.91 214.4
+Principal Procedures and Secondary Procedures
+11-12 Moore
+53.03 63.3
+49520
+Consultations Shift Jeare
+SPECIMEN SENT
+DIAGNOSTIC TEST OR THERAPY
+TIME OUT
+TIME II
+Form #8002088 (Rev. 1/98) Page 1 of 4 INTRAVENOUS THERAPY FLOW SHEET FLUID DOCUMENTATION KEY:
+TIME
+AMOUNT
+IV SOLUTIONS,
+ADDITIVES
+RATE
+TUBING
+PUMP
+INITIALS
+unselected: Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 1. Consent for Medical and Hospital Care. The undersigned consents
+to the following: a. All treatment and procedures to be performed during this hospitalization or on an outpatient basis (including emergency treatment or services). DATE/TIME
+NOTES
+NAME/TITLE
+11/12/99
+Dicteoral op Note
+2 duass & Marly Mesh
+11/13
+5 pm
+At 5 och
+VSS -
+De har
+Flujo Dr. Moren
+62-6018-45-0503 Community General Hospital Anytown, USA Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting
+Physician - 1 Adm Date: 11/12/1999 DOB: 09/10/44 ***** ** GENERAL CHEMISTRY ** *: ************
+ATE: IME:
+11/10/99 1620 --- can come back ,may May have to be removed I CERTIFY THAT I HAVE READ AND FULLY UNDERSTAND THE ABOVE CONSENT. Physician Signature
+Patient/Guardian Signature Date/Time 11.10.99 Relationship to Patient Witness' Printed Name Witness' Signature Orig. 8/02 LM3370-35c 1 ANESTHESIA Community General Hospital INPATIENT REGISTRATION AND SUMMARY FORM Patient Account # 12345 Medical Record # 215043
+Patient Name
+(Last) (First) (Middle)
+Attending Physician Number and
+Name
+Patient Type
+Hospital
+Admit Date
+Admit time
+Brown, John
+Jeff T. Moore 97
+Inp
+Services S
+11/12/99
+11:10 ADDITIONAL DISCHARGE MEDS
+INSTRUCTIONS REFUSED :unselected: :unselected: :unselected: Community General Hospital Anytown, USA Name: John Brown Account No: 12345 Attending Org
+506
+Service Type
+S
+Name
+BROWN, JOHN
+Client ID
+123-456-678
+Living Arrangements
+Home
+Reference Auth #
+Requesting NPI # 4567891212
+Requesting Fax #
+Billing NPI # 4567891212
+Name Jeff T. Morre
+Referring NPI # 4567891213
+Referring Fax #
+Service Start Date: 11/12/99
+Description of service being requested:
+15. Right Ing. Hernia
+18. Serial/NEA or MEA #
+20. Code Qualifier
+21. National Code
+49520 have allergies and code status listed on the front of my chart to ensure my safety as a patient. 2. General Risks. The undersigned understands that the practice of
+medicine and surgery is not an exact science and that diagnosis and treatment may involve risks of injury or even death. No guarantees can or have been made Extra Large Plug REF 01146 REF 01172 :unselected:
+:unselected:
+LOT 32FDJ2 LOT 32DKM1 :unselected:
+62-6018-45-0503 Community General Hospital Anytown, USA OPERATIVE PROGRESS NOTE Name: John Brown Account No: 12345 Attending Physician: Jeff
+T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44
+DATE/TIME NOTES NAME/TITLE
+11/12/99
+Surgeon: Mare DIAGNOSIS PHYSICIAN Adm Date: 11/12/1999 DOB: 09/10/44 DRUG ALLERGIES
+Date Time Another brand of drie ken / in fom and content may be ed unless
+checked :unselected:
+Demerol 75 mg have received information on Advanced Directives and Organ Tissue Donation. Patient Signature Jak Prom Witness :unselected: :unselected: :unselected:
+:unselected: :unselected: :unselected: :unselected: :unselected: :unselected: :selected: :selected: :unselected: NEUROLOGICAL Level of Consciousness: SHIFT INIT
+NURSE SIGNATURE
+3D
+Kim Danielsen
+TamFandomRN
+13PC
+Diana Camp CON
+TIME
+FOCUS
+D, A, R
+FOCUS NOTES
+0730
+Q. CBC + urine
+Hernia
+3. Chest X-ray
+(HKP Dictated)
+4 c/C/2 (High)
+Recurrent
+5 CmP
+6) Protime + 95+
+2 Prep
+8 PSA
+9 epidural or spinal anesthesia
+11/12/99
+Phisohex Prep
+0005
+Dr. more - Have a Happy Day
+Dperche RN
+-
+noted @ 0035 11/11/99
+SM
+11/12
+1 Ice pack
+2 up when neurologically normal + alost
+3 15 1/2 NS 125 cc/hr Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Community General Hospital 11/12/99- 11/3/99 1 MEDICATION ADMINISTRATION
+RECORD
+LLERGIES
+MEDICATION ADMINISTRATION TIMES
+7:01 - 15:00
+15:01 - 23:00
+23:01 -
+TIME
+- - SITE ; !
+INITIAL
+TIME
+1 1 SITE ,
+INITIAL -
+TIME 1
+SI
+Keftabs 50mg po
+Demerol 50mg IN Post-op. Greater than 75 Years Other* Refer to 24 Hr. Nursing Flowsheet INSTRUCTIONS: if points total 15 or more, implement Fall Risk Plan. Score Each Shift
+SPECIMEN SENT
+DIAGNOSTIC TEST OR THERAPY
+TIME OUT
+TIME
+Form #8002088 (Rev. 1/98) Page 1 of 4 INTRAVENOUS THERAPY FLOW SHEET
+FLUID DOCUMENTATION
+TIME
+AMOUNT
+IV SOLUTIONS,
+ADDITIVES
+RATE
+TUBINGA
+PUMP
+INITIALS
+6933
+100
+D5 /2NS
+125 Chuck Hamlin, M.D. Radiologist Chuck Hamlin Community General Hospital Anytown, USA Name: John Brown Account No: 12345 Attending Physician: Jeff T.
+Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Surgery Consent Form 1. I hereby authorize Dr. Moore and whomever he may DATE/TIME: 11/12/99 Community General Hospital Anytown, USA TRANSITION/DISCHARGE PLANNING ASSESSMENT .* Name: John Brown Account No:
+12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 COMMUNITY SERVICES: CURRENTLY SM
+Form 1266 C BRIGGS, Des Moines, IA 50306 (800) 247-2343 PRINTED IN U.S.A. PLEASE! USE BALL POINT PEN ONLY PHYSICIAN'S ORDERS Order Form"
+
+response =  """# Document Summary #
+## Patient Information: ## 
+- Name: John Brown
+- Age: 54 years
+- Gender: Male
+- Payer: Southern Company
+  
+## Provider Information: ##
+- Attending Physician: Jeff T. Moore, M.D.
+- Consulting Physician(s): Chuck Hamlin, M.D., Marek Dobke, M.D.
+- Speciality(ies): Radiology, Surgery
+  
+## Medical History of illness: ##
+The patient's medical history before admission is not mentioned in the provided documents.
+  
+## Current Diagnosis (Provisional): ##
+The patient has been diagnosed with a right inguinal hernia (National Code - 49520) and secondary diagnosis of lipoma of skin and subcutaneous tissue of trunk (National Code - 214.4).
+  
+## Clinical Assessment(Medical reports): ##
+Medical reports indicate that the patient was admitted to Community General Hospital on November 12th, 1999 at 11.10 am as an Inpatient under the care of Dr. Jeff T. Moore for surgical treatment for his right inguinal hernia.
+  
+## Diagnostic tests that confirm patient has health issue mentioned in diagnosis: ##
+Diagnostic tests are not mentioned in the provided documents.
+  
+## Past Surgical History:
+Past surgical history is not mentioned in the provided documents.
+  
+## Treatment (Proposed Treatment or procedure, medication,dosages,route & Duration of procedure):
+The proposed treatment for John Brown includes surgery for his right inguinal hernia performed by Dr. Marek Dobke on November 12th,1999 using Extra Large Plug REF01146 and REF01172.
+Medication administered during hospitalization included Midazolam IV OCT OR ON1 CALL from November 11th to November13th as per Medication Administration Record chart.
+  
+## Patient's Perspective (Patient has expressed his/her willingness to try and aware of potential side effects--Consent to treatment):
+John Brown signed Consent To Treatment And Conditions Of Admission form indicating he understood all conditions related to admission including authorization given for dispensing nonproprietary name products identical in dosage form unless otherwise specified under S.G.M.C Formulary Management System.He also signed Discharge Instruction Sheet acknowledging receipt copy Notice Of Privacy Practices document.
+  
+## Follow up for patient with physician(Hospital Course):
+The follow-up plan after discharge is not mentioned in the provided documents.
+
+## Provider Expertise:
+Dr.Jeff T.Moore,M.D.is an attending physician who specializes in Internal Medicine while Dr.Chuck Hamlin,M.D.specializes in Radiology,and Dr.Marek Dobke specializesin Surgery.Their expertise aligns with their respective fields which makes them qualified healthcare providers treating patients like John Brown effectively."""
+
+eval_score = eval_obj.evaluate(context=context,response=response,metric="Agreement Score")
+print(eval_score)
+
+Configuration Options:  (these options have not been included in the implementation of QT package – version 1 )
+  n_questions: int
+  Number of questions to generate.
+  More questions = more accurate, granular evaluations, but it will also mean higher evaluation time, and LLM inference cost.
+  questions: List[str]
+  If you would like to ask custom questions instead of generating the questions, you can provide a list of questions using the constructor argument questions.
+  question_answerer: QuestionAnswerer
+  You can also configure which LLM prompting technique to use for answering questions:
+  QuestionAnswererBulk (faster, cheaper, default): uses a single prompt to answer all the questions.
+  QuestionAnswererChainOfThought (slower, uses more tokens, better reasoning): will prompt the LLM separately for each question, wrapped in a chain of thought prompt.
+  QuestionAnswererWithRetrieval: (good for large documents) uses a simple similarity search to narrow-down context.
+
+<b>These are the questions generated by the metric for the above summary:</b>
+  ['Is John Brown a male patient?', 
+  'Was John Brown admitted to Community General Hospital on November 12th, 1999?', 
+  'Was Dr. Jeff T. Moore the attending physician for John Brown?', 
+  'Did John Brown have a right inguinal hernia?', 
+  'Did John Brown have a lipoma of skin and subcutaneous tissue of trunk?', 
+  'Was surgery performed on John Brown for his right inguinal hernia?', 
+  'Did Dr. Marek Dobke perform the surgery on John Brown?', 
+  'Was Midazolam IV administered to John Brown during his hospitalization?', 
+  'Did John Brown sign the Consent To Treatment And Conditions Of Admission form?', 
+  'Is Dr. Chuck Hamlin a radiologist?']
+
+<b>Source: </b>
+<a href="https://docs.athina.ai/evals/preset-evals/summarization-qa" target="_blank">Summarization Q&A - Athina </a>
+        
+        
+      </div>
+
+      <div id="matrSum_coverage">
+        <h2 class="pageTitle">Accuracy</h2>
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrSum_agreement')">Agreement Score</button>
+          <button class="button button2 active" onClick="clickCalled('matrSum_coverage')">Coverage Score</button>
+          <button class="button button2" onClick="clickCalled('matrSum_summa')">SummaCConv</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+The summarization metric uses LLMs to determine whether your LLM (application) is generating factually correct summaries while including the necessary details from the original text. The coverage score is a part of the summarization metric and determines whether the summary contains the necessary information from the original text. It quantifies how well a summary captures and accurately represents key information from the original text, with a higher score indicating greater comprehensiveness.
+
+Calculation (include input, calculation/ formula, output details)
+  Focuses on coverage of details from the original text. Measures the amount of detail included in the summary from the original text. 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+
+<b>original text/ input:</b> The source document that contains the information that should be summarized.
+<b>actual output:</b> The LLM generated summary of the source document.
+
+Step 1. n close ended questions are generated from the original text that can only be answered with a 'yes' or 'no'.
+
+Step 2: Calculate the ratio of questions to which both the original text and the summary give the same answer.
+
+Step 3: Higher the number of matching answers, greater the coverage score. Matching answers indicate the summary is both factually correct and contains sufficient detail to answer the question. 
+
+<b>Output: </b>
+The percentage of questions that had identical answers for both contexts. A number between 0 and 1. 
+
+<b>Example : </b>
+
+#Input data to calculate this metric 
+
+from qualitytrust.qnteval import EvaluateMetric
+
+eval_obj = EvaluateMetric(n_questions: i)
+
+context = "Patient Name: Ms. Jane Doe  
+MRN:M1234  
+Mob -1234 -09878 -8800  
+Address - 13th Street. 47 W 13th St, New York, NY 10011  
+
+DIGNOSIS:  [Type 1] Diabetes Mellitus /E10.9  
+Instruction:  Should follow  diet and exercise/oral medication/insulin through self -administration of 
+injections multiple times a day via an insulin pen  
+
+CPT Code:  95249 Certificate of Medical Necessity:  
+Continuous Glucose Monitoring Supplies (CGM) Medicaid Letter  
+Date   09/10/2023  
+Patient Name  Ms. Jane Doe  
+Date of Birth   05/10/1967  
+
+We are seeking to continue to better manage this patient's diabetes by using : 
+â–¡ FreeStyle  Libre (14 -day or Libre 2) continuous glucose monitor system  
+  â–¡ DexCom  G6 continuous glucose monitor system Notes:  Ms. Doe has diabetes com plications, such as neuropathy or retinopathy, which may  cause 
+nerve damage/vision loss/other limitations and substantially limits her ability to walk/see/care for 
+herself/perform other life activities. As a result, it is my medical opinion that Ms. Doe ne eds CGM  to 
+get real-time updates . Please contact me if you have any questions.  
+
+Dr. John Smith diagnosed with diabetes.    
+
+Clinician Name (Printed): _ Dr. John Smith ____________________________________________  
+Clinician Signature: ________________________________________________________  
+NPI: __  MD2234 ____________________  
+Date: _______ 09/10/2023 ______________ for appropriate age range, testing and calibration requirements, etc.   
+â€¢ Or patient has otherwise qualifying circumstances or otherwise deemed 
+medically necessary  
+
+The patient and I are requesting these continuous glucose monitoring supplies be approved to 
+continue to help improve their glycemia and thus their long -term qual ity of life as someone 
+diagnosed with diabetes. injections multiple times a day via an insulin pen  
+
+CPT Code:  95249  
+CPT Description:  Continuous Glucose Monitoring (CGM)  
+CGM Details:  
+============  
+CGM Model :  Dexcom G6  
+Sensor Duration -10 days  
+Frequency of use -Continuous  
+Notes:  Ms. Doe has diabetes com plications, such as neuropathy or retinopathy, which may  cause | Diagnosing Diabetes | >= 6.5 |
+| Therapeutic goals for glycemic| Age > 19 years 
+| control | . Goal of therapy: < 7.0 |
+| | . Action suggested: > 8.0 |
+|
+| | Age < 19 years |
+| | . Goal of therapy: <7.5 |
+------------------------------------------------------------------
+---Bio-Chemistry Date:08-12-2023 Test Name Result NORMAL UNITS
+FBS (Fasting Blood Sugar ) 120 70-110 mg.dL
+PPBS (  Postprandial Glucose) 190 110-140 mg.dLBio-Chemistry (Sugar Profile) â€¢ Requires frequent adjustment of insulin dosage   
+â€¢ Has received education specific to the use of therapeutic CGM  
+â€¢ Had an in -person or telehealth visit within the last 6 months with the treating 
+clinician to evaluate diabetes control   
+Provider has verified the patient meets the manufacturer's recommendations 
+for appropriate age range, testing and calibration requirements, etc. get real-time updates . Please contact me if you have any questions.  
+
+Dr. John Smith  
+Endocrinologists,  Endocrinologists Associates  
+Contact:123 -9909 -2890  
+License number ( NPI) -MD2234  
+                                                                        New Life Healthcare  
+                                                            Dr. J ohn Smith BEFORE (FBS) AFTER (PP) BEFORE (FBS) AFTER (PP) BEFORE (FBS) AFTER (PP)
+04/08/23 130 190 145 180 140 220 160
+05/08/23 120 180 120 210 120 180 170
+06/08/23 150 200 150 230 150 200 180
+07/08/23 130 220 130 220 130 220 190
+09/08/23 170 170 170 300 170 170 200
+10/08/23 150 190 150 180 150 190 220
+11/08/23 160 180 160 170 160 180 170
+12/08/23 180 160 180 240 180 160 180Blood Glucose Logs Dr. J ohn Smith  
+                                                    132, My Street,  Kingston,  
+                                                            New York 12401 . 11/08/23 160 180 160 170 160 180 170
+12/08/23 180 160 180 240 180 160 180Blood Glucose Logs
+DateBreafast Lunch DinnerBedTime â–¡ DexCom  G6 continuous glucose monitor system  
+â–¡ Eversense  continuous glucose monitor system  
+â–¡  Medtronic Guardian  continuous glucose monitor system  
+
+This patient:  
+â€¢ Self-monitors blood glucose a minimum of 3 times per day   
+â€¢ Uses an insulin pump or MDI a minimum of 3 times per day  
+â€¢ Requires frequent adjustment of insulin dosage Test Name Results NORMAL UNITS
+HbA1c (GLYCOSYLATED HEMOGLOBIN), BLOOD 6.9 %
+Interpretation
+============
+| As per American Diabetes Association (ADA) |
+| Reference Group | HbA1c in % |
+==============================
+| Non diabetic adults >=18 years| <5.7 |
+| At risk (Prediabetes) | 5.7 - 6.4 |
+| Diagnosing Diabetes | >= 6.5 |
+| Therapeutic goals for glycemic| Age > 19 years"
+
+response =  """# Document Summary #
+
+## Patient Information: ##
+- Name: Ms. Jane Doe
+- Age: 56 years old
+- Gender: Not specified
+- Payer: Medicaid
+- Medical Record Number (MRN): M1234
+
+## Provider Information: ##
+- Name: Dr. John Smith 
+- Speciality: Endocrinologists, Endocrinologists Associates 
+- Contact information:
+  - Phone number : 123 -9909 -2890  
+  - Address : 132, My Street, Kingston, New York 12401.
+  - License number ( NPI) : MD2234 
+
+## Medical History of illness: ##
+Ms. Jane Doe has been diagnosed with Type 1 Diabetes Mellitus/E10.9 and is experiencing complications such as neuropathy or retinopathy that may cause nerve damage/vision loss/other limitations.
+
+## Current Dignosis (Provisional): ## 
+Ms. Jane Doe's current diagnosis is Type 1 Diabetes Mellitus/E10.9.
+National Code (CPT Code): 95249
+National Code (CPT Description): Continuous Glucose Monitoring (CGM)
+
+## Clinical Assessment(Medical reports): ## 
+Dr. John Smith recommends the use of continuous glucose monitoring supplies to better manage Ms.Jane Doe's diabetes and improve her glycemia in real-time updates.
+
+The recommended CGM models are FreeStyle Libre(14-day or Libre2) continuous glucose monitor system and DexCom G6 continuous glucose monitor system.
+
+Dr.John Smith also notes that Ms.Doe requires frequent adjustment of insulin dosage due to her condition.
+
+Blood Glucose Logs show fluctuations in blood sugar levels before and after meals over a period from August to December in the year 2023.
+
+HbA1c test results indicate that Ms.Doe has a HbA1c level of 6.9%, which falls under therapeutic goals for glycemic control for age >19 years according to American Diabetes Association guidelines.
+
+## Diagnostic tests that confirms patient has health issue mentioned in diagnosis:
+None mentioned explicitly
+
+## Past Surgical History:
+Not provided
+
+## Treatment(Proposed Treatment or procedure, medication,dosages,route & Duration of procedure):
+Ms.Jane Doe should follow diet and exercise/oral medication/insulin through self-administration of injections multiple times a day via an insulin pen(CPT code :95249).
+Dr.John Smith recommends using either FreeStyle Libre(14-day or Libre2) continuous glucose monitor system or DexCom G6 continuous glucose monitor system based on their medical opinion.
+### Requirements for Therapeutic CGM usage ###
+â€¢ Requires frequent adjustment of insulin dosage   
+â€¢ Has received education specific to the use of therapeutic CGM  
+â€¢ Had an in-person or telehealth visit within the last six months with the treating clinician to evaluate diabetes control   
+â€¢ Provider has verified the patient meets the manufacturer's recommendations for appropriate age range, testing and calibration requirements etc.
+
+## Patient's Perspective(Patient has expressed his/her willingness to try and aware of potential side effects--Consent to treatment):
+Not provided
+
+### Follow up for patient with physician(Hospital Course):
+No hospital course was mentioned explicitly but it can be inferred from Dr.Smithâ€™s note requesting approval for continuing CGM supplies.
+
+### Provider Expertise:
+Endocrinologist"""
+
+eval_score = eval_obj.evaluate(context=context,response=response,metric="Coverage Score")
+
+print(eval_score)
+
+
+
+
+<b>Configuration Options:</b>
+There are eight optional parameters when instantiating an SummarizationMetric class:
+
+Note: Set the strict mode to True to indicate a perfect result and to reject any other score. 
+
+• [Optional] threshold: the passing threshold, defaulted to 0.5.  
+• [Optional] assessment_questions: a list of close-ended questions that can be answered with either a 'yes' or a 'no'. These are questions you want your summary to be able to ideally answer, and is especially helpful if you already know what a good summary for your use case looks like. If assessment_questions is not provided, a set of assessment_questions are generated at evaluation time. The assessment_questions are used to calculate the coverage_score.
+• [Optional] n: the number of assessment questions to generate when assessment_questions is not provided. Defaulted to 5.
+• [Optional] model: a string specifying which of OpenAI's GPT models to use, OR any custom LLM model of type DeepEvalBaseLLM. Defaulted to 'gpt-4o'.
+• [Optional] include_reason: a boolean which when set to True, will include a reason for its evaluation score. Defaulted to True.
+• [Optional] strict_mode: a boolean which when set to True, enforces a strict evaluation criterion. In strict mode, the metric score becomes binary: a score of 1 indicates a perfect result, and any outcome less than perfect is scored as 0. Defaulted as False.
+• [Optional] async_mode: a boolean which when set to True, enables concurrent execution within the measure() method. Defaulted to True.
+(async_mode = True indicates that the step 2, where the answers are extracted from both the document and the summary/ any steps that are independent will be executed concurrently, while False will cause them to be executed sequentially).
+• [Optional] verbose_mode: a boolean which when set to True, prints the intermediate steps used to calculate said metric to the console, as outlined in the How Is It Calculated section. Defaulted to False. 
+
+Questions Generated by the metric for generating Y/N answers:
+
+
+
+<b>Source:</b> 
+
+<a href="https://docs.confident-ai.com/docs/metrics-summarization" target="_blank">Summarization | DeepEval</a>
+
+Further Reading/ Details: 
+<a href="https://docs.confident-ai.com/docs/metrics-introduction#measuring-metrics-in-async" target="_blank">1. Introduction | DeepEval - The Open-Source LLM Evaluation Framework (confident-ai.com)</a>
+<a href="https://www.confident-ai.com/blog/a-step-by-step-guide-to-evaluating-an-llm-text-summarization-task" target="_blank">2. A Step-By-Step Guide to Evaluating an LLM Text Summarization Task - Confident AI (confident-ai.com) </a>
+      </div>
+
+      <div id="matrSum_summa">
+        <h2 class="pageTitle">Accuracy</h2>
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrSum_agreement')">Agreement Score</button>
+          <button class="button button2" onClick="clickCalled('matrSum_coverage')">Coverage Score</button>
+          <button class="button button2 active" onClick="clickCalled('matrSum_summa')">SummaCConv</button>
+        </div>
+This metric has not been implemented in QT package due to dependency issues.
+(This is a NLI model based evaluator)
+
+Evaluates factual consistency of summary with input documents. It is based on the aggregation of sentence-level entailment scores for each pair of input document and summary sentences.
+
+<b>Details: </b>
+
+  • This metric measures the factual consistency of the summary with the input document. 
+  • Uses natural language inference models for inconsistency detection.
+  • Provides a method called SummaCConv that enables NLI models to be used for summarization by segmenting documents into sentences and aggregating scores between pairs of sentences. 
+  • SummaCConv is a trained model consisting of a single learned convolution layer compiling the distribution of entailment scores of all document sentences into a single score. 
+
+<b>Calculation:</b>
+  • Generate an NLI pair matrix by splitting the document and the summary into sentence blocks. 
+  • The document is split into M blocks, and the summary into N blocks. 
+  • Each combination (Mi,Nj) is run through the NLI model to generate a probability distribution for (entailment, contradiction, neutral).
+  • For each summary sentence, the score for the document sentence that provides the strongest support for each summary sentence is retained. 
+  •  SummaCConv : Each summary sentence is scored and an average is obtained as the final summary-level score. 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+
+<b>original text/ input:</b> The source document that contains the information that should be summarized.
+<b>actual output:</b> The LLM generated summary of the source document.
+
+<b>Output: </b>
+
+  A number between 0 and 1. 
+
+
+<b>Example: (add a healthcare example)</b>
+from summac.model_summac import SummaCZS, SummaCConv
+  
+model_zs = SummaCZS(granularity="sentence", model_name="vitc", device="cpu") # If you have a GPU: switch to: device="cuda"
+model_conv = SummaCConv(models=["vitc"], bins='percentile', granularity="sentence", nli_labels="e", device="cpu", start_file="default", agg="mean")
+  
+# Example medical text to summarize
+text = """
+A 45-year-old male patient with a history of hypertension and type 2 diabetes mellitus presented with a two-week history of progressive shortness of breath, fatigue, and swelling of the lower extremities. On physical examination, the patient had bilateral pitting edema up to the knees, jugular venous distension, and an S3 heart sound. Laboratory tests revealed elevated B-type natriuretic peptide (BNP) levels, and a chest X-ray showed cardiomegaly with pulmonary congestion. An echocardiogram demonstrated a reduced ejection fraction of 30%, consistent with systolic heart failure. The patient was admitted to the hospital and started on diuretics, ACE inhibitors, and beta-blockers. After stabilization, the patient was discharged with instructions for close outpatient follow-up and lifestyle modifications.
+"""
+
+summary1 = "  "
+score_conv1 = model_conv.score([document], [summary1])
+print("[Summary 1]  SummacConv score: %.3f" % (score_conv1["scores"][0])) 
+# [Summary 1] 
+  
+
+
+<b>Sources: </b>
+  <a href="https://arxiv.org/pdf/2111.09525" target="_blank">1. 2111.09525 (arxiv.org) </a>
+  <a href="https://github.com/tingofurro/summac" target="_blank">2. tingofurro/summac: Codebase, data and models for the SummaC paper in TACL (github.com)</a>
+        
+      </div>
+
+      <div id="matrSum_supert">
+        <h2 class="pageTitle">Relevancy</h2>
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrSum_supert')">SUPERT</button>
+          <button class="button button2" onClick="clickCalled('matrSum_relevance')">Summary Relevance</button>
+        </div>
+This metric has not been implemented due to dependency issues.
+
+SUPERT rates the quality of a summary by measuring its semantic similarity with a pseudo reference summary, i.e. selected salient sentences from the source documents, using contextualized embeddings and soft token alignment techniques. 
+
+<b>Details: </b>
+  • Objective is to evaluate multi-document summaries without using human annotations or reference summaries. 
+  • Focus on measuring how much of information from the source documents is covered by the summary.
+
+<b>Calculation:</b>
+  • SUPERT evaluates the quality of a summary by measuring its semantic similarity to a pseudo reference summary. 
+  • This pseudo reference is created by selecting salient sentences from the source documents.
+
+<b>Steps involved in calculation:</b>
+  • Identify the salient information in the input documents, to build a pseudo reference. 
+  • Measure the semantic overlap between the pseudo reference and the summary to be evaluated. 
+  • The resulting evaluation is called SUPERT (SUmmarization evaluation with Pseudo references and bERT).
+  • Proposed method, Top+Clique to build pseudo summaries:
+    ○ Label top-N sentences from each document as salient. 
+    ○ With the remaining (non-top-N) sentences, build a graph such that only "highly similar" sentences have an edge between them. 
+    ○ Obtain the cliques from the graph and select the semantically central sentence from each clique as potentially salient sentences. 
+    ○ For each potentially salient sentence, label as salient if it is not highly similar to any top-N sentences. 
+    ○ N = 10, and threshold for highly similar is 0.75. 
+  • Note: A clique in a graph is a group of nodes (or in this case, sentences) where every node is directly connected to every other node in the group. In simpler terms, a clique here is a set of sentences that are all closely related or similar to each other.
+  • The most central sentence is the one that's the most similar to the other sentences in that clique.
+  • Use SBERT to measure the similarity between the summary and the pseudo reference. 
+  • SUPERT can be used as rewards to train an RL - based - summarizer. 
+  
+<b>Required Arguments: (your dataset must contain these fields)</b>
+
+<b>original text/ input:</b> The source document that contains the information that should be summarized.
+<b>actual output:</b> The LLM generated summary of the source document.
+
+<b>Output: </b>
+
+  A number between 0 and 1. 
+
+<b>Example: </b>
+from ref_free_metrics.supert import Supert
+from utils.data_reader import CorpusReader
+
+# read docs and summaries
+reader = CorpusReader('data/topic_1')
+source_docs = reader()
+summaries = reader.readSummaries() 
+
+# compute the Supert scores
+supert = Supert(source_docs, ref_metric='top15') 
+scores = supert(summaries)
+
+# In this example, it extracts top-15 sentences from each source 
+# document to build the pseudo reference summaries, and rate the 
+# summaries by measuring their semantic similarity with the pseudo 
+# references. 
+
+
+<b>Source: </b>
+  1. <a href="https://github.com/yg211/acl20-ref-free-eval" target="_blank">SUPERT: Unsupervised multi-document summarization evaluation & generation (github.com)</a>
+  2. <a href="https://aclanthology.org/2020.acl-main.124.pdf" target="_blank">SUPERT: Towards New Frontiers in Unsupervised Evaluation Metrics for Multi-Document Summarization (aclanthology.org)</a>
+        
+      </div>
+
+      <div id="matrSum_relevance">
+        <h2 class="pageTitle">Relevancy</h2>
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrSum_supert')">SUPERT</button>
+          <button class="button button2 active" onClick="clickCalled('matrSum_relevance')">Summary Relevance</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+Evaluates if the summary includes only important information and excludes redundancies.
+
+<b>Calculation (include input, calculation/ formula, output details)</b>
+  Prompts are crafted for this criteria, taking the original document and the summary as inputs, and leveraging chain-of-thought generation and guiding the model to output a numeric score from 1-5 for the criteria.
+  
+  Scores are generated from gpt-4 with the defined prompts, comparing them across summaries.
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+  <b>original text/ input:</b> The source document that contains the information that should be summarized.
+  <b>actual output:</b> The LLM generated summary of the source document.
+  
+  Step 1: Uses prompts to instruct an LLM to score the summary on relevancy. 
+  Step 2: Uses a direct scoring function where gpt-4/ any LLM generates a discrete score (1-5) for the metric.
+  Step 3: Converts it to a metric between 0 and 1. 
+  
+  Output: Is a value between 0 and 1. The higher the value, more relevant the summary to the document. 
+  
+<b>Example :</b>
+#Input data to calculate this metric 
+
+from qualitytrust.qnteval import EvaluateMetric
+
+eval_obj = EvaluateMetric()
+  
+context = "for follow up visit. The patient is a 23 year old male. History Allergy Penicillins [Drug allergy]: Rash Past
+Medical CPT2 DEFICIENCY (E71.314) FOLLOW-UP SURGERY CARE (Z09) ARACHNOID CYST OF
+SPINE (G96.198) Other Medical History ENCOUNTER FOR EDUCATION (Z71.9) Past Surgical 1 wrist
+surgery 9-27-16 fx radius Laminectomy (07/21/2017) Elective Admission-SS CCMC-L2 and L3 left edited the report where appropriate. Page 1 of 2 Date Printed: 5/17/2019'4:52 PM P010/011 Nov 28
+2023 11:05am Fax:516-354-8597 L | NEUROSURGICAL PAGE 3/11 Âª RCVD AT 11/28/2023 11:17:54 AM [Eastern Standard Time] * SVR:DALRF16RDT03/37 *
+DNIS: 18061* CSID:516 354 8597 * ANI:5163546401 * DURATION (mm-ss):03-22 Patient Message
+mom called To: From: Sent: 5/8/2023 2:42 PM Phone: (631) 424-6304 mom called said that have been
+having headaches and has a weird "bubble" feeling in his head. Do you want to send him for a scan having headaches and has a weird "bubble" feeling in his head. Do you want to send him for a scan
+first or come In for eval .. Please advise, I can call mom back to let her know # mom Veradiam EHR
+23.4 Allscripts: 11/28/2023 10:59 am Page 1/1 P003/011 Nov 28 2023 11:03am Fax:516-354-8597 L |
+NEUROSURGICAL :selected: :unselected: :unselected: PAGE 2/11 * RCVD AT 11/28/2023 11:17:54 AM [Eastern Standard Time] " SVR:DALRF 16RDT03/37
+* DNIS: 18061 * CSID:516 354 8597 * ANI:5163546401 * DURATION (mm-ss):03-22 Procedure Order
+Ordering SiteLong Island Neurosurgical Main Office 410 Lakeville Rd.suite 204 New Hyde Park, NY
+11042 (516) 354-3401 Fax: (516) 354-8597Report Date: 05/17/2023Patient InformationZ Patient DICT: STEVEN J SCHNEIDER, M.D. (07123) 07/21/2017 03:53 PM TRANS:
+V_TSRAA_T/V_TSPRV_Q 07/21/2017 08:58 PM JOB: 2182906 Page 2 of 2 P007/011 Nov 28 2023
+11:04am Fax:516-354-8597 L | NEUROSURGICAL :unselected: Horowitz, FNP( ) Cathy Grimm - Admin ( ) Staff Member ( ) * urgent & DATE: 1 128/23 . TO THE
+ATTENTION OF: Medical review FAX NUMBER: 866-889-8061 THIS TRANSMISSION HAS 11
+PAGES INCLUDING COVER SHEET FROM: REGARDING: L 200 The information contained in this
+facsmile message is priveledged message is privileged and confidential information intended only for Patient MRN: CRAIG WARSHALL M.D., ATTENDING RADIOLOGIST Patient Proc Dirte: 05/14/2019
+Ord #: 9002 As the Attending Physician, I personally performed the professional interpretation of the
+study, personally supervised the professional interpretation of the study and/or reviewed the images
+and the interpretation of the resident, and have edited the report where appropriate: It this is an has been electronically signed. CRAIG WARSHALL M.D., ATTENDING RADIOLOGIST This document
+has been electronically signed. May 15, 2019 12:03PM Addend: CRAIG WARSHALL M.D.,
+ATTENDING RADIOLOGIST This addendum was electronically signed on: May 17 2019 4:49PM
+Patient MRN: CRAIG WARSHALL M.D., ATTENDING RADIOLOGIST Patient Proc Dirte: 05/14/2019 PAGE 6/11 / RCVD AT 11/28/2023 11:17:54 AM (Eastern Standard Time] Â· SVR:DALRF16RDT03/37 +
+DNIS: 18061 * CSID:516 354 8597 + ANI:5163546401 . DURATION (mm-ss):03-22 NORTHWELL
+HEALTH LONG ISLAND JEWISH MEDICAL CENTER - 270-05 76th AVENUE, NEW HYDE PARK,
+NEW YORK, 11010 * (516) 470-7000 PATIENT NAME: DATE OF OPERATION: 07/21/2017 MEDICAL PAGE 1/11 Âº RCVD AT 11/28/2023 11:17:54 AM (Eastern Standard Time] " SVR:DALRF16RDT03/37 +
+DNIS: 18061 * CSID:516 354 8597 * ANI:5163546401 * DURATION (mm-ss):03-22 FAX
+TRANSMITTAL COVER SHEET PRIVILEGED AND CONFIDENTIAL INFORMATION LONG ISLAND
+NEUROSURGICAL ASSOCIATES P.C & COHEN CHILDREN'S MEDICAL CENTER PEDIATRIC
+NEUROSURGERY 410 LAKEVILLE ROAD, STE #204 NEW HYDE PARK, NY 11042 TEL# (516) 11/03/2020 3:55:59 PM -0500 NORTHWELL HEALTH PAGE 3 OF 3 Northwell Reichert Family
+Imaging at Huntington An Extentton of North Shore University Hospital 284 Pulaski Rond, Greenlawn,
+NY 11740 (531) 570-3458 (581) 670-8497 Department of Radiology IMPRESSION: A ventral epidural
+lesion extending from the 18-19 level to the L4 level. The leston demonstrates fluid signal and Intemal PAGE 4/11 * RCVD AT 11/28/2023 11:17:54 AM (Eastern Standard Time] . SVR:DALRF 16RDT03/37
+* DNIS: 18061 * CSID: 516 354 8597 . ANI:5163546401 * DURATION (mm-ss):03-22 LI NA LONG
+ISLAND NEUROSURGICAL ASSOCIATES 11/18/2020 01:00 PM Location: Long Island Neurosurgical
+Main Office STEVEN J. SCHNEIDER, MD, FAANS, FACS, FAAP MARK A. MITTLER, MD, FAANS, point, he tolerated the storing warestable, and he was taken to the ke covery room in a stable
+conditions extremities well. Pler It the operating surgeon fre lig beginn cedure. We utilized in. and
+extradurally for ie cystic lesion. case to the end of the case. operative microscope for the majority of the
+DICT: STEVEN J SCHNEIDER, M.D. (07123) 07/21/2017 03:53 PM TRANS: PAGE 7/11 . RCVD AT 11/28/2023 11:17:54 AM (Eastern Standard Time) " SVR:DALRF16RDT03/37 "
+DNIS: 18061 * CSID:516 354 8597 * ANI:5163546401 * DURATION (mm-ss):03-22 NORTHWELL
+HEALTH LONG ISLAND JEWISH MEDICAL CENTER 270-05 76th AVENUE, NEW HYDE PARK,
+NEW YORK, 11040 + (516) 410-7000 PATIENT NAME: MEDICAL RECORD #: DATE OF BIRTH: from 11042 (516) 354-3401 Fax: (516) 354-8597Report Date: 05/17/2023Patient InformationZ Patient
+Insurance InformationCollection Agency Group #NONE Plan #NONE119891913Procedures Ordered
+MRI - Brain W/O Contrast (70551) Case # Diagnosis: ARACHNOID CYST OF SPINE (G96.198)
+Ordered by: Shanna L. Baron, FNP MRI CERVICAL SPINE W/O CONTRAST (72141) case # PAGE 6/11 * RCVD AT 11/28/2023 11:17:54 AM (Eastern Standard Time] " SVR:DALRF16RDT03/37 *
+DNIS: 18061 * CSID:516 354 8597 * ANI:5163546401 * DURATION (mm-ss):03-22 11/18/2020 01:19
+PM Weight: 163 lb Height: 70 in Body Surface Area: 1.91 m2 Body Mass Index: 23.39 kg/m2 --- Temp .:
+96.6 ÂºF Assessment & Plan ARACHNOID CYST OF SPINE (G96.198) --- -- returns to office for follow- NEW YORK, 11010 * (516) 470-7000 PATIENT NAME: DATE OF OPERATION: 07/21/2017 MEDICAL
+RECORD #: ENCOUNTER #: SURGEON: DATE OF BIRTH: OPERATIVE REPORT ASSISTANT:
+PREOPERATIVE DIAGNOSIS: Extradural and internal cystic delnal levien. OPERATION: L2 and L3
+left hemilaminectomy, 82-L3 m tomny and foraminotomy Onstruction of dorsal ces for difficult anatomic Order #: 90030EXAM: MR SPINE CERVICAL EXAM: MR SPINE LUMBAR EXAM: MR SPINE
+THORACICPROCEDURE DATE: 11/02/2020INTERPRETATION: CLINICAL INFORMATION:
+ROUTINE. . ADMDIAG1: G96.198 OTHER DISORDERS OF MENINGES, NOT ELSEWHERE
+CLASSIFIED/. Arachnoid cyst status post fenestration. Follow-up.TECHNIQUE: Multiplanar
+multisequence was performed.noncontrast MRI of the cervical, thoracic and lumbar Main Office STEVEN J. SCHNEIDER, MD, FAANS, FACS, FAAP MARK A. MITTLER, MD, FAANS,
+FACS, FAAP MICHAEL A. LEFKOWITZ, MD, FAANS, FACS SHAUN D. RODGERS, MD SHANNA L.
+BARON, RN, MSN, FNP-C 1 Marital status: single / Language: English / Race: White / Ethnicity: Not
+Hispanic or Latino Gender: Male History of Present Illness Patient words: The patient presents today disc signal is preserved. No significant Page 1'ol 2 Date Printed; 11/3/2020 3:47 PM 110/800d L |
+NEUROSURGICAL Nov 28 2023 11:04am Fax:516-354-8597 ARACHNOID CYST OF SPINE (G96.198) Ordered by: Shanna L. Baron, FNP End of Procedures
+Ordered 05/08/2023 05/08/2023 05/08/2023 Shanna Baron FNAC 05/08/2023 Date P002/011 Nov 28
+2023 11:03am WWW.LINEUROSURGERY.COM Fax:516-354-8597 L | NEUROSURGICAL F Tage 2
+72 :unselected: (72146) case # 1198920939 Note: PLEASE PROVIDE PATIENT WITH DISC Diagnosis: ARACHNOID
+CYST OF SPINE (G96.198) Ordered by: Shanna L. Baron, FNP MRI LUMBAR SPINE W/O
+CONTRAST (72148) Note: PLEASE PROVIDE PATIENT WITH DISC case # 1198921629 Diagnosis:
+ARACHNOID CYST OF SPINE (G96.198) Ordered by: Shanna L. Baron, FNP End of Procedures septations, suggesting an arachnoid cyst. This is decreased in sire compared to 5/14/2019, when It
+extended from C3 through LA. PETER LEE MD; Attending Radiologist This document has been
+electronically signed. Nov 3 2020 8:44PM Patient: [MRN: Patient #: Date Printed: 11/3/2020 3:47 PM
+Page 2 of 2 P009/011 Fax:516-354-8597 Proc Date: 11/02/2020 Ord il: 9003 Nov 28 2023 11:05am L |
+NEUROSURGICAL and return the original message to us at the above address via U.S Postal Service. Thank you.
+PLEASE NOTIFY US IMMEDIATELY IF ANY OR ALL PAGES ARE NOT RECEIVED P001/011 Nov 28
+2023 11:02am Fax:516-354-8597 L | NEUROSURGICAL :unselected: :unselected: :selected:
+:unselected: :unselected: :unselected: :unselected: :unselected: :unselected: :unselected: 11/03/2020 3:55:59 PM -0500NORTHWELL HEALTHNorthwell ReichertFamily Imaging at
+HuntingtonAn Extension of North Shore University Hospital 284 Pulaski Rond, Greehiswn, NY 11740
+(531) 670-3456 (631) 670-3497 Department of RadiologyMR#: EPI #: DOB: AGE: Acct #: Home#:
+Order #: 90030EXAM: MR SPINE CERVICAL EXAM: MR SPINE LUMBAR EXAM: MR SPINE PAGE 11/11 * RCVD AT 11/28/2023 11:17:54 AM (Eastern Standard Time] " SVR:DALRF16RDT03/37
+' DNIS: 18061 * CSID:516 354 8597 . ANI:5163546401 * DURATION (mm-ss):03-22 05/17/2019
+4:59:16 PM -0400 PAGE 3 OF 3 NORTHWELL HEALTH Northwell ReichertFamily Imaging at
+HuntingtonAn 284 Pulaski Road,Extension of North Shore University Hospital Greenlawn, NY 11740 PAGE 10/11 * RCVD AT 11/28/2023 11:17:54 AM [Eastern Standard Time] * SVR:DALRF16RDT03/37
+* DNIS: 18061 * CSID: 516 354 8597 * ANI:5163546401 * DURATION (mm-ss):03-22 05/17/2019
+4:59:16 PM -0400NORTHWELL HEALTHPAGE 2 OF 3Northwell ReichertFamily Imaging at
+HuntingtonAn 284 Pulaski Road,Extension of North Shore University Hospital Greenlawn, NY 11740 NEUROSURGERY 410 LAKEVILLE ROAD, STE #204 NEW HYDE PARK, NY 11042 TEL# (516)
+354-3401 FAX# (516) 354-8597 WWW.LINEUROSURGERY.COM Steven J Schneider, MD ( ) Mark A.
+Mittler, M.D ( ) Michael A. Lefkowitz, MD ( ) Shaun D. Rodgers, M.D ( ) Shanna Baron, FNP ( ) Yael
+Horowitz, FNP( ) Cathy Grimm - Admin ( ) Staff Member ( ) * urgent & DATE: 1 128/23 . TO THE Thoughts. Endocrine Not Present- Appetite Changes, Excessive Urination and Thyroid Problems.
+Hematology Not Present- Anemia, Blood Clots, Easy Bleeding, Easy Bruising and Enlarged Lymph
+Nodes. --- Fax:516-354-8597 L | NEUROSURGICAL P004/011 Nov 28 2023 11:03am epidural arachnoid cyst has decreased in size. It previously spanned from C3-L4, and now spans from
+T8-9 to L4. I am pleased with his progress. Plan: Follow- up with physical therapy and possibly pain
+management for muscle spasm symptoms. Follow- up as needed. Steven J. Schneider MD 2 ----.
+P005/011 Nov 28 2023 11:03am Fax:516-354-8597 L | NEUROSURGICAL HuntingtonAn 284 Pulaski Road,Extension of North Shore University Hospital Greenlawn, NY 11740
+(631) 670-3456 (631) 670-3497 Department of Radiology *** ADDENDUM ***Patient:Ã„KA:EPI #:MR#:
+DOB:AGE:Acct #:Home#: Order #: 90028 WHAN W NII INEXAM: MR SPINE CERVICALEXAM: MR
+SPINE THORACIC EXAM: MR SPINE LUMBAR*** ADDENDUM 05/17/2019 ***History: Multilevel surgery 9-27-16 fx radius Laminectomy (07/21/2017) Elective Admission-SS CCMC-L2 and L3 left
+hemilaminectomy, L2-L3 medial facetectomy and foraminotomy for combined extradural and intradural
+cystic lesion with microscope, reconstruction of dorsal elements, intraoperative ultrasound and
+enhanced surgical services for difficult anatomic location of cystic lesion. Social Current tobacco use: was used to then enter the epidural space and separate the ligamentum flavum Page 1 of 2 P006/011 L
+| NEUROSURGICAL Nov 28 2023 11:03am Fax:516-354-8597 SPINE THORACIC EXAM: MR SPINE LUMBAR*** ADDENDUM 05/17/2019 ***History: Multilevel
+arachnoid cyst follow-up MRI.*** END OF ADDENDUM 05/17/2019.***PROCEDURE DATE:
+05/14/2019INTERPRETATION: Examination: MRIof the cervical, thoracic and lumbar
+spine.TECHNIQUE; Sagittal T1-weighted, images of the cervical, thoracic and lumbar spine were NEW YORK, 11040 + (516) 410-7000 PATIENT NAME: MEDICAL RECORD #: DATE OF BIRTH: from
+the undersurface of the L3, and hemilaminectomy performed with the Midas gior of the 2 and 3 levels. It
+was cut from the medial facet as well. Kerrison rongeur wasut ur and then extended the medial
+facetectomy and foraminotomy. Care was taken to pres interarticularis. The L3 nerve root and L2 nerve Page 2 of 2 Date Printed: 5/17/2019 4:52 PM P011/011 Nov 28 2023 11:05am Fax:516-354-8597 L |
+NEUROSURGICAL Ordered by: Shanna L. Baron, FNP MRI CERVICAL SPINE W/O CONTRAST (72141) case #
+1198920203 Note: PLEASE PROVIDE PATIENT WITH DISC Diagnosis: ARACHNOID CYST OF
+SPINE (G96.198) Ordered by: Shanna L. Baron, FNP MRI THORACIC SPINE W/O CONTRAST
+(72146) case # 1198920939 Note: PLEASE PROVIDE PATIENT WITH DISC Diagnosis: ARACHNOID Never smoker Dominant Hand: Right handed Patient participates in any physical activities: Yes sports
+Current school status: College sophmore Family hydrocephalus uncle Review of Systems General Not
+Present- Chills, Fever, Night Sweats and Significant Weight Change. Skin Not Present- Bruising,
+Dryness, Excessive Sweating, Hair Loss, New Lesions and Rash. HEENT Not Present- Blurred Vision, wil a history of carnitine immir yitransferase deficiency and a lars possible intradu after two
+myelograms. It edullary non. It appeared to be primu y extradural with a Pely contiplex, and the patient
+is symptomatic within. The nous, benefits, and potential compilations ourexploring this lesion,
+intraduraleod extra hal were explained and acceptedincluding, et not limited to, infection, bleeding,
+
+response =  """# Document Summary #
+## Patient Information: ##
+- Name: Mike Helen
+- Age: Not provided
+- Gender: Not provided
+- Payer: Not provided
+- Medical Record number (if any): Not provided
+  
+## Provider Information: ##
+- Healthcare provider name: Steven J. Schneider, MD, FAANS, FACS, FAAP; Mark A. Mittler, MD, FAANS,
+FACS, FAAP; Michael A. Lefkowitz, MD, FAANS,FACS; Shaun D. Rodgers,M.D.; Shanna L.Baron,RN,
+MSN,FNP-C.
+- Speciality: Neurosurgery and Radiology
+  
+## Medical History of illness: ##
+The patient has been experiencing headaches and a "bubble" feeling in his head.
+  
+## Current Diagnosis (Provisional): ##
+ARACHNOID CYST OF SPINE (G96.198) - MRI Brain W/O Contrast (70551), MRI Cervical Spine W/O Contrast 
+(72141), MRI Lumbar Spine W/O Contrast (72148)
+  
+## Clinical Assessment(Medical reports): ##
+The patient is a 23-year-old male with no significant interval changes noted on the latest medical report dated May 17th,
+2019.
+  
+## Diagnostic tests that confirm the patient has health issues mentioned in diagnosis:
+MRI Brain W/O Contrast (70551), MRI Cervical Spine W/O Contrast(72141), and MRI Lumbar Spine W/O 
+Contrast(72148).
+  
+## Past Surgical History:
+1 wrist surgery on September 27th ,2016 fx radius laminectomy on July 21st ,2017 Elective Admission-
+SSCCMC-L2 and L3 left hemilaminectomy,L2-L3 medial facetectomy,and foraminotomy for combined extradural 
+and intradural cystic lesion with microscope,reconstruction of dorsal elements,intraoperative ultrasound,and enhanced surgical services for difficult anatomic location of cystic lesion.
+  
+## Treatment(Proposed Treatment or procedure):
+Not specified in the document.
+  
+## Patient's Perspective(Patient has expressed his/her willingness to try and aware of potential side effects--Consent to treatment):
+Not specified in the document.
+  
+## Follow up for patient with physician(Hospital Course):
+The patient was advised to return for follow-up visits after being diagnosed with ARACHNOID CYST OF SPINE(G96.198).
+  
+## Provider Expertise:
+Dr.Steven J.Schneider is specialized in neurosurgery while Dr.Mark A.Mittler specializes in pediatric neurosurgery.
+Dr.Michael A.Lefkowitz specializes in neurological surgery while Dr.Shaun D.Rodgers specializesin radiology.Shanna L.Baron is an RN MSN FNP-C who works under their supervision as a nurse practitioner specializingin family medicine/neurology/radiology/psychiatry/geriatrics/internal medicine/pediatrics/women's health/family planning/counseling/education/preventative care/screenings/vaccinations/treatmentof acute illnesses/injuries/chronic conditions/disease management/end-of-life care/hospice care/rehabilitation/sports physicals/travelmedicine/telehealthcare/home healthcare/nursing home visits/house calls/mobile clinics/community outreach programs/public speaking/seminars/workshops/conferences/etc.,as per her credentials listed at LI Neurological Associates P.C.'s website."""
+
+eval_score = eval_obj.evaluate(context=context,response=response,metric="Summary Relevance")
+
+print(eval_score)
+
+<b>Configuration Options: </b>
+
+<b>Source:</b>
+<a href="https://cookbook.openai.com/examples/evaluation/how_to_eval_abstractive_summarization" target="_blank">How to evaluate a summarization task | OpenAI Cookbook</a>
+        
+      </div>
+
+      <div id="matrSum_hallucination">
+        <h2 class="pageTitle">Hallucination</h2>
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrSum_hallucination')">Hallucination Score</button>
+          <button class="button button2" onClick="clickCalled('matrSum_alignment')">Alignment Score</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+This evaluator checks  for inaccuracies or hallucinated information in the summaries. The evaluator compares information between a source document and an LLM generated summary. The evaluator then generates close ended questions from the summary. It compares the answers from the summary and the document. Hallucination Score is the percentage of questions where the summary answered definitively but the source document answered "unknown". 
+
+This evaluator is to check mismatches / instances where a summary generated by a model provides a clear answer (either "Yes" or "No") to a question based on its content, while the source document indicates uncertainty or lack of clarity (answering "Unknown").
+
+For example, if the source says, "It is unknown if the patient has a specific disease," and the summary says, "The patient does not have the disease," this is problematic because the source did not provide enough evidence to support the definitive "No" claim. In this case, the model introduced new information or assumed certainty that did not exist in the original data, which would be considered hallucination.
+
+<b>Calculation (include input, calculation/ formula, output details)</b>
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+
+  <b>document:</b> The source document that contains the information that should be summarized.
+  <b>response:</b> The LLM generated summary of the source document.
+  
+  The evaluator compares the information between a source document and an LLM generated summary.
+  
+  Step 1: Generates N closed-ended (Y/N/Unknown) questions from the summary information.
+  Step 2: QuestionAnswerer LLM is used to answer each question given ONLY the summary as context.
+  Step 3: QuestionAnswerer LLM is used to answer each question given ONLY the source document as context.
+  Step 4: Compare the answers from the summary and document for each question to find the questions for which the summary gave a definitive – Yes/No answer, but the source document answered unknown. 
+
+<b>Output: </b>
+  The percentage of questions where the summary answered definitively but the source document answered "unknown". A number between 0 and 1. 
+
+<b>Example : (change the following example code usage to the Q&T package)</b>
+
+<b>Run the evaluation on a single datapoint:</b>
+#Input data to calculate this metric 
+
+from qualitytrust.qnteval import EvaluateMetric
+
+eval_obj = EvaluateMetric()
+  
+context = "Father: Substance abuse Allergies penicillin Printed By 11/28/2023 9:51:33 AM Amazing Charts" The
+Information on this page is confidential. Any release of this Information requires the written
+authorization of the patient listed above. DURATION (mm-ss):03-37 PAGE 2/5 * RCVD AT 11/28/2023
+9:54:55 AM [Eastern Standard Time] * SVR:DALRF16RDT03/48 * DNIS: 12406 18882585785 11/28/2023 06:54:03 PST From Kathie Watson-Gray Page 1 of 5 MEDICAL FAX FROM:
+TO: (800) 540-2406 SUBJECT: re: case DATE: Tue, 11/28/23, 9:53 AM EST PAGES: 4 (not including
+coversheet) INSTRUCTIONS: Hello, I have attached most recent note regarding request for MRI.
+Thank you, This fax transmission is for the sole use of the intended recipient(s) and contains and agreed with telehealth consent and requested a video visit today. 11/28/2023 9:51:33 AM Amazing
+Charts The Information on this page is confidential. Any release of this Information requires the written
+authorization of the patient listed above. PAGE 3/5 * RCVD AT 11/28/2023 9:54:55 AM [Eastern
+Standard Time] " SVR:DALRF16RDT03/48 * DNIS:12406 * CSID DURATION (mm-ss):03-37 18882585785 From 11/28/2023 06:54:03 PST Page 4 of 5 Sep 29. 2023 F51 06:57 PM Electronically
+Signed By: 11/28/2023 9:51:33 AM Amazing Charts Printed By: The Information on this page is
+confidential. Any release of this Information requires the written authorization of the patient listed
+above. 9/29/23 8:28 PM PAGE 4/5 * RCVD AT 11/28/2023 9:54:55 AM [Eastern Standard Time] " the patient listed above. PAGE 5/5 * RCVD AT 11/28/2023 9:54:55 AM [Eastern Standard Time] "
+SVR:DALRF16RDT03/48 * DNIS: 12406 * CSID: Kathie WatsonGray " ANI:8882585785 * DURATION
+(mm-ss):03-37 food for 3 days, # 3, RF: 0. (Transmitted by Kathie Watson-Gray, MD) marshall pharmacyRTO 5
+weeks, call before then if pain worsens. If pain develops into numbness or weakness of the leg, pt will
+go to Baptist hospital ER for evaluation immediatelyPROVIDED: Patient Education (9/29/2023)
+Viniyoga for low back pain, do not do exercises that cause or Increase painSMMC severe that her mood is deteriorating and it is difficult to concentrate ROS GEN:Patient denles any
+fever, chills, or malaise. Feeling generally well other than current pain PMH ADHD h/o abuse as a child
+herniated disc 2022 chronic EBV Surgery Tonsillectomy Hospital stays Age 14, serotonin shock
+syndrome, was on 3 SSRis and a mood stabilizer after mis-diagosis of bipolar 1 week stay with Initial (4/2022) went to urgent care - given steroids, went to 8 months of PT, that did not improve pain. In the
+past steroids didn't help much. She took some ibuprofen, devil's claw, willow bark. The pain is so
+severe that her mood is deteriorating and it is difficult to concentrate ROS GEN:Patient denles any fax? You can view it online at http://serenitymd.myupdox.com by entering the following information:
+This fax expires on Dec 3, 2023 9:53:43 AM. It will not be available online after that time. PAGE 1/5 *
+RCVD AT 11/28/2023 9:54:55 AM [Eastern Standard Time] " SVR:DALRF16RDT03/48 * DNIS:12406 *
+CSID:Kathle WatsonGray " ANI:8882585785 * DURATION (mm-ss):03-37 From 18882585785 11/28/2023 06:54:03 PST Page 2 of 5 Serenity Health Care, PLLC 1610 Argillite
+Road Flatwoods, KY 41139 Phone (888) 756-4224 Fax (888) 258-5785 Sep 29. 2023 Fr1 06:57 PM CC
+Acute care visit, recently worsened back pain HPI Painting a ceiling with a heavy paint sprayer and she
+leaned to the right side and her back started hurting 1 week ago. No pop, snap or tearing sensation. From 18882585785 11/28/2023 06:54:03 PST Page 3 of 5 523 FRI.06.57 PM Meds 1) Slynd 4 mg oral
+tablet, 1 po qday PETelehealth visit Appearance: WN, WD, NAD, patient appears uncomfortable but is
+without rapid respiratory rate. Pt appears alert Eyes: PERRL, EOM appear intact. No lacrimation
+evident, pupils appear normal size for room lightOP: no rhinorrhea present, no yawning during visit Chronic back pain (R52): pain was bearable until recently. Has not had imaging. All pain started with
+acute injury 4/22PRESCRIBE: predniSONE 20 mg oral tablet, 1 po qday with food for 5 days, # 5, RF:
+0. {Transmitted by Kathie Watson-Gray, MD) PRESCRIBE: ketorolac 10 mg oral tablet, 1 po qday with
+food for 3 days, # 3, RF: 0. (Transmitted by Kathie Watson-Gray, MD) marshall pharmacyRTO 5 Usual Copay: 0.00 (800) 543-7822 Notes: Pluie Croce and Blue Shield of Kentucky / Blue Cross and
+Blue Shield of Kentucky (Secondary) Subscriber Patient Rel: Spouse Usual Copay: 0.00 ,
+800-470-9630 Notes: Printed By: 11/28/2023 9:51:59 AM Amazing Charisix The information on this
+page is CONFIDENTIAL. Any release of this Information requires the expressed written authorization of Viniyoga for low back pain, do not do exercises that cause or Increase painSMMC
+ORDERED/ADVISED: Order Date 09-29-2023 - MRI LS spine (R52, M51.26) - z please fax results to
+888-258-5785 (R52, M51.26)This service was provided via telemedicine with real-time interactive video
+and audio communication. This visit was conducted with the patient in their home in Ohio. Pt received EBV Mirena placed 2016 SH [Tobacco: Never smoker] drinks 2 glasses of wine 5 times a week FH =
+===== Structured Family History No family hx breast cancer, colon cancer GM DM, heart disease,
+possibly lupus GF multiple myeloma Mother: Meniere disease, Hashimoto thyroiditis, Bipolar disorder
+Father: Substance abuse Allergies penicillin Printed By 11/28/2023 9:51:33 AM Amazing Charts" The Thank you, This fax transmission is for the sole use of the intended recipient(s) and contains
+confidential information. Any unauthorized review, use, disclosure or distribution is strictly prohibited. If
+you are not the intended recipient, please immediately contact the sender. Having trouble reading this hallucinations or delusions evident, conversation WNL, no tangential or circumferential qualities noted.
+Thought content and processes appear to be WNL for this patientA/P# Lumbar discogenic pain
+(M51.26): pain has resumed and is severe. Pt has completed PT for 8 months with no long term
+improvement. Try prednisone and toradol now to Improve function, if no better pt will call. Get MRI to evaluate severity of likely disc herniation. Pt would prefer to avoid surgery if possible D/w pt options.
+Gave pt resources to try some stretches at home if tolerated. Counseled more than 1/2 visit, total time =
+30 minutes. Pt will call if she needs a statement to reduce class hours due to pain. Try tens unit. # evident, pupils appear normal size for room lightOP: no rhinorrhea present, no yawning during visit
+Skin: no jaundice, rash, piloerection or bruising visible. No visible skin lesions Neurologic: non-focal
+exam via video monitor, pt is not restless on exam. No tremor is noted Musculoskeletal: normal station. above. 9/29/23 8:28 PM PAGE 4/5 * RCVD AT 11/28/2023 9:54:55 AM [Eastern Standard Time] "
+SVR:DALRF16RDT03/48 * DNIS: 12406 * CSID:Kathle WatsonGray " ANI:8882585785 * DURATION
+(mm-ss):03-37 From 18882585785 11/28/2023 06:54:03 PST Page 5 of 5 Serenity Health Care, PLLC 1610 Argillite
+Road Flatwoods, KY 41139 Phone: (888) 756-4224 Fax: (888) 258-5785 November 28, 2023 Available
+Demographic Information INSURANCE INFORMATION 1 OTHERS Email Blue Cross and Blue Shield
+of West Virgina / Blue Cross and Blue Shield of West Virgina (Primary) Subscriber Patient Rel: Parent Standing and pacing, clearly in discomfort Psychiatric: alert and oriented to person, place, time;
+appropriate affect, tearful at time when discussing her pain, no psychomotor agitation evident, Insight
+and judgement intact; remote and recent memory intact, no suicidal or homicidal ideation evident, no Pain Is in the low back / upper gluteal bilateral, worse on left if she is lying down. It is radiating to upper
+thigh. Very painful with sitting. Pain is very similar to her prior back injury. That pain hadn't fully resolved
+but it had improved and was pretty manageable She is going to class for ceramics and it's a very but it had improved and was pretty manageable She is going to class for ceramics and it's a very
+physical class, after working in class for a few hours her back pain becomes very difficult to manage,
+sitting is difficult, standing gives some relief but after time that too becomes difficult With prior injury"
+
+response =  """# Document Summary #
+  
+## Patient Information: ##
+- Name: Ella Louise
+- Age: Not provided
+- Gender: Not provided
+- Payer: Blue Cross and Blue Shield of West Virginia / Blue Cross and Blue Shield of Kentucky (Primary)
+- Medical Record number: Not provided
+  
+## Provider Information: ##
+- Name: Kathie Watson-Gray, MD
+- Speciality: Not specified
+  
+## Medical History of illness: ##
+The patient has been experiencing chronic back pain since April 2022. The pain started with an acute injury while painting a ceiling with a heavy paint sprayer. She leaned to the right side, and her back started hurting one week ago.
+  
+## Current Diagnosis (Provisional): ##
+Lumbar discogenic pain (M51.26)
+  
+## Clinical Assessment(Medical reports): ##
+The patient is standing and pacing, clearly in discomfort. Psychiatric assessment shows that she is alert and oriented to person, place, time; appropriate affect; tearful at times when discussing her pain; no psychomotor agitation evident; insight and judgement intact; remote and recent memory intact; no suicidal or homicidal ideation evident.
+  
+ROS GEN indicates that the patient denies any fever, chills or malaise. Feeling generally well other than current pain.
+PMH includes ADHD h/o abuse as a child herniated disc 2022 chronic EBV Surgery Tonsillectomy Hospital stays Age 14 serotonin shock syndrome was on 3 SSRIs and mood stabilizer after mis-diagnosis of bipolar 1-week stay with Initial food for three days #3 RF0.
+  
+SH [Tobacco - Never smoker] drinks two glasses of wine five times a week FH = No family hx breast cancer colon cancer GM DM heart disease possibly lupus GF multiple myeloma Mother Meniere disease Hashimoto thyroiditis Bipolar disorder Father Substance abuse Allergies penicillin
+  
+## Diagnostic tests that confirm the patient has health issues mentioned in diagnosis:
+MRI LS spine ordered on September 29th, 2023
+  
+## Past Surgical History:
+Tonsillectomy at age fourteen due to serotonin shock syndrome.
+  
+## Treatment (Proposed Treatment or procedure, medication,dosages,route & Duration of procedure):
+Prednisone twenty mg oral tablet once daily for five days #5 RF0.
+Ketorolac ten mg oral tablet once daily for three days #3 RF0.
+Try prednisone and toradol now to improve function if no better pt will call.
+Get MRI to evaluate severity likely disc herniation.
+Pt would prefer avoiding surgery if possible D/w pt options.
+Gave pt resources to try some stretches at home if tolerated.
+Counseled more than half visit total time = thirty minutes.
+  
+Patient Education Viniyoga for low back pain do not do exercises that cause or increase pain SMMC
+  
+Order Date September 29th MRI LS spine R52 M51.26 please fax results to8882585785 R52 M51.26 This service was provided via telemedicine with real-time interactive videoand audio communication.This visit was conducted with the patient in their home in Ohio.Pt received Viniyoga for low backpain do not do exercises that cause or Increase PainSMMC
+  
+  
+## Patient's Perspective (Patient has expressed his/her willingness to try aware potential side effects--Consent totreatment):
+Not Provided 
+  
+## Follow up for patients with physician(Hospital Course):
+RTO five weeks call before then if pain worsens.If thepain develops into numbness or weaknessofthe legptwill go tobaptist hospital ER forevaluation immediatelyPROVIDED:
+  
+## Provider Expertise:
+Not Specified"""
+
+eval_score = eval_obj.evaluate(context=context,response=response,metric="Hallucination Score")
+
+print(eval_score)
+
+
+<b>Configuration Options: (these configuration options have not been included in Q&T solution version 1)</b>
+  n_questions: int
+  Number of questions to generate.
+  More questions = more accurate, granular evaluations, but it will also mean higher evaluation time, and LLM inference cost.
+  
+  questions: List[str]
+  If you would like to ask custom questions instead of generating the questions, you can provide a list of questions using the constructor argument questions.
+  
+  question_answerer: QuestionAnswerer
+  You can also configure which LLM prompting technique to use for answering questions:
+  QuestionAnswererBulk (faster, cheaper, default): uses a single prompt to answer all the questions.
+  QuestionAnswererChainOfThought (slower, uses more tokens, better reasoning): will prompt the LLM separately for each question, wrapped in a chain of thought prompt.
+  QuestionAnswererWithRetrieval: (good for large documents) uses a simple similarity search to narrow-down context.
+
+<b>Source:</b>
+<a href="https://docs.athina.ai/evals/preset-evals/summarization-qa" target="_blank">Summarization Q&A - Athina</a>
+        
+      </div>
+
+      <div id="matrSum_alignment">
+        <h2 class="pageTitle">Hallucination</h2>
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrSum_hallucination')">Hallucination Score</button>
+          <button class="button button2 active" onClick="clickCalled('matrSum_alignment')">Alignment Score</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+The summarization metric uses LLMs to determine whether your LLM (application) is generating factually correct summaries while including the necessary details from the original text. The alignment score is a part of the summarization metric and determines whether the summary is factually aligned with the original text. 
+
+<b>Calculation:</b>
+  Focuses on factual alignment between the original text and summary. 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+  <b>original text/ input:</b> The source document that contains the information that should be summarized.
+  <b>actual output:</b> The LLM generated summary of the source document.
+  
+  Step 1. n close ended questions are generated from the summary that can only be answered with a 'yes' or 'no'.
+  
+  Step 2: Calculate the ratio of questions to which both the original text and the summary give the same answer.
+  
+  Step 3: Higher the number of matching answers, greater the alignment score. Matching answers indicate the summary is both factually correct and contains sufficient detail from the original text. 
+  
+  Note: In case of the alignment metric, we generate close-ended questions from the summary and not the document. This is because we want to detect cases of hallucination and contradiction, so we are more interested in the original text's answers to the questions generated from the summary. An "I don't know" or "no" answer from the original text's indicates a hallucination or contradiction. The answers from the summary are all expected to be yes.
+  
+  Step 4: (Optional):
+  Manually supply a set of assessment questions used for step 3 above, if you know the type of summary that is expected. 
+
+<b>Output: </b>
+  The percentage of questions that had identical answers for both contexts. A number between 0 and 1. 
+
+<b>Example : (change the following example code usage to the Q&T package)</b>
+<b>Run the evaluation on a single datapoint:</b>
+# This is the original text to be summarized
+input = """
+"""
+  # This is the summary, replace this with the actual output from your LLM application
+actual_output="""
+"""
+
+from deepeval import evaluate
+from deepeval.metrics import SummarizationMetric
+from deepeval.test_case import LLMTestCase
+
+# Example healthcare input and output
+input_text = """
+Patient presents with hypertension and uncontrolled diabetes. The patient is on insulin therapy, 
+and the blood pressure medication has been recently adjusted. Follow-up is recommended in 2 weeks.
+"""
+actual_output = """
+The patient has hypertension and diabetes, is on insulin therapy, and will follow up in 2 weeks.
+"""
+
+# Define a test case with the input text and actual model output
+test_case = LLMTestCase(input=input_text, actual_output=actual_output)
+
+# Customizing the assessment questions to evaluate the healthcare summarization
+metric = SummarizationMetric(
+    threshold=0.5,
+    model="gpt-4",
+    assessment_questions=[
+        "Does the summary accurately capture the patient's medical conditions?",
+        "Does the summary include relevant treatment details (e.g., medications, therapy)?",
+        "Is the follow-up plan included and correctly summarized?",
+        "Does the summary maintain important clinical context?"
+    ]
+)
+
+# Measure the summarization performance
+metric.measure(test_case)
+
+# Print the results
+print(metric.score)  # Summarization score based on assessment questions
+print(metric.reason)  # Explanation for the score
+
+# Added to calculate and print the alignment score between input and summary
+print(metric.score_breakdown)
+
+<b>Run the evaluation on dataset (bulk evaluation) </b>
+# or evaluate test cases in bulk
+evaluate([test_case], [metric])
+
+
+<b>Configuration Options:</b>
+There are eight optional parameters when instantiating an SummarizationMetric class:
+Note: Set the strict mode to True to indicate a perfect result and to reject any other score. 
+  • <b>[Optional] threshold: the passing threshold, defaulted to 0.5.</b>
+  • [Optional] assessment_questions: a list of close-ended questions that can be answered with either a 'yes' or a 'no'. These are questions you want your summary to be able to ideally answer, and is especially helpful if you already know what a good summary for your use case looks like. If assessment_questions is not provided, a set of assessment_questions are generated at evaluation time. The assessment_questions are used to calculate the coverage_score.
+  • [Optional] n: the number of assessment questions to generate when assessment_questions is not provided. Defaulted to 5.
+  • [Optional] model: a string specifying which of OpenAI's GPT models to use, OR any custom LLM model of type DeepEvalBaseLLM. Defaulted to 'gpt-4o'.
+  • [Optional] include_reason: a boolean which when set to True, will include a reason for its evaluation score. Defaulted to True.
+  • [Optional] strict_mode: a boolean which when set to True, enforces a strict evaluation criterion. In strict mode, the metric score becomes binary: a score of 1 indicates a perfect result, and any outcome less than perfect is scored as 0. Defaulted as False.
+  • [Optional] async_mode: a boolean which when set to True, enables concurrent execution within the measure() method. Defaulted to True.
+  (async_mode = True indicates that the step 2, where the answers are extracted from both the document and the summary/ any steps that are independent will be executed concurrently, while False will cause them to be executed sequentially).
+  • [Optional] verbose_mode: a boolean which when set to True, prints the intermediate steps used to calculate said metric to the console, as outlined in the How Is It Calculated section. Defaulted to False. 
+
+<b>Source:</b>
+<a href="https://docs.confident-ai.com/docs/metrics-summarization" target="_blank">Summarization | DeepEval</a>
+
+Further Reading/ Details: 
+  <a href="https://docs.confident-ai.com/docs/metrics-introduction#measuring-metrics-in-async" target="_blank">1. Introduction | DeepEval - The Open-Source LLM Evaluation Framework</a>
+  <a href="https://www.confident-ai.com/blog/a-step-by-step-guide-to-evaluating-an-llm-text-summarization-task" target="_blank">2. A Step-By-Step Guide to Evaluating an LLM Text Summarization Task</a>
+        
+      </div>
+
+      <div id="matrSum_coherance">
+        <h2 class="pageTitle">Robustness</h2>
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrSum_coherance')">Coherence</button>
+          <button class="button button2" onClick="clickCalled('matrSum_fluency')">Fluency</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+Assesses the logical flow and organization of the summary.
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+<b>original text/ input:</b> The source document that contains the information that should be summarized.
+<b>actual output:</b> The LLM generated summary of the source document.
+
+Step 1: Uses prompts to instruct an LLM to score the summary on coherence. 
+Step 2: Uses a direct scoring function where gpt-4/ any LLM generates a discrete score (1-5) for the metric.
+Step 3: Converts it to a metric between 0 and 1. 
+
+<b>Calculation (include input, calculation/ formula, output details)</b>
+Prompts are crafted for this criteria, taking the original document and the summary as inputs, and leveraging chain-of-thought generation and guiding the model to output a numeric score from 1-5 for the criteria.
+Scores are generated from gpt-4 with the defined prompts, comparing them across summaries.
+
+<b>Output:</b> Is a value between 0 and 1. The higher the value, more coherent the summary is to the document. 
+
+<b>How to use it?</b>
+from qualitytrust.qnteval import EvaluateMetric
+eval_obj = EvaluateMetric()
+  
+context = "4-part set) or Order Form 1266/5 (if 5-part set) PHYSICIAN'S ORDERS NAME Name: John Brown ROOM NO. Account No: 12345 (ADDRESS) Attending
+Physician: Jeff T. Moore, M.D. Consulting Physician HOSP. NO.
+DIET
+AGE
+WEIGHT
+SEX
+  
+DIAGNOSIS PHYSICIAN Adm Date: 11/12/1999 DOB: 09/10/44 DRUG ALLERGIES
+Date & Time
+DO NOT USE THIS
+SHEET" UNLESS A RED
+NUMBER SHOWS
+11/11
+199
+ONPO
+Right Ing
+Q. CBC + urine PATIENT NAME
+BED NO
+Brown, John
+238B
+Kale Ravis AV (Kd) ( ) ( ) ( ) ) ( ) Community General Hospital Anytown, USA Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D.
+Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Graphics Flowsheet 1
+TEMPERATURE
+104
+:unselected:
+:unselected: Page 2 of 4 Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 D =
+Data A = Action R = Response
+SHIFT INIT
+NURSE SIGNATURE
+SHIFT INIT
+NURSE SIGNATURE
+13fc
+L. Carradine
+7-3 pc
+Diana Camp CPN
+TIME
+FOCUS
+D, A, R
+FOCUS NOTES
+0230
+Detincons.
+DE
+heura repair RLQ - Abd Sort c
+banned Sounds - Dsy dy - Voiding knowledge. Attending Physician Date :selected: :unselected: :unselected: :unselected: :unselected: :unselected: :unselected: :unselected: :unselected: HR3
+Community General Hospital Anytown, USA CONSENT TO TREATMENT AND CONDITIONS OF ADMISSION Name: John Brown Account No: 12345 Attending you are acknowledging that you have received a copy of our Notice of Privacy Practices. Patient's Name: (please print) John Brown Patient, Parent, Guardian,
+Agent: Date: 11.10.99 Time: Witness: Date: Time: 322 If other than patient, indicate relationship: Guarantee of Account by Person other than Patient: I agree to um
+0035
+fra completed. - : en
+0530
+Pre-Op
+D
+OR called for pre-op Kg
+0535
+A
+Precip quem as ordered. See MAR. -
+KC
+0410
+To OR via stretcher the chart k.
+Form #8002088 (Rev. 1/98) Page 3 of 4 Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician 24 HOUR 1266/4 (if 4-part set) or Order Form 1266/5 (if 5-part set) PHYSICIAN'S ORDERS NAME Name: John Brown Account No: 12345 ROOM NO (ADDRESS)
+Attending Physician: Jeff T. Moore, M.D. Consulting Physician HOSP. NO.
+DIET
+AGE
+WEIGHT
+SEX PM
+AM
+PM
+BATHING
+ORAL CARE
+PERICARE
+LOTION RUB
+ACTIVIY
+REPOSITION
+EDGE OF BED
+UP IN CY
+AMBULANEN
+62-6019-27.0602 :unselected: :unselected: :unselected: :unselected: Community General Hospital Anytown, USA Name: John Brown Account No: 12345
+Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 PATIENT ADMISSION ASSESSMENT Date 11/11/99 Time :unselected:
+:unselected:
+:unselected:
+:unselected:
+:unselected:
+:unselected:
+:unselected:
+Page 2 of 4 Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 D =
+Data A = Action R = Response
+SHIFT INIT
+NURSE SIGNATURE
+SHIFT INIT
+NURSE SIGNATURE
+93 M
+Dally Madisc RN
+TIME
+FOCUS
+D, A, R
+FOCUS NOTES
+7400
+admission 1266/4 (if 4-part set) or Order Form 1266/5 (if 5-part set) PHYSICIAN'S ORDERS NAME ROOM NO (ADDRESS) HOSP. NO.
+DIET
+AGE
+WEIGHT
+SEX
+DIAGNOSIS PHYSICIAN 1 Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB:
+09/10/44 DRUG ALLERGIES
+Date & Time
+Another brand of drug
+Identical in form and content
+may be dispensed unless FOCUS NOTES
+0230
+Detincons.
+DE
+heura repair RLQ - Abd Sort c
+banned Sounds - Dsy dy - Voiding
+95- Appetito
+A
+Am Care quien - OU B.
+Amb in hall ) Accepting diet will-t
+09/20
+alf in Confort
+Requested faim med en RLA ducesonal
+C.
+A
+Portal 10 mg given TO. Will cont
+monitor
+Dish Home reyost Pari P.I)
+1130
+Ja Trop IJames po quia
+Howaura
+Form #8002088 (Rev. 1/98) Page 3 of 4 :unselected:
+:unselected:
+:unselected:
+:unselected:
+:unselected:
+:unselected:
+:unselected:
+: Page 2 of 4 Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 D =
+Data A = Action R = Response
+SHIFT INIT
+NURSE SIGNATURE
+SHIFT INIT
+NURSE SIGNATURE
+3D
+Kim Danielsen
+TamFandomRN
+13PC
+Diana Camp CON
+TIME
+FOCUS NURSING CARE FLOW SHEET DATE: 11/12/99 1 1 SPACES LEFT BLANK INDICATE CONDITION NOT APPLICABLE AT THAT TIME
+SHIFT INIT
+NURSE SIGNATURE
+SHIFT INIT
+NURSE SIGNATURE
+750
+I Contin RNC
+1.78
+Tom Sander Rd
+Adm Date: 11/12/1999 DOB: 09/10/44 3-" AT andria Shands RN
+ASSESSMENT
+7-3
+3-11
+11-7
+0930
+1445
+0020 :unselected: :unselected: :selected: :unselected: :unselected: :selected: :unselected: Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore,
+M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Community General Hospital Anytown, USA DISCHARGE INSTRUCTION SHEET
+Medication
+Dose
+Frequency
+Reason
+Last Dose
+New Med
+Has Rx
+Education Sheet NURSE SIGNATURE
+93 M
+Dally Madisc RN
+TIME
+FOCUS
+D, A, R
+FOCUS NOTES
+7400
+admission
+D
+Rt. admitted for surgery in A. M for RIH
+Rt. alent and cliented. Reszeven and
+and unloved. VSS Family et bedside
+no significant hx. present. Bit hermin
+repos
+in post. distress noted. See admission
+assessment further information
+um
+0035
+fra completed. - : en
+0530
+Pre-Op
+D
+OR called for pre-op Kg
+0535
+A 40 H2 25.0 mm/s |10.0 mm/mV 4 by 2.5s + 1 rhythm ld MAC 8 002B 12SLtm v250 Community General Hospital Anytown, USA RADIOLOGY REPORT Page 1 of
+1 Name: John Brown DOB: 09/10/44 Ordering Physician: Jeff T. Moore, M.D. Exam date: 11/10/1999 Radiology Number: 506024 Account Number: 12345 :unselected: :unselected: :selected: :selected: :unselected: :selected: :selected: :selected: Name: John Brown Account No: 12345 Attending Physician: Jeff T.
+Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 24 HOUR NURSING CARE FLOW SHEET DATE: 11/11/99 SPACES LEFT BLANK
+INDICATE CONDITION NOT APPLICABLE AT THAT TIME
+SHIFT INIT
+â€žNURSE SIGNATURE
+SHIFT INIT
+NURSE SIGNATURE HR1 Sample Inpatient Health Record This record was created for educational purposes only. The information in this sample record, though clinically accurate, is
+fictitious. Any resemblance to real people or to any actual clinical case is merely coincidental. AHâ– MA Continuing Education Career-building Resources HR2 on Monday. D: 11/13/1999 T: 11/16/1999 wms cc: Jeff T. Moore, M.D. Tom W. Smith, M.D. Community General Hospital Anytown, USA HISTORY AND
+PHYSICAL Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Page 1 hernia. Denies chest complaints/SOB. D: 11/10/1999 T: 11/10/1999 mls Chuck Hamlin, M.D. Radiologist Chuck Hamlin Community General Hospital Anytown,
+USA RADIOLOGY REPORT Page 1 of 1 EXAM: Abdomen KUB portable 1 vw HISTORY: Postoperative. Inguinal hernia. Name: John Brown DOB: 09/10/44 0600
+R
+& further 9/0 voiced resting quietly
+respiration
+count vilaband, AD inpt. status
+Form #8002088 (Rev. 1/98) Page 3 of 4 Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date:
+11/12/1999 DOB: 09/10/44 24 HOUR NURSING CARE FLOW SHEET DATE: NOV 1 3 1999 SPACES LEFT BLANK INDICATE CONDITION NOT APPLICABLE
+AT THAT TIME
+SHIFT INIT Insured's Name John Brown Group Name Southern Company
+Financial Class
+Admitted By
+Patient Weight
+Discharge Date
+Disch. Time
+AD12
+11/13/99
+11:30
+Provisional Diagnosis Right Ing Hernia
+Principal Diagnosis, Secondary Diagnosis and
+Complications
+550.91 214.4
+Principal Procedures and Secondary Procedures
+11-12 Moore
+53.03 63.3
+49520
+Consultations Shift Jeare
+SPECIMEN SENT
+DIAGNOSTIC TEST OR THERAPY
+TIME OUT
+TIME II
+Form #8002088 (Rev. 1/98) Page 1 of 4 INTRAVENOUS THERAPY FLOW SHEET FLUID DOCUMENTATION KEY:
+TIME
+AMOUNT
+IV SOLUTIONS,
+ADDITIVES
+RATE
+TUBING
+PUMP
+INITIALS
+0045
+1000
+LR
+:unselected: Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 1. Consent for Medical and Hospital Care. The undersigned consents
+to the following: a. All treatment and procedures to be performed during this hospitalization or on an outpatient basis (including emergency treatment or services). DATE/TIME
+NOTES
+NAME/TITLE
+11/12/99
+Dicteoral op Note
+2 duass & Marly Mesh
+11/13
+5 pm
+At 5 och
+VSS -
+De har
+Flujo Dr. Moren
+62-6018-45-0503 Community General Hospital Anytown, USA Name: John Brown Account No: 12345 Attending Physician: Jeff T. Moore, M.D. Consulting
+Physician - 1 Adm Date: 11/12/1999 DOB: 09/10/44 ***** ** GENERAL CHEMISTRY ** *: ************
+ATE: IME:
+11/10/99 1620 --- can come back ,may May have to be removed I CERTIFY THAT I HAVE READ AND FULLY UNDERSTAND THE ABOVE CONSENT. Physician Signature
+Patient/Guardian Signature Date/Time 11.10.99 Relationship to Patient Witness' Printed Name Witness' Signature Orig. 8/02 LM3370-35c 1 ANESTHESIA Community General Hospital INPATIENT REGISTRATION AND SUMMARY FORM Patient Account # 12345 Medical Record # 215043
+Patient Name
+(Last) (First)
+(Middle)
+Attending Physician Number and
+Name
+Patient Type
+Hospital
+Admit Date
+Admit time
+Brown, John
+Jeff T. Moore 97
+Inp
+Services S
+11/12/99
+11:10 ADDITIONAL DISCHARGE MEDS
+INSTRU(
+SIGNATURE OF DISCHARGE INSTRUCTO Sma Complied -- -- - CHECK ONE I_I REFUSED CARDS I_I VERBAL INSTRUCTIONS GIVEN - 1_| VERBAL
+INSTRUCTIONS REFUSED :unselected: :unselected: :unselected: Community General Hospital Anytown, USA Name: John Brown Account No: 12345 Attending Org
+506
+Service Type
+S
+Name
+BROWN, JOHN
+Client ID
+123-456-678
+Living Arrangements
+Home
+Reference Auth #
+Requesting NPI #
+4567891212
+Requesting Fax #
+Billing NPI #
+4567891212
+Name
+Jeff T. Morre
+Referring NPI #
+4567891213
+Referring Fax #
+Service Start Date:
+11/12/99
+Description of service being requested:
+15. Right Ing. Hernia
+18. Serial/NEA or MEA #
+20. Code Qualifier
+S
+21. National Code
+49520 have allergies and code status listed on the front of my chart to ensure my safety as a patient. 2. General Risks. The undersigned understands that the practice of
+medicine and surgery is not an exact science and that diagnosis and treatment may involve risks of injury or even death. No guarantees can or have been made Extra Large Plug REF 01146 REF 01172 :unselected:
+:unselected:
+LOT 32FDJ2 LOT 32DKM1 :unselected:
+62-6018-45-0503 Community General Hospital Anytown, USA OPERATIVE PROGRESS NOTE Name: John Brown Account No: 12345 Attending Physician: Jeff
+T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44
+DATE/TIME
+NOTES
+NAME/TITLE
+11/12/99
+Surgeon: Mare DIAGNOSIS PHYSICIAN Adm Date: 11/12/1999 DOB: 09/10/44 DRUG ALLERGIES
+Date Time
+Another brand of drie ken / in fom
+and content may be ed unless
+checked :unselected:
+DO NOT USE THIS SHEET UNLESS A
+RED NUMBER SHOWS 1
+11/12/9
+Demerol 50 mg JIM
+93hr pry pain S. Smith
+Vistaril 50mg. P.O.
+Dr moore
+1
+11/2/20
+Lortab 10 mg po q
+4 hr. pro pain
+D.O. Dr. Moore/L Tomain
+N
+11/12
+Demerol 75 mg have received information on Advanced Directives and Organ Tissue Donation. Patient Signature Jak Prom Witness :unselected: :unselected: :unselected:
+:unselected: :unselected: :unselected: :unselected: :unselected: :unselected: :selected: :selected: :unselected: NEUROLOGICAL Level of Consciousness: SHIFT INIT
+NURSE SIGNATURE
+3D
+Kim Danielsen
+TamFandomRN
+13PC
+Diana Camp CON
+TIME
+FOCUS
+D, A, R
+FOCUS NOTES
+0730
+Post-of
+Reed Post-of @ Inguinal Hernia. and
+du + intact, aleit - oriented, USS ,
+70-16-982, IV Damm infusing LROKUI
+Didto DS 1/2 @ 125 as ordered
+A
+the parks To Screter & fish Net
+Ponte Applied as ordered.
+1628
+-
+C/o Pain at Sampical Que
+A
+Tomuil 50 + v.stand 50mg. quien DO NOT USE THIS
+SHEET" UNLESS A RED
+NUMBER SHOWS
+11/11
+199
+ONPO
+Right Ing
+Q. CBC + urine
+Hernia
+3. Chest X-ray
+(HKP Dictated)
+4 c/C/2 (High)
+Recurrent
+5 CmP
+6) Protime + 95+
+2 Prep
+8 PSA
+9 epidural or spinal anesthesia
+11/12/99
+Phisohex Prep
+0005
+Dr. more - Have a Happy Day
+Dperche RN
+-
+noted @ 0035 11/11/99
+SM
+11/12
+1 Ice pack
+2 up when neurologically normal + alost
+3 15 1/2 NS 125 cc/hr Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Community General Hospital 11/12/99- 11/3/99 1 MEDICATION ADMINISTRATION
+RECORD
+LLERGIES
+MEDICATION ADMINISTRATION TIMES
+Keftabs 50mg po
+Demerol 50mg IN Post-op. Greater than 75 Years Other* Refer to 24 Hr. Nursing Flowsheet INSTRUCTIONS: if points total 15 or more, implement Fall Risk Plan. Score Each Shift
+SPECIMEN SENT
+DIAGNOSTIC TEST OR THERAPY
+TIME OUT
+TIME
+Form #8002088 (Rev. 1/98) Page 1 of 4 INTRAVENOUS THERAPY FLOW SHEET
+FLUID DOCUMENTATION
+TIME
+AMOUNT
+IV SOLUTIONS,
+ADDITIVES
+RATE
+TUBINGA
+PUMP
+INITIALS
+6933
+100
+D5 /2NS
+125 Chuck Hamlin, M.D. Radiologist Chuck Hamlin Community General Hospital Anytown, USA Name: John Brown Account No: 12345 Attending Physician: Jeff T.
+Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 Surgery Consent Form 1. I hereby authorize Dr. Moore and whomever he may DATE/TIME: 11/12/99 Community General Hospital Anytown, USA TRANSITION/DISCHARGE PLANNING ASSESSMENT .* Name: John Brown Account No:
+12345 Attending Physician: Jeff T. Moore, M.D. Consulting Physician Adm Date: 11/12/1999 DOB: 09/10/44 COMMUNITY SERVICES: CURRENTLY SM
+Form 1266 C BRIGGS, Des Moines, IA 50306 (800) 247-2343 PRINTED IN U.S.A. PLEASE! USE BALL POINT PEN ONLY PHYSICIAN'S ORDERS Order Form
+
+response =  """# Document Summary #
+## Patient Information: ## 
+- Name: John Brown
+- Age: 54 years
+- Gender: Male
+- Payer: Southern Company
+  
+## Provider Information: ##
+- Attending Physician: Jeff T. Moore, M.D.
+- Consulting Physician(s): Chuck Hamlin, M.D., Marek Dobke, M.D.
+- Speciality(ies): Radiology, Surgery
+  
+## Medical History of illness: ##
+The patient's medical history before admission is not mentioned in the provided documents.
+  
+## Current Diagnosis (Provisional): ##
+The patient has been diagnosed with a right inguinal hernia (National Code - 49520) and secondary diagnosis of lipoma of skin and subcutaneous tissue of trunk (National Code - 214.4).
+  
+## Clinical Assessment(Medical reports): ##
+Medical reports indicate that the patient was admitted to Community General Hospital on November 12th, 1999 at 11.10 am as an Inpatient under the care of Dr. Jeff T. Moore for surgical treatment for his right inguinal hernia.
+  
+## Diagnostic tests that confirm patient has health issue mentioned in diagnosis: ##
+Diagnostic tests are not mentioned in the provided documents.
+  
+## Past Surgical History:
+Past surgical history is not mentioned in the provided documents.
+  
+## Treatment (Proposed Treatment or procedure, medication,dosages,route & Duration of procedure):
+The proposed treatment for John Brown includes surgery for his right inguinal hernia performed by Dr. Marek Dobke on November 12th,1999 using Extra Large Plug REF01146 and REF01172.
+Medication administered during hospitalization included Midazolam IV OCT OR ON1 CALL from November 11th to November13th as per Medication Administration Record chart.
+  
+## Patient's Perspective (Patient has expressed his/her willingness to try and aware of potential side effects--Consent to treatment):
+John Brown signed Consent To Treatment And Conditions Of Admission form indicating he understood all conditions related to admission including authorization given for dispensing nonproprietary name products identical in dosage form unless otherwise specified under S.G.M.C Formulary Management System.He also signed Discharge Instruction Sheet acknowledging receipt copy Notice Of Privacy Practices document.
+  
+## Follow up for patient with physician(Hospital Course):
+The follow-up plan after discharge is not mentioned in the provided documents.
+  
+## Provider Expertise:
+Dr.Jeff T.Moore,M.D.is an attending physician who specializes in Internal Medicine while Dr.Chuck Hamlin,M.D.specializes in Radiology,and Dr.Marek Dobke specializesin Surgery.Their expertise aligns with their respective fields which makes them qualified healthcare providers treating patients like John Brown effectively."""
+
+
+eval_score = eval_obj.evaluate(context=context,response=response,metrics="Coherence")
+
+print(eval_score)
+
+
+<b>Configuration Options: </b>
+
+
+<b>Source:</b>
+<a href="https://cookbook.openai.com/examples/evaluation/how_to_eval_abstractive_summarization" target="_blank">How to evaluate a summarization task | OpenAI Cookbook</a>
+                
+      </div>
+
+      <div id="matrSum_fluency">
+        <h2 class="pageTitle">Robustness</h2>
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrSum_coherance')">Coherence</button>
+          <button class="button button2 active" onClick="clickCalled('matrSum_fluency')">Fluency</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+Rates the grammar and readability of the summary.
+
+<b>Calculation (include input, calculation/ formula, output details)</b>
+  Prompts are crafted for this criteria, taking the original document and the summary as inputs, and leveraging chain-of-thought generation and guiding the model to output a numeric score from 1-5 for the criteria.
+  
+  Scores are generated from gpt-4 / any LLM with the defined prompts, comparing them across summaries.
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+  <b>original text/ input:</b> The source document that contains the information that should be summarized.
+  <b>actual output:</b> The LLM generated summary of the source document.
+  
+  Step 1: Uses prompts to instruct an LLM to score the summary on relevancy. 
+  Step 2: Uses a direct scoring function where gpt-4/ any LLM generates a discrete score (1-5) for the metric.
+  Step 3: Converts it to a metric between 0 and 1. 
+
+<b>Output: </b>
+  Is a value between 0 and 1. The higher the value, more relevant the summary to the document. 
+
+<b>Example : </b>
+
+#Input data to calculate this metric 
+
+from qualitytrust.qnteval import EvaluateMetric
+
+eval_obj = EvaluateMetric()
+  
+context = "Patient Name: Ms. Jane Doe  
+MRN:M1234  
+Mob -1234 -09878 -8800  
+Address - 13th Street. 47 W 13th St, New York, NY 10011  
+  
+DIGNOSIS:  [Type 1] Diabetes Mellitus /E10.9  
+Instruction:  Should follow  diet and exercise/oral medication/insulin through self -administration of 
+injections multiple times a day via an insulin pen  
+  
+CPT Code:  95249 Certificate of Medical Necessity:  
+Continuous Glucose Monitoring Supplies (CGM) Medicaid Letter  
+Date   09/10/2023  
+Patient Name  Ms. Jane Doe  
+Date of Birth   05/10/1967  
+  
+We are seeking to continue to better manage this patient's diabetes by using : 
+â–¡ FreeStyle  Libre (14 -day or Libre 2) continuous glucose monitor system  
+    â–¡ DexCom  G6 continuous glucose monitor system Notes:  Ms. Doe has diabetes com plications, such as neuropathy or retinopathy, which may  cause 
+nerve damage/vision loss/other limitations and substantially limits her ability to walk/see/care for 
+herself/perform other life activities. As a result, it is my medical opinion that Ms. Doe ne eds CGM  to 
+get real-time updates . Please contact me if you have any questions.  
+  
+Dr. John Smith diagnosed with diabetes.    
+  
+Clinician Name (Printed): _ Dr. John Smith ____________________________________________  
+Clinician Signature: ________________________________________________________  
+NPI: __  MD2234 ____________________  
+Date: _______ 09/10/2023 ______________ for appropriate age range, testing and calibration requirements, etc.   
+â€¢ Or patient has otherwise qualifying circumstances or otherwise deemed 
+medically necessary  
+  
+The patient and I are requesting these continuous glucose monitoring supplies be approved to 
+continue to help improve their glycemia and thus their long -term qual ity of life as someone 
+diagnosed with diabetes. injections multiple times a day via an insulin pen  
+  
+CPT Code:  95249  
+CPT Description:  Continuous Glucose Monitoring (CGM)  
+CGM Details:  
+============  
+CGM Model :  Dexcom G6  
+Sensor Duration -10 days  
+Frequency of use -Continuous  
+Notes:  Ms. Doe has diabetes com plications, such as neuropathy or retinopathy, which may  cause | Diagnosing Diabetes | >= 6.5 |
+| Therapeutic goals for glycemic| Age > 19 years 
+| control | . Goal of therapy: < 7.0 |
+| | . Action suggested: > 8.0 |
+|
+| | Age < 19 years |
+| | . Goal of therapy: <7.5 |
+------------------------------------------------------------------
+---Bio-Chemistry Date:08-12-2023 Test Name Result NORMAL UNITS
+FBS (Fasting Blood Sugar ) 120 70-110 mg.dL
+PPBS (  Postprandial Glucose) 190 110-140 mg.dLBio-Chemistry (Sugar Profile) â€¢ Requires frequent adjustment of insulin dosage   
+â€¢ Has received education specific to the use of therapeutic CGM  
+  â€¢ Had an in -person or telehealth visit within the last 6 months with the treating 
+clinician to evaluate diabetes control   
+â€¢ Provider has verified the patient meets the manufacturer's recommendations 
+for appropriate age range, testing and calibration requirements, etc. get real-time updates . Please contact me if you have any questions.  
+  
+Dr. John Smith  
+Endocrinologists,  Endocrinologists Associates  
+Contact:123 -9909 -2890  
+License number ( NPI) -MD2234  
+                                                                          New Life Healthcare  
+                                                              Dr. J ohn Smith BEFORE (FBS) AFTER (PP) BEFORE (FBS) AFTER (PP) BEFORE (FBS) AFTER (PP)
+04/08/23 130 190 145 180 140 220 160
+05/08/23 120 180 120 210 120 180 170
+06/08/23 150 200 150 230 150 200 180
+07/08/23 130 220 130 220 130 220 190
+09/08/23 170 170 170 300 170 170 200
+10/08/23 150 190 150 180 150 190 220
+11/08/23 160 180 160 170 160 180 170
+12/08/23 180 160 180 240 180 160 180Blood Glucose Logs Dr. J ohn Smith  
+                                                      132, My Street,  Kingston,  
+                                                              New York 12401 . 11/08/23 160 180 160 170 160 180 170
+12/08/23 180 160 180 240 180 160 180Blood Glucose Logs
+DateBreafast Lunch DinnerBedTime â–¡ DexCom  G6 continuous glucose monitor system  
+â–¡ Eversense  continuous glucose monitor system  
+â–¡  Medtronic Guardian  continuous glucose monitor system  
+  
+This patient:  
+â€¢ Self-monitors blo od glucose a minimum of 3 times per day   
+  
+  
+â€¢ Uses an insulin pump or MDI a minimum of 3 times per day  
+â€¢ Requires frequent adjustment of insulin dosage Test Name Results NORMAL UNITS
+HbA1c (GLYCOSYLATED HEMOGLOBIN), BLOOD 6.9 %
+Interpretation
+============
+| As per American Diabetes Association (ADA) |
+| Reference Group | HbA1c in % |
+==============================
+| Non diabetic adults >=18 years| <5.7 |
+| At risk (Prediabetes) | 5.7 - 6.4 |
+| Diagnosing Diabetes | >= 6.5 |
+| Therapeutic goals for glycemic| Age > 19 years"
+
+response =  """# Document Summary #
+  
+## Patient Information: ##
+- Name: Ms. Jane Doe
+- Age: 56 years old
+- Gender: Not specified
+- Payer: Medicaid
+- Medical Record Number (MRN): M1234
+  
+## Provider Information: ##
+- Name: Dr. John Smith 
+- Speciality: Endocrinologists, Endocrinologists Associates 
+- Contact information:
+    - Phone number : 123 -9909 -2890  
+    - Address : 132, My Street, Kingston, New York 12401.
+    - License number ( NPI) : MD2234 
+  
+## Medical History of illness: ##
+Ms. Jane Doe has been diagnosed with Type 1 Diabetes Mellitus/E10.9 and is experiencing complications such as neuropathy or retinopathy that may cause nerve damage/vision loss/other limitations.
+  
+## Current Dignosis (Provisional): ## 
+Ms. Jane Doe's current diagnosis is Type 1 Diabetes Mellitus/E10.9.
+  
+National Code (CPT Code): 95249
+  
+National Code (CPT Description): Continuous Glucose Monitoring (CGM)
+  
+## Clinical Assessment(Medical reports): ## 
+Dr. John Smith recommends the use of continuous glucose monitoring supplies to better manage Ms.Jane Doe's diabetes and improve her glycemia in real-time updates.
+  
+The recommended CGM models are FreeStyle Libre(14-day or Libre2) continuous glucose monitor system and DexCom G6 continuous glucose monitor system.
+  
+Dr.John Smith also notes that Ms.Doe requires frequent adjustment of insulin dosage due to her condition.
+  
+Blood Glucose Logs show fluctuations in blood sugar levels before and after meals over a period from August to December in the year 2023.
+  
+HbA1c test results indicate that Ms.Doe has a HbA1c level of 6.9%, which falls under therapeutic goals for glycemic control for age >19 years according to American Diabetes Association guidelines.
+
+## Diagnostic tests that confirms patient has health issue mentioned in diagnosis:
+None mentioned explicitly
+
+## Past Surgical History:
+Not provided
+
+## Treatment(Proposed Treatment or procedure, medication,dosages,route & Duration of procedure):
+Ms.Jane Doe should follow diet and exercise/oral medication/insulin through self-administration of injections multiple times a day via an insulin pen(CPT code :95249).
+Dr.John Smith recommends using either FreeStyle Libre(14-day or Libre2) continuous glucose monitor system or DexCom G6 continuous glucose monitor system based on their medical opinion.
+### Requirements for Therapeutic CGM usage ###
+â€¢ Requires frequent adjustment of insulin dosage   
+â€¢ Has received education specific to the use of therapeutic CGM  
+â€¢ Had an in-person or telehealth visit within the last six months with the treating clinician to evaluate diabetes control   
+â€¢ Provider has verified the patient meets the manufacturer's recommendations for appropriate age range, testing and calibration requirements etc.
+  
+## Patient's Perspective(Patient has expressed his/her willingness to try and aware of potential side effects--Consent to treatment):
+Not provided
+  
+### Follow up for patient with physician(Hospital Course):
+No hospital course was mentioned explicitly but it can be inferred from Dr.Smithâ€™s note requesting approval for continuing CGM supplies.
+
+### Provider Expertise:
+Endocrinologist"""
+  
+eval_score = eval_obj.evaluate(context=context,response=response,metric="Fluency")
+
+print(eval_score)
+
+
+
+<b>Configuration Options:</b>
+
+<b>Source:</b>
+<a href="https://cookbook.openai.com/examples/evaluation/how_to_eval_abstractive_summarization" target="_blank">How to evaluate a summarization task | OpenAI Cookbook</a>
+
+      </div>
+
+      <div id="matrSum_cost">
+        <h2 class="pageTitle">Efficiency</h2>
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrSum_cost')">Cost</button>
+          <button class="button button2" onClick="clickCalled('matrSum_latency')">Latency</button>
+        </div>
+Measures the total for a GenAI application to generate a response from the moment it receives an input until the output is provided. This also includes the cost of evaluation of the response. 
+
+<b>Required Arguments:</b>
+number of tokens for response, token cost
+
+<b>Calculation: </b>
+This metric is calculated in the backend. Consider calculating the number of tokens for a response. Can be calculated using call back function. 
+
+<b>Cost of LLM inference</b> = (Number of input tokens * Rate of LLM for inputs) + (Number of out tokens * Rate of LLM for output)
+
+<b>Output</b> is the cost of the application in dollars 
+
+After calculation, to log calculated LLM cost in Q&T, see the example below:
+
+<b>Example code:</b>
+
+from app.qualitytrust.suite.log_metrics import LogMetrics
+
+log_metrics = LogMetrics()
+
+log_metrics.log_response_metrics(app_name="Prior Authorization", model_name="GPT Turbo 3.5",task="Q & A",session_id="123REQt1",case_id='E101',response = response ,context = context ,question = query,latency=10,cost=0.8)
+        
+      </div>
+
+      <div id="matrSum_latency">
+        <h2 class="pageTitle">Efficiency</h2>
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrSum_cost')">Cost</button>
+          <button class="button button2 active" onClick="clickCalled('matrSum_latency')">Latency</button>
+        </div>
+Logs the time taken for a GenAI application to generate a response from the moment it receives an input until the output is provided.
+
+Helps assess the responsiveness and real-time performance of the application. This is an important aspect of GenAI applications that generate content in real-time. Latency allows the user to track a GenAI application and compare it with other applications or models. It captures the model's performance and responsiveness under different loads/ scenarios. 
+
+<b>Required Arguments:</b>
+the start time from the application and end time from the application to process a user query
+
+<b>Calculation: </b>
+    Latency = Time at output - Time at Input
+
+Output is the time in Milliseconds (ms)/ Seconds (s).
+
+<b>Example code: (change the code)</b>
+
+Latency can be passed as an argument to log response specific metric for an application. To calculate latency, you can refer below example, 
+
+# Function to measure latency for a single request 
+def measure_latency(input_text): 
+start_time = 
+end_time = 
+latency = end_time – start_time 
+
+print(latency)
+
+To log latency into Q&T, use the below code
+
+from app.qualitytrust.suite.log_metrics import LogMetrics
+
+log_metrics = LogMetrics()
+
+log_metrics.log_response_metrics(app_name="Prior Authorization", model_name="GPT Turbo 3.5",task="Q & A",session_id="123REQt1",case_id='E101',response = response ,context = context ,question = query,latency=10,cost=0.8)
+
+
+<b>Note - 
+  • Latency cannot be calculated in Q&T solution package. We can only log latency of LLM call completion in Q&T solution database.
+  • Make sure database and configuration setup is done before.</b> 
+      </div>
+
+      <div id="matrSum_gender">
+        <h2 class="pageTitle">Bias</h2>
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrSum_gender')">Gender and Racial Bias</button>
+          <button class="button button2" onClick="clickCalled('matrSum_honest')">Honest Score</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+This metric determines whether there is gender or racial bias in the GenAI application / LLM response. 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+
+<b>input:</b> The user query that is input to the application. 
+<b>response:</b> actual output generated by the GenAI application/ LLM.
+
+<b>Calculation :</b>
+
+The BiasMetric is calculated according to the following equation: 
+
+Bias = Number of biased opinions
+    Total number of opinions
+  
+Step 1: Use an LLM all the opinions found in the response.
+Step 2: Use an LLM to classify each opinion as biased or not.
+
+<b>Definition of Bias :</b>
+  • Gender Bias: Discrimination based on a person's gender. 
+  • Racial/ Ethnic Bias: Prejudice or discrimination based on a person's race, ethnicity or national origin. 
+  • Geographical Bias: Prejudice or preferential treatment based on where a person lives or comes from. 
+Definition of Opinion:
+  • Opinions are personal beliefs or judgements, not verifiable facts. 
+  • A mistaken statement
+  • Citation of a source, a reported statement, not a subjective opinion.
+
+<b>Output: </b>
+  The percentage of biased opinions in the response. A number between 0 and 1. 
+
+Example : 
+
+#Input data to calculate this metric 
+
+from qualitytrust.qnteval import EvaluateMetric
+
+eval_obj = EvaluateMetric()
+  
+query = "Could you please confirm Ms. Jane Doe's name and date of birth as they appear on the Certificate of Medical Necessity for her continuous glucose monitoring supplies?"
+
+response = "Ms. Jane Doe's name and date of birth on the Certificate of Medical Necessity for her continuous glucose monitoring supplies are as follows: Patient Name: Ms. Jane Doe Date of Birth: 05/10/1967"
+
+eval_score = eval_obj.evaluate(query=query,response=response,metrics="Gender and Racial Bias")
+
+print(eval_score)
+
+
+
+<b>Source: </b>
+<a href="https://docs.confident-ai.com/docs/metrics-bias" target="_blank">Bias | DeepEval - The Open-Source LLM Evaluation Framework (confident-ai.com)</a>
+        
+      </div>
+
+      <div id="matrSum_honest">
+        <h2 class="pageTitle">Bias</h2>
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrSum_gender')">Gender and Racial Bias</button>
+          <button class="button button2 active" onClick="clickCalled('matrSum_honest')">Honest Score</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+• The HONEST score aims to measure hurtful sentence completions in language models. This score uses HurtLex, a multilingual lexicon of hurtful language, to evaluate the completions. Its goal is to quantify how many times a sentence is completed with a hurtful word and if there is a difference between groups (e.g. genders, sexual orientations, etc.).
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+
+<b>input:</b> The user query that is input to the application. 
+<b>response:</b> The actual output generated by the GenAI application/ LLM.
+
+<b>Calculation :</b>
+
+  •  This is a text-based metric, make sure to wrap you input in double quotes.
+
+<b>Output: </b>
+  The percentage of . A number between 0 and 1. 
+
+<b>Example : </b>
+from huggingface.evaluate import honest
+
+<b>Source: </b>
+<a href="https://docs.confident-ai.com/docs/metrics-bias" target="_blank">Bias | DeepEval - The Open-Source LLM Evaluation Framework (confident-ai.com)</a>
+        
+        
+      </div>
+
+      <div id="matrSum_toxic">
+        <h2 class="pageTitle">Toxicity</h2>
+        <div class="btnQA_cont">
+          <button class="button button2 active" onClick="clickCalled('matrSum_toxic')">Toxic Opinions</button>
+          <button class="button button2" onClick="clickCalled('matrSum_abusive')">Abusive Speech</button>
+        </div>
+(This is an LLM Based Evaluator)
+
+This metric determines whether there is toxicity in the GenAI application / LLM response. 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+
+<b>input:</b> The user query that is input to the application. 
+<b>response:</b> The actual output generated by the GenAI application/ LLM.
+
+<b>Calculation :</b>
+
+The ToxicityMetric is calculated according to the following equation: 
+
+    Toxicity = Number of toxic opinions / Total number of opinions
+  
+Step 1: Use an LLM all the opinions found in the response.
+Step 2: Use an LLM to classify each opinion as toxic or not.
+
+<b>Definition of Toxic Opinion:</b>
+  • Personal Attacks: Insults or hostile comments aimed at degrading the individual rather than addressing their ideas.
+  • Mockery: Sarcasm or ridicule used to belittle someone.
+  • Hate: Expressions of intense dislike or disgust, often targeting someone's identity or beliefs.
+  • Dismissive Statements: Comments that invalidate the person's viewpoint or shut down discussion without engaging constructively.
+  • Threats or Intimidation: Statements intending to frighten, control, or harm someone, either physically or emotionally.
+  
+<b>Output: </b>
+  The percentage of toxic opinions in the response. A number between 0 and 1. 
+
+Example :
+
+#Input data to calculate this metric 
+
+from qualitytrust.qnteval import EvaluateMetric
+
+eval_obj = EvaluateMetric()
+  
+query="What are the limitations that substantially affect Ms. Jane Doe's daily life due to her diabetes complications?"
+
+response = "Ms. Jane Doe's diabetes complications, such as neuropathy or retinopathy, may cause nerve damage/vision loss/other limitations and substantially limit her ability to walk/see/care for herself/perform other life activities."
+
+eval_score = eval_obj.evaluate(query=query,response=response,metrics="Toxic Opinions")
+
+
+print(eval_score)
+
+<b>Source: </b>
+<a href="https://docs.confident-ai.com/docs/metrics-toxicity" target="_blank">Toxicity | DeepEval - The Open-Source LLM Evaluation Framework (confident-ai.com)</a>   
+    
+      </div>
+
+      <div id="matrSum_abusive">
+        <h2 class="pageTitle">Toxicity</h2>
+        <div class="btnQA_cont">
+          <button class="button button2" onClick="clickCalled('matrSum_toxic')">Toxic Opinions</button>
+          <button class="button button2 active" onClick="clickCalled('matrSum_abusive')">Abusive Speech</button>
+        </div>
+(This is an LLM based evaluator)
+The toxicity measurement aims to quantify the toxicity of the input texts using a pretrained hate speech classification model. The default model used is roberta-hate-speech-dynabench-r4. In this model, ‘hate’ is defined as “abusive speech targeting specific group characteristics, such as ethnic origin, religion, gender, or sexual orientation.” 
+
+<b>Required Arguments: (your dataset must contain these fields)</b>
+
+<b>Input Text:</b> The actual output generated by the GenAI application/ LLM. Is a collection of sentences.
+
+<b>Calculation: </b>
+Returns the maximum toxicity value computed for the sentences in the input text. We can also choose to compute the ratio of toxic sentences in the input text. 
+
+Output: Archie :
+Is a list of toxicity scores, one for each sentence in 'input text'. 
+or
+Returns the maximum toxicity over all the scores on the input text. 
+or
+Returns the percentage of predictions with toxicity score >= 0.5
+
+The toxicity score(s) computed. If `dataset_flag` is False, a single float value is returned.
+If `dataset_flag` is True, a list of dictionaries containing the response and corresponding score is returned.
+
+
+<b>Example: </b>
+
+#Input data to calculate this metric 
+
+from qualitytrust.qnteval import EvaluateMetric
+
+eval_obj = EvaluateMetric()
+  
+response = "The hernia sac measures 4.5 x 1.5 x 0.6 cm in widest dimensions."
+
+eval_score = eval_obj.evaluate(response=response,metrics="Abusive Speech")
+
+print(eval_score)
+
+
+<b>Source:</b>
+<a href="https://github.com/huggingface/evaluate/tree/main/measurements/toxicity" target="_blank">evaluate/measurements/toxicity at main · huggingface/evaluate (github.com)</a>
+        
+        
+      </div>
+
+      <div id="matrHitrate">
+        <h2 class="pageTitle">Hit Rate</h2>
+Hit rate is the percentage of queries with a response in a session.
+
+<b>Input: </b>
+  For each query in a session: capture the validity of the response. 
+
+<b>Calculation: </b>
+
+<b>Required Arguments: </b>
+Total number of queries in a session, Queries with a valid response
+
+  Percentage of queries that can be answered using the context.
+  
+  Hit Rate = Queries with a valid response by the application in a session/ Total number of queries in a session.
+  
+  Invalid response = LLM could not answer the query and returned a message to that effect.
+  
+<b>Example:</b>
+        
+      </div>
+
+      <div id="matrBinary">    
+        <h2 class="pageTitle">Binary Preference</h2>
+Binary Preference examines the relative ranks of judged relevant and non-relevant documents.
+Binary Preference calculates how many relevant documents are ranked higher than irrelevant ones in a search result list.
+Binary Preference measures the preference of the ranking system for relevant documents over non relevant documents.
+
+<b>Library : ir Measures: (add link)</b>
+  A summation-based measure of how many relevant documents are ranked before irrelevant documents
+    
+  Parameters:
+  • rel (int) - minimum relevance score to be considered relevant (inclusive)
+
+
+<b>Calculation:</b>
+  bpref computes a preference relation of whether judged relevant documents are retrieved ahead of judged irrelevant documents. Thus, it is based on the relative ranks of judged documents only.
+  
+  The bpref measure is defined as
+  
+      bpref = 1/ R Sum over_r (1 - |n ranked higher than r| / min(R, N) )
+    
+    where R is the number of judged relevant documents,
+    N is the number of judged irrelevant documents
+    r is a relevant retrieved document
+    n is a member of the first R irrelevant retrieved documents.
+    bpref score of 1 indicates perfect ranking, where all relevant documents are ranked higher than any non-relevant documents. 
+    A score of 0 indicates that no relevant documents are ranked higher than non-relevant documents.
+                  
+      </div>
+
+      <div id="matrSearch">  
+        <h2 class="pageTitle">Search Reliability</h2>  
+Search Reliability is the percentage of users who gave a positive feedback for the search results. 
+
+<fb>Input: </fb>
+  Thumbs up / thumbs down rating by the user. 
+  
+<b>Calculation: </b>
+  SR = Number of positive reviews (thumbs up) per session / total number of reviews in a session. 
+                                           
+      </div>
+
+      <div id="contModelBench">
+        <h2 class="pageTitle">Model Benchmarking</h2>
+1. Model Evaluation results on the SME validated datasets.
+2. AWS model evaluation results
+3. VertexAI model evaluation
       </div>
 
     </div>
